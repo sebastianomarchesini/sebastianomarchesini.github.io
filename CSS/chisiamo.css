@@ -4,86 +4,118 @@ html, body{padding:0px;
 	color: white;
 	background-color:rgb(12, 143, 254);}
 
-h1{
-    text-align:center;
+h1{ text-align:center;
     background-image:url(../img/logo.png);
     width: 800px;
     height: 200px;
 }
 
-h1 span {	
-    display:block;	
+h1 span {
+	display:block;	
     height:0;	
     overflow:hidden;
 }
 
-#breadcrumbs{background-color:rgb(184,252,151);
-padding-left: 3em;}
+/*Logo*/
+#logo{
+	float: left;
+}
 
-#ricerca{width:15em;
-height:2em;}
+/*Login*/
+#contenitore-login{
+	float: right;
+	width: 40%;
+}
 
-#conferma{width:8em;
+#login{
+
+}
+
+#button_admin{
+
+}
+
+#breadcrumbs{
+	background-color:rgb(184,252,151);
+	padding-left: 3em;
+	clear: both;
+}
+
+#ricerca{
+	width:15em;
+	height:2em;
+}
+
+#conferma{
+ outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font: bold 12px Arial, Helvetica, sans-serif;
+ color: #fff;
+ padding: 10px 20px;
+ border: solid 1px #0076a3;
+ background: #0095cd;
+
+ background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+ background: -webkit-linear-gradient(top,  #00adee,  #0078a5);
+ background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+ background: -ms-linear-gradient(top,  #00adee,  #0078a5);
+ background: -o-linear-gradient(top,  #00adee,  #0078a5);
+
+/*
+width:8em;
 height:2em;
 font-size:0.9em;
 font-weight:bold;
-background-color:lime;}
-
-.ricerca{position:relative;
-left:25%;}
-
-
-
-//menù	
-
-#contenitore-menu {
-margin: 1em 0;
-text-align: center;
-border-bottom: 1px solid #000;
-}
-	
-#menu {
-list-style-type: none;
-margin: 0 auto 1em;
-padding: 0;
-height: 1.5em;
-line-height: 1.5em;
-width: 36%;
+background-color:lime;
+*/
 }
 
-#menu ul {
+.ricerca{
 	position:relative;
-	left:50%;
-	clear:left;
-	float:left;
-	margin:10px 0;
-	border:4px solid #CC0000;
+	left:25%;
 }
-	
-#menu li {
-float: left;
-padding: 3px;
-border-right: 1px solid #000;
+
+
+/*Menu*/
+#contenitore-menu {
+width: 524px;
+margin: 0 auto;
 }
-	
-#menu a:link,
-#menu a:visited {
-margin: 0;
-padding: 0;
-color: #c00;
-background: transparent;
-text-decoration: none;
-font-weight: bold;
+
+.vnav{
+	background-color: rgb(255,204,255);
+	font-weight: bold;
 }
-#menu a:hover {
-color: #000;
-background: transparent;
+
+.menu{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(204,255,255);
 }
-	
-#menu li.last {border-right: none;}
+
+li {
+	float: left;
+}
+
+li a {    
+	display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
 
 
+
+li a:hover {
+	color: white;
+    background-color: #111;
+}
 
 #content{
 background-color:rgb(184,252,151); 
@@ -245,5 +277,3 @@ height:27em;}
 		margin-left: 0;
 	}
 }
-
-
