@@ -1,0 +1,66 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{./stile}
+
+%posizione dei file di capitolo per il documento corrente
+%default scts (sections)
+\newcommand{\docs}{./sezioni/}
+%posizione delle immagini per il documento corrente
+\newcommand{\docsImg}{./sezioni/img/}
+
+%
+%	Dati locali del documento
+%
+%Titolo documento
+\newcommand{\titoloDocumento}{Relazione Progetto Tecnologie Web}
+%Prima data di creazione del documento
+\newcommand{\dataCreazione}{28 dicembre 2015}
+\newcommand{\dataUM}{5 gennaio 2015}
+%Inserite la versione attuale del documento
+\newcommand{\versione}{1.0}
+%
+
+
+
+\rhead{\titoloDocumento}
+\lfoot{Versione: \versione}
+\title{\titoloDocumento}
+
+\begin{document}
+\input{\docs front.tex}
+
+\newpage
+%\pagenumbering{arabic}
+\tableofcontents
+\newpage
+\listoftables
+\listoffigures
+\newpage
+\input{\docs Introduzione.tex}
+\newpage
+\input{\docs DescrizioneGenerale.tex}
+\newpage
+\input{\docs SuddivisioneLavori.tex}
+\newpage
+\input{\docs LinguaggiUtilizzati.tex}
+\newpage
+\input{\docs Architettura.tex}
+\newpage   
+\input{\docs Struttura.tex}
+\newpage
+\input{\docs Presentazione.tex}
+\newpage
+\input{\docs Comportamento.tex}
+\newpage
+\input{\docs Accessibilita.tex}
+\newpage
+\input{\docs GestioneDati.tex}
+\newpage
+\input{\docs PERL.tex}
+\newpage
+\input{\docs VerificaTest.tex}
+%\newpage
+%\appendix
+
+%\bibliography{../bibliografia}
+
+\end{document}

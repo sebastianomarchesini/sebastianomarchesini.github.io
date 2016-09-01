@@ -1,0 +1,51 @@
+\section{Descrizione Generale}{
+	\subsection{Il sito}{
+		Il sito desidera essere una vetrina di prodotti per il giardinaggio con la possibilità, per un utente, di acquistarli oppure di noleggiarli per un periodo di tempo limitato; per ogni prodotto offerto si desidera rendere disponibile una pagina di dettaglio in cui trovare le principali caratteristiche.
+		A supporto dell'utente si desidera rendere disponibili una mappa per raggiungere l'azienda, e-mail e numero di telefono aziendali.
+	}
+	\subsection{Caratteristiche degli utenti}{
+		Gli utenti del sito saranno persone interessate al giardinaggio ed al fai-da-te, in grado di utilizzare strumenti per la navigazione web. \\
+		Il sito è rivolto ad un pubblico generico, all'interno del quale possiamo individuare le seguenti categorie:
+		\begin{description}\itemsep1pt
+			\item[Categoria di utenti:] privati e piccole aziende
+			\begin{description}\itemsep1pt
+				\item[Funzionalità:] Informarsi sugli attrezzi per il giardinaggio e procedere all'acquisto od al noleggio se interessati, carrello in cui inserire i prodotti scelti; 
+				\item[Termini generali:] Non eccessivamente distante dal punto vendita, in un raggio di circa 70 Km.
+			\end{description}
+			\item[Categoria di utenti:] amministratori
+			\begin{description}\itemsep1pt
+				\item[Funzionalità:] area riservata da cui aggiungere, rimuovere o aggiornare prodotti a noleggio o in vendita;
+			\end{description}
+		\end{description}
+	}
+	\subsection{Vincoli generali}{
+		\begin{itemize}\itemsep1pt
+			\item Il sito dev'essere accessibile da parte di categorie d'utenti diversificate ed utilizzando dispositivi diversi;
+			\item Separazione tra struttura, presentazione, comportamento;
+			\item Conformità agli standard W3C;
+			\item Sito fruibile da dispositivi diversi;
+			\item Sito comprensibile da screen-reader.
+		\end{itemize}
+	}
+	\subsection{Requisiti}{
+		Di seguito sono presentati i requisiti emersi dall'analisi iniziale e quelli che si sono aggiunti nel corso dello svolgimento del progetto. Ciascuno è identificato da un numero progressivo per semplificarne l'individuazione successiva.\\
+		\newcounter{magicrownumbers}
+		\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
+		\begin{table}[h]
+			\centering
+			\begin{tabular}{|p{\dimexpr 0.15\linewidth-2\tabcolsep}|p{\dimexpr 0.8\linewidth-2\tabcolsep}|}
+				\hline
+			 	\textbf{ID Req.} & \textbf{Descrizione}\\
+				\hline
+				\centering \rownumber	&	Il sito dev'essere visualizzabile su più browser\\
+				\hline
+				\rownumber	&	Il sito dev'essere accessibile indipendentemente dalla grandezza dello schermo del dispositivo\\
+				\hline
+				\rownumber	&	Il sito dev'essere leggibile da uno screenreader\\
+				\hline
+			\end{tabular}
+			\label{tab:requisiti}
+			\caption{Elenco dei requisiti}
+		\end{table}
+	}
+}

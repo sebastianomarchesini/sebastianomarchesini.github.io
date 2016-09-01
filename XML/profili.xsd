@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ggarden.com" targetNamespace="http://www.ggarden.com" elementFormDefault="qualified">
+	<xsd:element name="profili">
+	<xsd:complexType><xsd:sequence>
+		<xsd:element name="profilo" minOccurs="1" maxOccurs="unbounded">
+		<xsd:complexType><xsd:sequence>
+			<xsd:element name="username" type="xsd:string"/>
+			<xsd:element name="password" type="xsd:string"/>
+		</xsd:sequence>
+		<xsd:attribute name="tipo" type="xsd:string" use="required"/>
+		</xsd:complexType>
+		</xsd:element>
+	</xsd:sequence></xsd:complexType>
+	</xsd:element>
+</xsd:schema>

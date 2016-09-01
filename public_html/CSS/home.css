@@ -1,0 +1,202 @@
+html, body{padding:0px;
+	margin:0px;
+	font-family: Verdana, Helevetica, sans-serif;
+	color: white;
+	background-color:rgb(12, 143, 254);}
+
+h1{font-size:3em;
+text-align:center;}
+
+.accesskey{text-decoration:underline;}
+
+#barra{background-color:rgb(184,252,151);
+margin:1px;
+width:100%;
+height:3em;}
+
+fieldset{border:0;}
+
+#formricerca{float:left;
+position:relative;
+left:40%;}
+
+#formadmin{float:right;}
+
+#ricerca{width:15em;
+height:2em;}
+
+#conferma{width:8em;
+height:2em;
+font-size:0.9em;
+font-weight:bold;
+background-color:lime;}
+
+#log{height:3.0em;
+width:10em;}
+
+#menu{background-color:rgb(184,252,151); margin:0 auto;}
+
+ul{list-style-type:none; margin:0px; padding:0px;}
+
+.nav{display:block;
+line-height:11.5em;
+color:white;
+font-size:1.9em;
+text-align:center;
+text-decoration: none;
+font-weight:bold;
+background-repeat:no-repeat;
+background-position:center;
+width:70%;
+margin-left:15%;}
+
+#menu a:hover {color:black;}
+
+#chisiamo{background-image:url(../../img/chiSiamo.jpg);}
+
+#real{background-image: url(../../img/realizzazione.jpg);}
+
+#vend{background-image: url(../../img/vendita.jpg);}
+
+#nol{background-image: url(../../img/noleggio.jpg);}
+
+#serv{background-image: url(../../img/servizi.jpg);}
+
+#cont{background-image: url(../../img/chiSiamo.jpg);}
+
+.informazioni{display:block;}
+
+
+.footer{
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 25px 20px;
+	margin-top: 20px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.footer .footer-left{
+	width: 40%;
+}
+
+
+.footer h3{
+	color:  #ffffff;
+	font: normal 36px, cursive;
+	margin: 0;
+}
+
+.footer h3 span{
+	color:  #5383d3;
+}
+
+
+.footer .footer-nome-azienda{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer .footer-center{
+	width: 35%;
+}
+
+.footer .footer-center i{
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer .footer-center i.fa-mail{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+
+.footer .footer-right{
+	width: 20%;
+}
+
+.footer .footer-nome-azienda{
+	line-height: 20px;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer .footer-company-info span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width:768px){
+	#menu{height:2100px;}
+	#chisiamo{margin-left:0em;}
+	#real{margin-left:0em;}
+	#vend{margin-left:0em;}
+	#nol{margin-left:0em;}
+	#serv{margin-left:0em;}
+	#cont{margin-left:0em;}
+	#formricerca{position:static; float:none;}
+	#formadmin{position:static; float:none;}
+	#log{width:15em; height:2em;}
+	#barra{height:5.3em;}
+	
+	
+	.footer{
+		font: bold 14px sans-serif;
+	}
+
+	.footer .footer-left,
+	.footer .footer-center,
+	.footer .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer .footer-center i{
+		margin-left: 0;
+	}
+}
+
+
+

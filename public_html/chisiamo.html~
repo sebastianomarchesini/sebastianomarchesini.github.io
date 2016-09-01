@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+	<head>
+		<title>Chi siamo - GGarden</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="title" content="Chi siamo - GGarden" />
+		<meta name="description" content="Informazioni riguardanti GGarden" />
+		<meta name="keywords" content="GGarden, piante, fiori, giardinaggio, attrezzi, noleggio" />
+		<meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini, Jacopo Guizzardi" />
+		<meta name="language" content="italian it" />
+  		<link rel="stylesheet" href="CSS
+		/chisiamo.css" type="text/css" media="screen" />
+	</head>
+	<body>
+		<div id="header">
+			<span id="logo" xml:lang="en"><h1>GGarden</h1></span>
+		</div>
+		<div id="breadcrumbs">
+			<form action="" method="get">
+				<fieldset>
+					<span id="rifnav" >Ti trovi in: <a href="home_andrea.html"><span xml:lang="en">Home</span></a> / <b>Chi siamo</b></span>
+					<input type="search" name="ricerca" id="ricerca" class="ricerca" placeholder="Cerca un prodotto o un servizio" accesskey="s" tabindex="1" />
+					<input type="submit" name="conferma" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
+				</fieldset>
+			</form>
+	  	</div>
+		<div id="content">
+			<p class="center">
+				<span xml:lang="en">GGarden</span> nasce per semplificare la manutenzione del giardino, offrendo vendita e noleggio di attrezzature e l'intervento sul posto di personale specializzato.
+			</p>
+			<p class="center">
+				L'azienda ha sede a Padova e cresce grazie allo sforzo quotidiano degli attuali soci ed amministratori Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini, Jacopo Guizzardi.	
+			</p>
+			<p class="center">
+				Oggi siamo in grado di offrire i migliori marchi presenti sul mercato per quanto riguarda macchine ed attrezzature per il giardinaggio e l’<span xml:lang="en">hobby</span>. 
+				Ci rivolgiamo sia al pubblico professionale sia a quello privato.
+			</p>
+			<p class="center">
+				Qualità, professionalità e cortesia sono i nostri punti di forza uniti ad un’assistenza responsabile con attrezzature moderne.</p>
+			</p>
+			<span id="immagine" class="center"></span>
+		</div>
+		<div id="footer">
+			<span id="info">
+				<p>
+					<span class="informazioni">Via Trieste 63, 35121, Padova, <span xml:lang="en">Italy</span></span>
+					<span class="informazioni">Telefono: 049 8325299 - <span xml:lang="en">Email</span>: info@ggarden.com</span>
+				</p>
+			</span>
+		</div>
+	</body>
+</html>

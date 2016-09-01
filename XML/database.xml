@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="database.xslt"?>
+<p:prodotti xmlns:p="http://www.ggarden.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ggarden.com database.xsd">
+	<p:pianta id="00000001" formato="jpg">
+		<p:nome>Gerani Birch Double</p:nome>
+		<p:nome_scientifico>Geranium Himalayense Plenum</p:nome_scientifico>
+		<p:tipo>Piante per aiuole</p:tipo>
+		<p:prezzo><p:pacchetto><p:valore>13,95</p:valore><p:formato>per 1 confezione da 3</p:formato></p:pacchetto></p:prezzo>
+		<p:descrizione>I Gerani Birch Double (Geranium Himalayense Plenum) sono una varietà resistente al freddo. La pianta sviluppa bellissimi fiori doppi fucsia, larghi 3,5 cm, che contrastano con il fogliame verde. La pianta ha una crescita compatta ed è bellissima nelle aiuole e nei vasi.
+		</p:descrizione>
+		<p:dettagli>
+				<p:dato><p:nome>Mesi di fioritura</p:nome><p:contenuto>Maggio, Giugno, Luglio</p:contenuto></p:dato>
+				<p:dato><p:nome>Posizione</p:nome><p:contenuto>Mettere in pieno sole o a mezz'ombra</p:contenuto></p:dato>
+				<p:dato><p:nome>Altezza pianta</p:nome><p:contenuto>25-30 cm</p:contenuto></p:dato>
+				<p:dato><p:nome>Colore</p:nome><p:contenuto>rosa</p:contenuto></p:dato>
+		</p:dettagli>
+		<p:piantagione>Se desideri piantare il Geranio Birch Double in vaso, è meglio utilizzare un vaso grande bucherellato sul fondo. Rivesti il fondo del vaso con uno strato di cocci o di idrogranuli. Usa del terriccio fresco e interra la radice del Geranio Birch Double alla giusta profondità giusta, distanziando le piante di circa 15 cm. Riempi col terriccio compattalo e annaffia abbondantemente. Sistema il vaso in un'area soleggiata o parzialmente soleggiata. Se il vaso è poroso foderalo con della plastica per prevenire l'evaporazione dell'acqua ed evitare che il suolo si inaridisca troppo velocemente. Se lo pianti direttamente in giardino, lascia più spazio tra le piante. Grazie alla sua fioritura abbondante e alla sua crescita compatta, il Geranio Birch Double è perfetto nelle aiuole e nelle bordure. Puoi anche creare bellissime combinazioni, abbinandolo con altre piante da aiuola come la Rudbeckia.
+		</p:piantagione>
+		<p:cura>Il Geranio Birch Double è una pianta perenne che richiede poche cure. Annaffialo regolarmente per non far seccare il terreno intorno alle radici. Taglia completamente i rami secchi per stimolare la formazione di nuovi germogli floreali. Prima dell'inverno la parte aerea della pianta morirà. In inverno proteggi l'apparato radicale distribuendo uno strato di foglie secche sul terreno. Ad inizio primavera fertilizza e taglia tutte le foglie, presto spunteranno i nuovi germogli.
+		</p:cura>
+		<p:altre_info>Il Geranio Birch Double è compatto e bellissimo. I suoi brillanti fiori fucsia sono rigogliosissimi, doppi e grandi fino a 3,5 cm. Le sue foglie sono molto decorative e ricoprono graziosamente il terreno. In autunno, le foglie della pianta prendono una colorazione rossa autunnale.
+		</p:altre_info>
+	</p:pianta>
+	<p:pianta id="00000002" formato="jpg">
+		<p:nome>Edera bicolore</p:nome>
+		<p:nome_scientifico>Hedera helix</p:nome_scientifico>
+		<p:tipo>Piante da vaso</p:tipo>
+		<p:prezzo><p:pacchetto><p:valore>4,95</p:valore><p:formato>cadauno</p:formato></p:pacchetto></p:prezzo>
+		<p:descrizione>Eccezionale pianta per purificare l'aria! Questa bellissima edera è molto semplice da coltivare ed estremamente decorativa con il suo fogliame bicolore. L'edera fa parte della famiglia delle Araliacee (famiglia delle edere) ed in natura di solito cresce su alberi e rocce, arrampicandosi fino a 25-30 metri.
+		</p:descrizione>
+		<p:dettagli>
+			<p:dato><p:nome>Posizione</p:nome><p:contenuto>Mettere in pieno sole o a mezz'ombra</p:contenuto></p:dato>
+		</p:dettagli>
+		<p:piantagione>Riceverai la tua pianta di edera in un vaso da vivaio.
+Puoi inserire l'edera direttamente con il vaso da vivaio in una fioriera/vaso più capiente e sistema dei cocci o idrogranuli sul fondo del vaso per favorire il drenaggio dell'acqua.
+Oppure puoi travasarla in un altro vaso: anche in questo caso, usa un vaso bucherellato e posiziona degli idrogranuli sul fondo dello stesso. Poi aggiungi del terriccio e sistema la zolla di radice alla giusta profondità, finisci di riempire con terriccio e pressa. Usa un sottovaso per raccogliere l'acqua in eccesso.
+		</p:piantagione>
+		<p:cura>L'edera è una pianta che non richiede cure particolari ed è facile da coltivare. Annaffiare subito dopo la messa a dimora. Evita di lasciare il terriccio troppo bagnato: meglio farlo asciugare tra un'innaffiatura e l'altra, ciò permette alla pianta di sviluppare un apparato radicale ben ramificato e profondo. Le piante in vaso devono essere irrigate con più frequenza. In inverno necessita di meno irrigazioni che possono essere riprese regolarmente in primavera.
+Per mantenere un buon grado di umidità, se necessario, usa un sottovaso riempito con dell'acqua che, evaporando, migliora le condizioni ambientali, non permettere che le radici della pianta siano troppo a contatto con l'acqua. L'edera è una pianta molto robusta che si adatta bene in molti ambienti. La varietà di edera variegata ha bisogno di più luce rispetto alla varietà verde.
+Sistema qualcosa che possa permettere all'edera di potersi arrampicare - come ad esempio canne di bambù.
+		</p:cura>
+		<p:altre_info>Questa edera è originaria delle zone a clima temperato dell'Europa. In natura cresce nelle foreste dove si arrampica lungo gli alberi.
+In casa l'edera è spesso coltivata come pianta pensile!
+L'edera helix appartiene alla famiglia delle Araliaceae.
+Il nome Edera, è un'antichissima denominazione latina, che deriva probabilmente, dalla radice Heud, ovvero prendere o attaccarsi. Inoltre, l'epiteto helix, deriva dal greco helissein che significa arrampicarsi.
+		</p:altre_info>
+	</p:pianta>
+	<p:pianta id="00000003" formato="jpg">
+		<p:nome>Origano - sementi</p:nome>
+		<p:nome_scientifico>Origanum vulgare</p:nome_scientifico>
+		<p:tipo>Piante aromatiche</p:tipo>
+		<p:prezzo><p:pacchetto><p:valore>1,95</p:valore><p:formato>a bustina</p:formato></p:pacchetto></p:prezzo>
+		<p:descrizione>Il gusto mediterraneo dell'origano è indispensabile nella cucina italiana! Di gran risalto in vaso, puoi coltivarlo anche sul davanzale.
+		</p:descrizione>
+		<p:dettagli>
+			<p:dato><p:nome>Colore</p:nome><p:contenuto>Bianco</p:contenuto></p:dato>
+		</p:dettagli>
+		<p:piantagione>I semi di origano non necessitano di essere pretrattati. Semina l'origano da aprile a luglio in un posto di ombra parziale, in pieno sole le foglie potrebbero appassire o ingiallire. I semi germinano in 8-15 giorni. Non permettere che le piantine si asciughino.
+		</p:piantagione>
+		<p:cura>Mantieni il terreno sempre pulito, eliminando costantemente le erbe infestanti e annaffia abbondantemente soprattutto nel caso si verifichino periodi di siccità prolungata. Ciò favorirà una crescita vigorosa delle piante.
+L'origano può essere raccolto 6-8 settimane dopo la semina, solitamente nei mesi di aprile-maggio.
+		</p:cura>
+		<p:altre_info>
+		</p:altre_info>
+	</p:pianta>
+	<p:pianta id="00000004" formato="jpg">
+		<p:nome>Rose Porcellana - cespuglio</p:nome>
+		<p:nome_scientifico>Rosa sp</p:nome_scientifico>
+		<p:tipo>Piante da vaso</p:tipo>
+		<p:prezzo><p:pacchetto><p:valore>29,95</p:valore><p:formato>per una confezione da 5 (1 per varietà)</p:formato></p:pacchetto></p:prezzo>
+		<p:descrizione>Nessun'altra varietà di rose fiorisce così riccamente come le Rose Porcellana. I folti cespuglietti sono coperti da grappoli di roselline dai colori magnifici. I Rosai Porcellana sono perfetti nelle fioriere sul terrazzo e nelle aiuole in giardino.
+		</p:descrizione>
+		<p:dettagli>
+			<p:dato><p:nome>Fioritura</p:nome><p:contenuto>da giugno a novembre</p:contenuto></p:dato>
+			<p:dato><p:nome>Posizione</p:nome><p:contenuto>Mettere in pieno sole o a mezz'ombra</p:contenuto></p:dato>
+			<p:dato><p:nome>Colore</p:nome><p:contenuto>misto</p:contenuto></p:dato>
+			<p:dato><p:nome>Altezza pianta</p:nome><p:contenuto>30 cm</p:contenuto></p:dato>
+			<p:dato><p:nome></p:nome><p:contenuto>Ideali da recidere</p:contenuto></p:dato>
+		</p:dettagli>
+		<p:piantagione>Riceverai le rose porcellana in vaso da vivaio, assicurati che il terreno sia ben bagnato prima di trapiantare le rose, immergendo in un secchio d'acqua per circa 30 minuti. Le rose porcellana crescono bene in un vaso largo, ma anche piantate a terra.
+Scava un'ampia buca di piantagione nel terreno sciolto e arricchito con compost e stallatico. Distendi bene le radici delle rose e interrale con il punto d'innesto (la parte rigonfia dalla quale nascono i rami) circa 5 cm sotto il livello del terreno. Riempi la buca col terriccio, premi bene e annaffia abbondantemente. I rosai preferiscono una posizione in pieno sole per fiorire più riccamente. Queste roselline hanno una fioritura incredibile e sviluppano centinaia di rigogliose rose gialle, arancioni, rosa e rosse. Puoi piantare il Rosaio Porcellana nelle aiuole o usarlo come pianta tappezzante.
+		</p:piantagione>
+		<p:cura>Per stimolare la rifioritura taglia regolarmente i fiori appassiti fino alla prima foglia con cinque foglioline. Fertilizza regolarmente; in inverno distribuisci lo stallatico intorno alla base. A inizio primavera somministra del fertilizzante organico e in luglio del fertilizzante specifico per rose per agevolare la crescita e la fioritura. Per proteggere le sue fragili radici, si raccomanda di rialzare la base della pianta. Pota ad inizio primavera.
+Le rose porcellana devono essere potati ogni anno. In marzo potalo mantenendo solo 5 dei rami più vigorosi. Accorcia tutti i rami fino a 3-5 occhi (gemme in riposo). I rosai che ti consegniamo sono già stati potati, dovrai quindi aspettare 12 mesi prima di potarli.
+		</p:cura>
+		<p:altre_info>Le rose Porcellana sono delle rose in miniatura molto fiorifere. I gambi vengono completamente ricoperti da adorabili fiori. La loro crescita compatta li rende perfetti come mini-rose da terrazzo.
+		</p:altre_info>
+	</p:pianta>
+	<p:pianta id="00000005" formato="jpg">
+		<p:nome>Mini Pesco-noce - albero</p:nome>
+		<p:nome_scientifico>Prunus persica var. nucipersica 'Fantasia'</p:nome_scientifico>
+		<p:tipo>Piante da orto</p:tipo>
+		<p:prezzo><p:pacchetto><p:valore>29,95</p:valore><p:formato>cadauno</p:formato></p:pacchetto></p:prezzo>
+		<p:descrizione>Il Mini Pesco-Noce (Prunus Persica var. Nucipersica) produce frutti dalla buccia liscia e polpa giallo oro dal gusto eccellente. Più a lungo terrai le pesche a maturare sull'albero e più dolce sarà il loro sapore. Il Mini Pesco-Noce è meraviglioso in un vaso o fioriera sul terrazzo. 
+Il mini Pesco Noce è una pianta autofecondante, quindi può essere piantata singolarmente.
+Altezza alla fornitura 70-80 cm.
+		</p:descrizione>
+		<p:dettagli>
+			<p:dato><p:nome>Posizione</p:nome><p:contenuto>Mettere in pieno sole</p:contenuto></p:dato>
+			<p:dato><p:nome>Altezza</p:nome><p:contenuto>150 cm</p:contenuto></p:dato>
+		</p:dettagli>
+		<p:piantagione>Assicurati che la radice del Mini Pesco-Noce sia molto umida prima della piantagione, immergendola in un secchio d'acqua tiepida. Scava una grande buca di 50 x 50 x 50 cm nel terreno sciolto, fertile e ben drenato. Sistema la radice del Mini Pesco-Noce alla giusta profondità, poco sotto il livello del suolo. Riempi la buca col terriccio, compattalo bene e annaffia immediatamente. Pianta l'albero in una posizione ben soleggiata. Grazie alle sue dimensioni contenute, questo piccolo pesco cresce bene anche in vaso. Sistema il Mini Pesco-Noce in un'area riparata e soleggiata. Puoi creare un mini frutteto sul terrazzo o sul balcone, piantando il Mini Pesco-Noce, il Mini Ciliegio, il Mini Albicocco e il Mini Melo in vasi capienti.
+		</p:piantagione>
+		<p:cura>Il Mini Pesco-Noce cresce facilmente. Se pianti il Mini Pesco-Noce in vaso non far seccare la radice. All'inizio dell'anno, somministra del fertilizzante organico. Metti uno strato di compost alla base del tronco. Le pesche matureranno in agosto-settembre: lasciane sull'albero per farle maturare di più e renderle più dolci. Proteggi la pianta dagli uccelli. Il Mini Pesco-Noce non ha bisogno di essere potato.
+		</p:cura>
+		<p:altre_info>La pesca noce è un tipo di pesca a buccia liscia. La polpa gialla è deliziosa, dolcissima e succosa. All'inizio della primavera, sbocciano i fiori delicati che sono impollinati dagli insetti; quindi si svilupperanno le pesche noci. Le pesche noci saranno deliziose se la pianta è esposta al sole.
+		</p:altre_info>
+	</p:pianta>
+	<p:pianta id="00000006" formato="jpg">
+		<p:nome>Tulipani Olympic Mix - bulbo da fiore</p:nome>
+		<p:nome_scientifico>Tulipa sp</p:nome_scientifico>
+		<p:tipo>Bulbi</p:tipo>
+		<p:prezzo><p:pacchetto><p:valore>4,99</p:valore><p:formato>per una confezione da 10</p:formato></p:pacchetto>
+				<p:pacchetto><p:valore>12,50</p:valore><p:formato>per una confezione da 25</p:formato></p:pacchetto></p:prezzo>
+		<p:descrizione>Abbiamo selezionato questa collezione di tulipani (Tulipa) Olympic Mix nei colori più belli: rosa intenso, rosa chiaro, bianco e porpora! Piantali in gruppi, otterrai un effetto scenografico. Anche recisi risulteranno spettacolari.
+		</p:descrizione>
+		<p:dettagli>
+			<p:dato><p:nome>Fioritura</p:nome><p:contenuto>Aprile e Maggio</p:contenuto></p:dato>
+			<p:dato><p:nome>Posizione</p:nome><p:contenuto>Mettere in pieno sole, a mezz'ombra o all'ombra</p:contenuto></p:dato>
+			<p:dato><p:nome></p:nome><p:contenuto>Ideali da recidere</p:contenuto></p:dato>
+			<p:dato><p:nome>Colore</p:nome><p:contenuto>misto</p:contenuto></p:dato>
+			<p:dato><p:nome>Misura bulbi</p:nome><p:contenuto>11-12 cm</p:contenuto></p:dato>
+			<p:dato><p:nome>Altezza</p:nome><p:contenuto>40-50 cm</p:contenuto></p:dato>
+		</p:dettagli>
+		<p:piantagione>Non appena ricevi i bulbi dei Tulipani Olympic Mix puoi piantarli in un vaso sul terrazzo. In caso contrario, i bulbi dei tulipani devono essere conservati in un luogo riparato. I bulbi piantati in vaso di solito non resistono al freddo. Pianta i bulbi in una buca profonda tre volte l'altezza del bulbo. Ad esempio un bulbo di 5 cm deve essere piantato in una buca profonda 15 cm. La distanza tra le piante dei Tulipani Olympic Mix è di circa 10 cm. Lavora bene il terreno e pianta i bulbi con la cima rivolta verso l'alto e le radici verso il basso. Riempi la buca col terriccio ed evita di calpestare il terreno. Pianta i bulbi dei fiori uno per uno con una piccola paletta o con uno speciale piantatore per bulbi. Puoi anche scavare una buca più grande per piantare molti bulbi: maggiore il numero dei bulbi, più bello sarà'effetto creato dai fiori. Pianta gruppi di almeno 6 bulbi o distribuisci da 25 a 50 bulbi di fiori lungo la bordura o nell'aiuola. I Tulipani Olympic Mix crescono bene in un vaso sul terrazzo. Utilizza del terriccio da vaso fresco e sistema uno strato di ghiaia o idrogranuli sul fondo del vaso. Pianta i bulbi in una buca tre volte più profonda dell'altezza del bulbo. Ad esempio, un bulbo di 5 cm deve essere piantato in una buca profonda 15 cm. La distanza tra le piante dei tulipani Olympic Mix in un vaso è di circa 7 cm. Per un tappeto di fiori colorato, pianta dei non ti scordar di me o degli anemoni ad una profondità inferiore rispetto ai bulbi dei tulipani.
+		</p:piantagione>
+		<p:cura>I bulbi dei Tulipani Olympic Mix raggiungono la massima fioritura il primo anno di piantagione, per questo ti consigliamo di piantare dei bulbi nuovi ogni anno. I Tulipani Olympic Mix vegetano al meglio in un terreno sciolto e ben drenato, in una posizione assolata. Proteggi dal gelo i bulbi in vaso conservando i vasi al riparo oppure rivestendoli con della plastica a bolle. Annaffia in caso di siccità.
+		</p:cura>
+		<p:altre_info>La meravigliosa combinazione di colori dei tulipani Olympic Mix non può mancare nel tuo giardino. Oltre ai tulipani bianchi, questa collezione ha diversi tulipani rosa chiaro, rosa intenso e porpora che rendono i tulipani Olympic Mix molto scenografici e decorativi.
+		</p:altre_info>
+	</p:pianta>
+	<p:attrezzo id="00000007" formato="png">
+		<p:nome>Decespugliatore Sterwins 36 BC LI-2</p:nome>
+		<p:tipo>Decespugliatori</p:tipo>
+		<p:prezzo><p:pacchetto><p:valore>149,00</p:valore><p:formato></p:formato></p:pacchetto></p:prezzo>
+		<p:descrizione>Decespugliatore ideale per taglio erba e sterpaglie. Silenzioso e di facile manutenzione grazie al motore senza spazzole.
+		</p:descrizione>
+		<p:dettagli>
+			<p:dato><p:nome>Motore</p:nome><p:contenuto>a batteria</p:contenuto></p:dato>
+			<p:dato><p:nome>Potenza batteria</p:nome><p:contenuto>36V</p:contenuto></p:dato>
+			<p:dato><p:nome>Larghezza taglio</p:nome><p:contenuto>20 cm</p:contenuto></p:dato>
+			<p:dato><p:nome>Tipi di taglio</p:nome><p:contenuto>a fili di nylon, a disco</p:contenuto></p:dato>
+			<p:dato><p:nome>Impugnatura</p:nome><p:contenuto>singola</p:contenuto></p:dato>
+			<p:dato><p:nome>Peso</p:nome><p:contenuto>6,8 kg</p:contenuto></p:dato>
+			<p:dato><p:nome>Asta</p:nome><p:contenuto>smontabile</p:contenuto></p:dato>
+			<p:dato><p:nome>Dotazione</p:nome><p:contenuto>disco a 4 denti, bretella singola, testina portafilo automatica</p:contenuto></p:dato>
+		</p:dettagli>
+	</p:attrezzo>
+	<p:attrezzo id="00000008" formato="png">
+		<p:nome>Trattorino Alpina AT1 66 B</p:nome>
+		<p:tipo>Trattorini</p:tipo>
+		<p:prezzo><p:pacchetto><p:valore>1199,00</p:valore><p:formato></p:formato></p:pacchetto></p:prezzo>
+		<p:descrizione>Trattorino comodo e di dimensioni ridotte, adatto per gli usi domestici e per piccoli appezzamenti.
+		</p:descrizione>
+		<p:dettagli>
+			<p:dato><p:nome>Marca</p:nome><p:contenuto>Alpina</p:contenuto></p:dato>
+			<p:dato><p:nome>Motore</p:nome><p:contenuto>Briggs &amp; Stratton B&amp;S 875 series ES Pro</p:contenuto></p:dato>
+			<p:dato><p:nome>Cilindrata</p:nome><p:contenuto>190 cc</p:contenuto></p:dato>
+			<p:dato><p:nome>Potenza</p:nome><p:contenuto>5,1 CV</p:contenuto></p:dato>
+			<p:dato><p:nome>Avviamento</p:nome><p:contenuto>elettrico</p:contenuto></p:dato>
+			<p:dato><p:nome>Trasmissione</p:nome><p:contenuto>meccanica</p:contenuto></p:dato>
+			<p:dato><p:nome>Marce</p:nome><p:contenuto>4 avanti + 1 indietro</p:contenuto></p:dato>
+			<p:dato><p:nome>Altezza taglio minima</p:nome><p:contenuto>30 mm</p:contenuto></p:dato>
+			<p:dato><p:nome>Altezza taglio massima</p:nome><p:contenuto>80 mm</p:contenuto></p:dato>
+			<p:dato><p:nome>Larghezza taglio</p:nome><p:contenuto>66 cm</p:contenuto></p:dato>
+			<p:dato><p:nome>Superificie</p:nome><p:contenuto>3000 m²</p:contenuto></p:dato>
+			<p:dato><p:nome>Scarico dell'erba</p:nome><p:contenuto>posteriore nel cesto</p:contenuto></p:dato>
+			<p:dato><p:nome>Capacità</p:nome><p:contenuto>cesto 150 L</p:contenuto></p:dato>
+			<p:dato><p:nome>Numero di lame</p:nome><p:contenuto>2</p:contenuto></p:dato>
+			<p:dato><p:nome>Innesto lame</p:nome><p:contenuto>elettromagnetico</p:contenuto></p:dato>
+			<p:dato><p:nome>Peso</p:nome><p:contenuto>131,6 kg</p:contenuto></p:dato>
+		</p:dettagli>
+	</p:attrezzo>
+	<p:attrezzo id="00000009" formato="png">
+		<p:nome>Arieggiatore a scoppio Alko 38 VLB</p:nome>
+		<p:tipo>Arieggiatori</p:tipo>
+		<p:prezzo><p:pacchetto><p:valore>369,00</p:valore><p:formato></p:formato></p:pacchetto></p:prezzo>
+		<p:descrizione>Attrezzo indicato per ripulire il proprio giardino da erbacce e vegetali indesiderati, Alko vi lascierà stupiti dalla sua semplicità e maneggevolezza.
+		</p:descrizione>
+		<p:dettagli>
+			<p:dato><p:nome>Cilindrata</p:nome><p:contenuto>53,2 cc</p:contenuto></p:dato>
+			<p:dato><p:nome>Avanzamento</p:nome><p:contenuto>semovente</p:contenuto></p:dato>
+			<p:dato><p:nome>Materiale del telaio</p:nome><p:contenuto>polipropilene</p:contenuto></p:dato>
+			<p:dato><p:nome>Larghezza di lavoro</p:nome><p:contenuto>37 cm</p:contenuto></p:dato>
+			<p:dato><p:nome>Numero di lame</p:nome><p:contenuto>14</p:contenuto></p:dato>
+			<p:dato><p:nome>Capacità cesto</p:nome><p:contenuto>55 L</p:contenuto></p:dato>
+			<p:dato><p:nome>Peso</p:nome><p:contenuto>21 kg</p:contenuto></p:dato>
+			<p:dato><p:nome>Rumorosità</p:nome><p:contenuto>90 db</p:contenuto></p:dato>
+			<p:dato><p:nome>Dotazione</p:nome><p:contenuto>sacco di raccolta</p:contenuto></p:dato>
+		</p:dettagli>
+	</p:attrezzo>
+	<p:attrezzo id="00000010" formato="png">
+		<p:nome>Zappetta a cuore</p:nome>
+		<p:tipo>Attrezzi da giardinaggio</p:tipo>
+		<p:prezzo><p:pacchetto><p:valore>7,50</p:valore><p:formato></p:formato></p:pacchetto></p:prezzo>
+		<p:descrizione>Strumento adatto per piantare, rimarrai soddisfatto dalla resistenza dell'acciaio e dalla comodità del manico in puro faggio.
+		</p:descrizione>
+		<p:dettagli>
+			<p:dato><p:nome>Materiale</p:nome><p:contenuto>acciaio</p:contenuto></p:dato>
+			<p:dato><p:nome>Numero denti</p:nome><p:contenuto>3</p:contenuto></p:dato>
+			<p:dato><p:nome>Forma</p:nome><p:contenuto>a cuore</p:contenuto></p:dato>
+			<p:dato><p:nome>Materiale del manico</p:nome><p:contenuto>faggio FSC</p:contenuto></p:dato>
+			<p:dato><p:nome>Manico verniciato</p:nome><p:contenuto>sì al 100%</p:contenuto></p:dato>
+			<p:dato><p:nome>Lunghezza</p:nome><p:contenuto>37 cm</p:contenuto></p:dato>
+			<p:dato><p:nome>Larghezza</p:nome><p:contenuto>17 cm</p:contenuto></p:dato>
+			<p:dato><p:nome>Lunghezza del manico</p:nome><p:contenuto>33,5 cm</p:contenuto></p:dato>
+			<p:dato><p:nome>Peso</p:nome><p:contenuto>360 g</p:contenuto></p:dato>
+		</p:dettagli>
+	</p:attrezzo>
+</p:prodotti>

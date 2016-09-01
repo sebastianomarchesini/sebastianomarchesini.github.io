@@ -1,0 +1,98 @@
+\section{Accessibilit\`a}{
+
+	\subsection{Implementazione}{
+	Al fine di garantire l'utilizzo del sito ad utenti con disabilità, si sono:
+	\begin{itemize}\itemsep0.5pt
+		\item Validati i file che compongono il sito con i validatori XHTML1.0 e CSS del W3C;
+		\item Separata struttura, presentazione e comportamento;
+	%	\item Fonita la possibilità per la tecnologia assistiva di ignorare contenuti non testuali puramente decorativi;
+		\item Potuti ridimensionare i testi fino al 200\%, senza perdita di contenuto e funzionalità;
+	%	\item La larghezza non supera gli 80 glifi;
+		\item Creati contenuti rappresentabili in modalità differenti senza perdere informazioni o la struttura;  %le informazioni, la struttura e la presentazione possono essere determinate programmaticamente o sono disponibili tramite testo; le istruzioni fornite per comprendere ed operare sui contenuti non si basano unicamente su caratteristiche sensoriali dei componenti;
+		\item Resi i contenuti in primo piano distinguibili dallo sfondo, grazie a colori diversi. Inoltre si utilizzato un rapporto di contrasto di almeno: 
+		\begin{itemize}\itemsep1pt
+			\item 7:1 tra testo e sfondo;
+			\item 4,5:1 tra testo grande ed immagini contenenti testo grande nella home;
+		\end{itemize}
+		\item Reso le funzionalità del sito utilizzabili tramite tastiera, mediante i tabindex;
+		\item Inseriti:
+		\begin{itemize}\itemsep0.5pt
+			\item informazioni relative alla posizione dell'utente (breadcrumbs); 
+			\item titoli appropriati  per le pagine web; 
+			\item testo appropriato e testo alternativo per i collegamenti; 
+			\item alternative testuali per il contenuto non testuale:
+				\begin{itemize} \itemsep0.5pt
+					\item corredata ogni immagine con gli attributi alt e title che la descrivono;
+					\item aggiunta di una label ad ogni campo di input della form, in aiuto dello screen reader;
+				\end{itemize}
+			\item intestazioni ed etichette appropriate; 
+			\item l'indicatore del focus nelle interfacce utilizzabili da tastiera; 
+			\item sezioni per organizzare il testo.
+			\item la lingua predefinita per il contenuto delle pagine; forniti i significati delle abbreviazioni e degli acronimi utilizzati; usati gli attributi \texttt{xml:lang} per definire parole o blocchi in lingua diversa da quella predefinita della pagina;
+ 			\item Definiti i meta tag: \textit{Description, Keywords, Copyright, Author}
+ 			\item Un link di ritorno ad inizio pagina.
+		\end{itemize} 
+		\item Mantenuto un meccanismo di navigazione coerente all'interno delle pagine web del sito;
+	%	\item Individuati eventuali errori di inserimento e descritti con del testo; fornite etichette (o istruzioni) per l'input dell'utente.
+		%inserito modalità per saltare blocchi di contenuto che si ripetono su più pagine;
+	\end{itemize}
+	Inoltre, non si sono:
+	\begin{itemize}\itemsep1pt
+		\item inseriti contenuti audio e video (contenuti multimediali basati sul tempo);
+		\item posti vincoli di tempo all'utente per consultare i contenuti o compilare i campi dati;
+		\item utilizzato il colore come modalità visiva per rappresentare le informazioni, indicare azioni, elemento di distinzione visiva; inserito contenuto audio eseguito automaticamente all'interno della pagina;
+		\item sviluppati contenuti che possano causare attacchi epilettici (non s'è inserito contenuto lampeggiante);
+		\item inseriti cambiamenti del contesto su alcun componente che riceve il focus;
+	\end{itemize}
+		Al fine di facilitare l'utilizzo del sito da parte di utenti con disabilità, si è:
+		\begin{itemize}\itemsep1pt
+
+			\item aiutata la navigazione tra le pagine, creando:
+			\begin{itemize}\itemsep1pt
+				\item \textit{un path o breadcrumb}, per individuare il contesto;
+				\item \textit{un menù di link} per mostrare dove si può andare;
+				\item \textit{uso dello stesso stile} per tutti i link del sito;
+				\item \textit{link di ritorno ad inizio pagina}.
+			\end{itemize}
+			%\item ridefiniti i tabindex per la navigazione tra i vari link.
+			%\item Mantenuti chiari i link
+		\end{itemize}
+	}
+	\subsection{Combinazione dei colori}{
+		È stata utlizzato uno schema di colori che garantisse un contrasto di almento 7:1 tra sfondo e testo; per testare le scelte fatte è stato utilizzato il servizio offerto da \url{http://snook.ca/technical/colour_contrast/colour.html}.\\
+		Il servizio offerto da \url{http://colorfilter.wickline.org} c'ha permesso di capire come utenti con determinati disturbi visivi visualizzassero il nostro sito.\\
+		Di seguito vengono riportati i risultati ottenuti sulla home page.
+%		\newpage
+		\begin{figure}[H]
+%			\centering
+			\begin{subfigure}[b]{0.5\textwidth}
+				\includegraphics[width=\textwidth]{\docsImg Home.png}
+				\vspace{-40pt}
+				\caption{Home Page originale}
+				\label{Home Page originale}
+			\end{subfigure}
+			\begin{subfigure}[b]{0.5\textwidth}
+				\includegraphics[width=\textwidth]{\docsImg Home.png}
+				\vspace{-40pt}
+				\caption{Home Page vista da un deutranope}
+				\label{Home Page vista da un deutranope}
+			\end{subfigure}
+			\\
+			\\
+			\begin{subfigure}[b]{0.5\textwidth}
+				\includegraphics[width=\textwidth]{\docsImg Home.png}
+				\vspace{-40pt}
+				\caption{Home Page vista da un protranope}
+				\label{Home Page vista da un protranope}
+			\end{subfigure}
+			\begin{subfigure}[b]{0.5\textwidth}
+			\includegraphics[width=\textwidth]{\docsImg Home.png}
+				\vspace{-40pt}
+				\caption{Home Page vista da un tritranope}
+				\label{Home Page vista da un tritranope}
+			\end{subfigure}
+			\caption{Homepage vista da persone con problemi nel distinguere i colori}
+			\label{fig: Homepage vista da persone con problemi nel distinguere i colori}
+		\end{figure}
+	}
+}

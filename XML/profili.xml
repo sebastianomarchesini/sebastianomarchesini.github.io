@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"?>
+<p:profili xmlns:p="http://www.ggarden.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ggarden.com profili.xsd">
+	<p:profilo tipo="amministratore">
+		<p:username>Admin</p:username>
+		<p:password>password</p:password>
+	</p:profilo>
+</p:profili>

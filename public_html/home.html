@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+	<head>
+		<title>GGarden - Home</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="title" content="GGarden" />
+		<meta name="description" content="Azienda specializzata nella vendita di piante e fiori e nel noleggio e vendita di attrezzi e macchine da giardinaggio" />
+		<meta name="keywords" content="piante, fiori, giardinaggio, attrezzi" />
+		<meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini, Jacopo Guizzardi" />
+		<meta name="language" content="italian it" />
+  		<link rel="stylesheet" href="CSS/home.css" type="text/css" media="screen" />
+		<script type="text/javascript">
+		<!--
+		function logform() {
+			if(document.getElementById('log').clicked{
+			prompt(“Inserisci la login:”,“guest”);
+			}
+		}
+		//-->
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<span id="logo"><h1>GGarden</h1></span>
+		</div>
+		<div id="barra">
+			<form action="../cgi-bin/search.cgi" method="get">
+				<fieldset id="formricerca">
+					<input type="search" name="ricerca" id="ricerca" placeholder="Cerca un prodotto o un servizio" accesskey="c" tabindex="1" />
+					<button type="submit" id="conferma" accesskey="e" tabindex="2">C<span class="accesskey">e</span>rca</button>
+				</fieldset>
+			</form>
+			<form action="" method="post">
+				<fieldset id="formadmin">
+					<button type="submit" name="log" id="log" accesskey="a" tabindex="3" onClick=window.open("log.html", "Log", "width=550,height=170,left=150,top=200,toolbar=0,status=0,");><span class="accesskey">A</span>ccedi come amministratore</button>
+				</fieldset>
+			</form>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="chisiamo.html" id="chisiamo" class="nav">Chi&nbsp;siamo</a></li>
+				<li><a href="realizzazioni.html" id="real" class="nav">Realizzazioni</a></li>
+				<li><a href="../XML/database.xml" id="vend" class="nav">Vendita</a></li>
+				<li><a href="noleggio.html" id="nol" class="nav">Noleggio</a></li>
+				<li><a href="servizi.html" id="serv" class="nav">Servizi</a></li>
+				<li><a href="contattaci.html" id="cont" class="nav">Contattaci</a></li>
+			</ul>
+		</div>
+		
+		<footer class="footer">
+			<div class="footer-left">
+				<h3>Company<span>logo</span></h3>
+				<p class="footer-menu">
+					<a href="home_andrea.html">Home</a>
+					·
+					<a href="chisiamo.html">Chi&nbsp;siamo</a>
+					·
+					<a href="vendita.html">Vendita</a>
+					·
+					<a href="noleggio.html">Noleggio</a>
+					·
+					<a href="servizi.html">Servizi</a>
+					·
+					<a href="contattaci.html">Contattaci</a>
+				</p>
+
+				<p class="footer-nome-azienda">Nome Azienda &copy; 2016</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-indirizzo"></i>
+					<p><span>Via Trieste , 63</span> Padova, Italy</p>
+				</div>
+
+				<div>
+					<i class="fa fa-telefono"></i>
+					<p>+1 555 123456</p>
+				</div>
+
+				<div>
+					<i class="fa fa-mail"></i>
+					<p><a href="mailto:support@company.com">service@ggarden.com</a></p>
+				</div>
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-info">
+					<span>Gg Garden a servizio</span>
+					Non so che scrivere in questo momento ma seconod me ci sta una piccola nostra firma come una frase di battaglia
+				</p>
+
+			</div>
+
+		</footer>
+	</body>
+</html>
