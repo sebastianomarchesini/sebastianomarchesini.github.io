@@ -4,7 +4,6 @@ use warnings;
 use CGI::Session;
 use CGI;
 use XML::LibXML;
-#use XML::Writer;
 require "./checkLog.cgi";
 
 sub logError {
