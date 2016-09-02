@@ -4,7 +4,8 @@ html, body{padding:0px;
 	color: white;
 	background-color:rgb(12, 143, 254);}
 
-h1{ text-align:center;
+h1{
+	text-align:center;
     background-image:url(../img/logo.png);
     width: 800px;
     height: 200px;
@@ -252,7 +253,7 @@ color: black;}
 /*Parte per la form di contattaci*/
 
 #immagine{
-	background-image:url("img/prato.jpg");
+	background-image:url("../img/prato.jpg");
 	background-repeat:no-repeat;
 	background-position:center;
 	height:22em;
