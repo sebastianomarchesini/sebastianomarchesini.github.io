@@ -2,92 +2,145 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 	<head>
-		<title>Chi siamo - GGarden</title>
+		<title>Contattaci- GGarden</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<meta name="title" content="Chi siamo - GGarden" />
-		<meta name="description" content="Informazioni riguardanti GGarden" />
-		<meta name="keywords" content="GGarden, piante, fiori, giardinaggio, attrezzi, noleggio" />
+		<meta name="title" content="Contattaci - GGarden" />
+		<meta name="description" content="Pagina con le modalità di contatto di GGarden" />
+		<meta name="keywords" content="GGarden, piante, fiori, giardinaggio, attrezzi, noleggio, telefono, email, mail, indirizzo" />
 		<meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini" />
 		<meta name="language" content="italian it" />
-  		<link rel="stylesheet" href="CSS/contattaci.css" type="text/css" media="screen" />
+  		<link rel="stylesheet" href="CSS/home.css" type="text/css" media="screen" />
 	</head>
-	<body>
+	<body onload="caricamento(); replaceMap();">
 		<div id="header">
 			<h1><span id="logo" xml:lang="en">GGarden</span></h1>
 		</div>
 		<div id="breadcrumbs">
-			<form action="../cgi-bin/search.cgi" method="get">
-				<fieldset>
-					<span id="rifnav" >Ti trovi in: <a href="home_andrea.html"><span xml:lang="en">Home</span></a> / <b>Chi siamo</b></span>
-					<input type="search" name="ricerca" id="ricerca" class="ricerca" placeholder="Cerca un prodotto o un servizio" accesskey="s" tabindex="1" />
-					<input type="submit" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
-				</fieldset>
-			</form>
-	  	</div>
+        	<span id="rifnav" >Ti trovi in: <b><a href="home.html">Home</a> / Contattaci</b></span>
+            <form class="headersearch" action="../cgi-bin/search.cgi" method="get">
+                <fieldset>
+                    	<label for="ricerca">Cerca un prodotto o un servizio</label>
+                    <input type="text" name="ricerca" id="ricerca" class="ricerca" accesskey="s" tabindex="1" />
+                    <input type="submit" name="conferma" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
+                </fieldset>
+            </form>
+        </div>
+           
+           
+        <div id="contenitore-menu">
+            <ul class="menu">
+                <li><a href="home.html" id="home" class="nav">Home </a></li>
+                <li><a href="realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
+                <li><a href="../data/database.xml" id="vend" class="nav">Vendita </a></li>
+                <li><a href="noleggio.html" id="nol" class="nav">Noleggio </a></li>
+                <li><a href="contattaci.html" id="cont" class="vnav">Contattaci</a></li>
+            </ul>
+        </div>
+
 	  	<div id="content">
-		  <div class="row header">
-		    <h2>Contattaci</h2>
-		    <h3>Qualsiasi infromazione in modo semplice</h3>
-		  </div>
-		  <div class="row body">
-		    <form action="#">
-		      <ul>
-			
-			<li>
-			  <p class="left">
-			    <label for="first_name">nome</label>
-			    <input type="text" name="first_name" placeholder="Mario" />
-			  </p>
-			  <p class="right">
-			    <label for="last_name">cognome</label>
-			    <input type="text" name="last_name" placeholder="Rossi" />      
-			  </p>
-			</li>
-			
-			<li>
-			  <p>
-			    <label for="email">email <span class="req">*</span></label>
-			    <input type="email" name="email" placeholder="mario.rossi@mail.com" />
-			  </p>
-			</li>        
-			<li><div class="divider"></div></li>
-			<li>
-			  <label for="comments">fai la tua domanda</label>
-			  <textarea cols="46" rows="3" name="comments"></textarea>
-			</li>
-			
-			<li>
-			  <input class="btn btn-submit" type="submit" value="Submit" />
-			  <small>or press <strong>enter</strong></small>
-			</li>
-			<li><div class="divider"></div></li>
-			</ul>
-		    </form>  
+			<div class="row header">
+				<h2>Contattaci</h2>
+				<h3>Qualsiasi infromazione in modo semplice</h3>
+			</div>
+			<div class="row body">
+				<form action="#" onsubmit="return validazioneForm()" method="post">
+					<ul>
+						<li>
+							<p>
+								<label for="first_name">nome</label>
+								<input type="text" name="first_name" id="first_name" />
+							</p>
+							<p>
+								<label for="last_name">cognome</label>
+								<input type="text" name="last_name" id="last_name" />      
+							</p>
+						</li>
+						<li>
+							<p>
+							    <label for="email">email <span class="req">*</span></label>
+							    <input type="text" name="email" id="email" />
+						  	</p>
+						</li>        
+						<li>
+							<div class="divider"></div>
+						</li>
+						<li>
+							<label for="comments">fai la tua domanda</label>
+							<textarea cols="46" rows="3" name="comments" id="comments"></textarea>
+						</li>
+						
+						<li>
+							<input class="btn btn-submit" type="submit" value="Submit" />
+							<small>or press <strong>enter</strong></small>
+						</li>
+						<li>
+							<div class="divider"></div>
+						</li>
+					</ul>
+			    </form>
+		    </div>
 		
-		  
-		          
             <div>
                 <div class="Gaddress">
-                   <label for="Address">
-                     	<div class="info">   
-                     	oppure puoi trovarci nella nostra sede:
-                     	<h4>GGarden</h4> 
-                        <ul>
-                        <li>Via Trieste , 63</li>
-                        <li>Padova PD</li>
-                        <li>0111223344</li>
-                        <li>service@ggarden.com</li>
-                        <ul>
+                    <!-- <label for="Address"> -->
+                    	<div class="info">  
+                     		<p>Oppure puoi trovarci nella nostra sede: in via Trieste, 63 - 35121 Padova PD.</p>
+                     		<p>Siamo aperti dal lunedì al sabato, dalle ore 8:30 alle 13:30 e dalle 15:00 alle 19:30.</p>
+                     		<p>Il nostro numero di telefono è: +39 049 827 1200.</p>
+                     	
                         </div>
-                        <div id="map1" class="map">
-                        </label>
-                    </div>
-                 <span class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.901052412508!2d11.88544311540718!3d45.41133484499064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda58b44676df%3A0xfacae5884fca17f5!2sTorre+Archimede%2C+Via+Trieste%2C+63%2C+35121+Padova+PD!5e0!3m2!1sit!2sit!4v1450107062651" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></span>
-
+                        <!-- <div id="map1" class="map"> -->
+                    <!-- </label> -->
+                </div>
+			</div>
+			<div id="divMappa">
+           		<div id="visualizzaMappa">
+					<a href="https://www.google.it/maps/place/Torre+Archimede,+Via+Trieste,+63,+35121+Padova+PD/@45.4113311,11.8854431,17z/data=!3m1!4b1!4m5!3m4!1s0x477eda58b44676df:0xfacae5884fca17f5!8m2!3d45.4113311!4d11.8876318"><img id="fotoMappa" src="img/mappa.png" alt="Mappa della posizione del campo" width="100%" height="100%"/></a>
+				</div>
+			</div>
+        </div>
+        
+        <div id="footer" class="footer">
+            <div class="footer-left">
+                <h3><span id="logo_mini">Ggarden</span></h3>
+                <p class="footer-menu">
+                    <a href="chisiamo.html">Chi&nbsp;siamo</a>
+                    ·
+                    <a href="../data/database.xml">Vendita</a>
+                    ·
+                    <a href="noleggio.html">Noleggio</a>
+                    ·
+                    <a href="contattaci.html">Contattaci</a>
+                </p>
+ 
+                <p class="footer-nome-azienda">Ggarden &copy; 2016</p>
+            </div>
+ 
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-indirizzo"></i>
+                    <p><span>Via Trieste , 63</span> Padova, Italy</p>
+                </div>
+ 
+                <div>
+                    <i class="fa fa-telefono"></i>
+                    <p>+1 555 123456</p>
+                </div>
+ 
+                <div>
+                    <i class="fa fa-mail"></i>
+                    <p><a href="mailto:support@company.com">service@ggarden.com</a></p>
                 </div>
             </div>
-      
-        
-  </div>
-        
-		</div>
+ 
+            <div class="footer-right">
+                <p class="footer-company-info">
+                    <span>Gg Garden a servizio</span>
+                    Non so che scrivere in questo momento ma seconod me ci sta una piccola nostra firma come una frase di battaglia
+                </p>
+            </div>
+        </div>
+ 
+        <script type="text/javascript" src="SCRIPT/script.js"></script>
+    </body>
+</html>
