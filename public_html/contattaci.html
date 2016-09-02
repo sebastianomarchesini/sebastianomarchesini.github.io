@@ -13,28 +13,61 @@
 	</head>
 	<body onload="caricamento(); replaceMap();">
 		<div id="header">
-			<h1><span id="logo" xml:lang="en">GGarden</span></h1>
-		</div>
-		<div id="breadcrumbs">
-        	<span id="rifnav" >Ti trovi in: <b><a href="home.html">Home</a> / Contattaci</b></span>
-            <form class="headersearch" action="../cgi-bin/search.cgi" method="get">
-                <fieldset>
-                    	<label for="ricerca">Cerca un prodotto o un servizio</label>
-                    <input type="text" name="ricerca" id="ricerca" class="ricerca" accesskey="s" tabindex="1" />
-                    <input type="submit" name="conferma" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
-                </fieldset>
-            </form>
-        </div>
+            <h1><span id="logo" xml:lang="en" class="nascosto">GGarden</span></h1> 
+            <div id="contenitore-login">
+            	<input id="button_admin" type="button" onclick="nascondi();" value="Accedi come amministratore"/> 
+	            <div id="login">
+	                <form action="../cgi-bin/log.cgi" method="get">
+	                    <fieldset>
+	                        <legend>Login amministratore</legend>
+	                        <div class="modal hide fade in">
+	                            <!-- <div class="modal-header">
+	                                <button type="button" onclick="nascondi();" class="close" data-dismiss="modal" aria-hidden="true" >×</button>
+	                                <h3>Login Block</h3>
+	                            </div> -->
+	                            <!-- <div class="modal-body"> -->
+	                                    <div class="control-group">
+	                                        <label for="inputEmail">E-mail</label>
+	                                        <input type="text" id="inputEmail" value="Email" tabindex="-1"/>
+	                                    </div>
+	                                    <div class="control-group">
+	                                        <label for="inputPassword">Password</label>
+	                                        <input type="password" id="inputPassword" value="Password" tabindex="-2" />
+	                                    </div>
+	                                    <input type="hidden" name="pagina" value="contattaci">
+	                                    <!-- <div class="control-group">
+	                                        <label class="checkbox">
+	                                        <input type="checkbox" /> Ricordami
+	                                        </label>
+	                                    </div> -->
+	                                <button type="submit" class="btn btn-success">Accedi</button>
+	                            <!-- </div> -->
+	                        </div>
+	                    </fieldset>
+	                </form>
+	            </div>
+       		</div>
+            <div id="breadcrumbs">
+            	<span id="rifnav" >Ti trovi in: <a href="home.html"> Home</a> / <b>Contattaci</b></span>
+                <form class="headersearch" action="../cgi-bin/search.cgi" method="get">
+                    <fieldset>
+                        	<label for="ricerca" class="nascosto">Cerca un prodotto o un servizio</label>
+                        <input type="text" name="ricerca" id="ricerca" class="ricerca" accesskey="s" tabindex="1" />
+                        <input type="submit" name="conferma" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
+                    </fieldset>
+                </form>
+            </div>
            
            
-        <div id="contenitore-menu">
-            <ul class="menu">
-                <li><a href="home.html" id="home" class="nav">Home </a></li>
-                <li><a href="realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
-                <li><a href="../data/database.xml" id="vend" class="nav">Vendita </a></li>
-                <li><a href="noleggio.html" id="nol" class="nav">Noleggio </a></li>
-                <li><a href="contattaci.html" id="cont" class="vnav">Contattaci</a></li>
-            </ul>
+            <div id="contenitore-menu">
+                <ul class="menu">
+                    <li><a href="home.html" id="home" class="nav">Home </a></li>
+                    <li><a href="realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
+                    <li><a href="../data/database.xml" id="vend" class="nav">Vendita </a></li>
+                    <li><a href="noleggio.html" id="nol" class="nav">Noleggio </a></li>
+                    <li><a href="contattaci.html" id="cont" class="vnav">Contattaci</a></li>
+                </ul>
+            </div>
         </div>
 
 	  	<div id="content">
@@ -104,7 +137,9 @@
             <div class="footer-left">
                 <h3><span id="logo_mini">Ggarden</span></h3>
                 <p class="footer-menu">
-                    <a href="chisiamo.html">Chi&nbsp;siamo</a>
+                    <a href="home.html">Home</a>
+                    ·
+                    <a href="realizzazioni.html">Realizzazioni</a>
                     ·
                     <a href="../data/database.xml">Vendita</a>
                     ·
