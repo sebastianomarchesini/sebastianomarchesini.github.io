@@ -9,85 +9,235 @@
 		<meta name="keywords" content="GGarden, piante, fiori, giardinaggio, attrezzi, noleggio" />
 		<meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini" />
 		<meta name="language" content="italian it" />
-  		<link rel="stylesheet" href="CSS/contattaci.css" type="text/css" media="screen" />
+  		<link rel="stylesheet" href="CSS/home.css" type="text/css" media="screen" />
+  		<script type="text/javascript">
+			/*
+			chiave: nome dell'input da controllare
+			[0]: prima indicazione per la compilazione dell'input
+			[1]: l'espressione regolare da controllare
+			[2]: hint nel caso in cui l'inpuit fornito sia sbagliato
+			*/
+			var dettagli_form={
+				"first_name":["Mario", /^[A-Z][a-z]+/, "Inserisci il tuo nome"],
+				"last_name":["Rossi", /^[A-Z][a-z]+( ([A-Z][a-z]+))?/, "Inserisci il tuo cognome"],
+				"email":["Inserire e-mail", /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, "Inserisci un indirizzo email valido"]
+			}
+
+			function caricamento() //carica i dati nei campi
+			{
+			for (var key in dettagli_form)
+				{
+					var input=document.getElementById(key);
+					campoDefault(input);
+
+					input.onfocus=function(){campoPerInput(this);}; //toglie l'aiuto
+					input.onblur=function(){validazioneCampo(this);}; //fa la validazione del campo
+				}
+			}
+
+			function campoDefault(input)
+			{
+				if (input.value=="")
+				{
+					input.className="";
+					input.value=dettagli_form[input.id][0];
+				}
+			}
+
+			function campoPerInput(input)
+			{
+				if (input.value==dettagli_form[input.id][0])
+				{
+					input.value="";
+					input.className="";
+				}
+			}
+
+			function validazioneCampo(input)
+			{
+				var p=input.parentNode; //prende lo span
+
+			var errore=document.getElementById(input.id+"errore");
+
+			if (errore)
+			{
+				p.removeChild(errore)
+			}
+
+				var regex=dettagli_form[input.id][1];
+				var text=input.value;
+				if ((text==dettagli_form[input.id][0]) || text.search(regex)!=0) //occhio! controllo che l'input sia diverso dal placeholder (con il primo check)
+				{
+					mostraErrore(input);
+					return false;
+				}
+				return true;
+			}
+
+			function validazioneForm()
+			{
+				var corretto=true;
+				for (var key in dettagli_form)
+				{
+					var input=document.getElementById(key);
+					var risultato=validazioneCampo(input);
+					corretto=corretto&&risultato;
+				}
+				return corretto;
+			}
+
+
+			function mostraErrore(input)
+			{
+				console.log(input);
+				var p=input.parentNode;
+				var e=document.createElement("strong");
+				e.className="errorSuggestion";
+				e.id=input.id+"errore";
+				//
+				//input.id="errore";
+
+				e.appendChild(document.createTextNode(dettagli_form[input.id][2]));
+				p.appendChild(e);
+			}
+		</script>
+
 	</head>
-	<body>
+	<body onload="caricamento();">
 		<div id="header">
 			<h1><span id="logo" xml:lang="en">GGarden</span></h1>
 		</div>
 		<div id="breadcrumbs">
-			<form action="../cgi-bin/search.cgi" method="get">
-				<fieldset>
-					<span id="rifnav" >Ti trovi in: <a href="home_andrea.html"><span xml:lang="en">Home</span></a> / <b>Chi siamo</b></span>
-					<input type="search" name="ricerca" id="ricerca" class="ricerca" placeholder="Cerca un prodotto o un servizio" accesskey="s" tabindex="1" />
-					<input type="submit" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
-				</fieldset>
-			</form>
-	  	</div>
+            	<span id="rifnav" >Ti trovi in: <b>Chi siamo</b></span>
+                <form class="headersearch" action="cgi-bin/search.cgi" method="get">
+                    <fieldset>
+                        	<label for="ricerca">Cerca un prodotto o un servizio</label>
+                        <input type="text" name="ricerca" id="ricerca" class="ricerca" accesskey="s" tabindex="1" />
+                        <input type="submit" name="conferma" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
+                    </fieldset>
+                </form>
+            </div>
+           
+           
+            <div id="contenitore-menu">
+                <ul class="menu">
+                    <li><a href="home.html" id="home" class="nav">Home </a></li>
+                    <li><a href="realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
+                    <li><a href="XML/database.xml" id="vend" class="nav">Vendita </a></li>
+                    <li><a href="noleggio.html" id="nol" class="nav">Noleggio </a></li>
+                    <li><a href="contattaci.html" id="cont" class="vnav">Contattaci</a></li>
+                </ul>
+            </div>
+        </div>
+
 	  	<div id="content">
-		  <div class="row header">
-		    <h2>Contattaci</h2>
-		    <h3>Qualsiasi infromazione in modo semplice</h3>
-		  </div>
-		  <div class="row body">
-		    <form action="#">
-		      <ul>
-			
-			<li>
-			  <p class="left">
-			    <label for="first_name">nome</label>
-			    <input type="text" name="first_name" placeholder="Mario" />
-			  </p>
-			  <p class="right">
-			    <label for="last_name">cognome</label>
-			    <input type="text" name="last_name" placeholder="Rossi" />      
-			  </p>
-			</li>
-			
-			<li>
-			  <p>
-			    <label for="email">email <span class="req">*</span></label>
-			    <input type="email" name="email" placeholder="mario.rossi@mail.com" />
-			  </p>
-			</li>        
-			<li><div class="divider"></div></li>
-			<li>
-			  <label for="comments">fai la tua domanda</label>
-			  <textarea cols="46" rows="3" name="comments"></textarea>
-			</li>
-			
-			<li>
-			  <input class="btn btn-submit" type="submit" value="Submit" />
-			  <small>or press <strong>enter</strong></small>
-			</li>
-			<li><div class="divider"></div></li>
-			</ul>
+			<div class="row header">
+				<h2>Contattaci</h2>
+				<h3>Qualsiasi infromazione in modo semplice</h3>
+			</div>
+			<div class="row body">
+			<form action="#" onsubmit="return validazioneForm()" method="post">
+				<ul>
+					<li>
+						<p class="left">
+							<label for="first_name">nome</label>
+							<input type="text" name="first_name" id="first_name" />
+						</p>
+						<p class="right">
+							<label for="last_name">cognome</label>
+							<input type="text" name="last_name" id="last_name" />      
+						</p>
+					</li>
+					<li>
+						<p>
+						    <label for="email">email <span class="req">*</span></label>
+						    <input type="email" name="email" id="email" />
+					  	</p>
+					</li>        
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li>
+						<label for="comments">fai la tua domanda</label>
+						<textarea cols="46" rows="3" name="comments"></textarea>
+					</li>
+					
+					<li>
+						<input class="btn btn-submit" type="submit" value="Submit" />
+						<small>or press <strong>enter</strong></small>
+					</li>
+					<li>
+						<div class="divider"></div>
+					</li>
+				</ul>
 		    </form>  
 		
-		  
-		          
             <div>
                 <div class="Gaddress">
-                   <label for="Address">
-                     	<div class="info">   
+                    <label for="Address">
+                    	<div class="info">   
                      	oppure puoi trovarci nella nostra sede:
                      	<h4>GGarden</h4> 
                         <ul>
-                        <li>Via Trieste , 63</li>
-                        <li>Padova PD</li>
-                        <li>0111223344</li>
-                        <li>service@ggarden.com</li>
+	                        <li>Via Trieste , 63</li>
+	                        <li>Padova PD</li>
+	                        <li>0111223344</li>
+	                        <li>service@ggarden.com</li>
                         <ul>
                         </div>
                         <div id="map1" class="map">
                         </label>
                     </div>
-                 <span class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.901052412508!2d11.88544311540718!3d45.41133484499064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda58b44676df%3A0xfacae5884fca17f5!2sTorre+Archimede%2C+Via+Trieste%2C+63%2C+35121+Padova+PD!5e0!3m2!1sit!2sit!4v1450107062651" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></span>
-
+                	<span class="map">
+                		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.901052412508!2d11.88544311540718!3d45.41133484499064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda58b44676df%3A0xfacae5884fca17f5!2sTorre+Archimede%2C+Via+Trieste%2C+63%2C+35121+Padova+PD!5e0!3m2!1sit!2sit!4v1450107062651" width="400" height="300" frameborder="0" style="border:0" allowfullscreen>
+                		</iframe>
+                 	</span>
                 </div>
             </div>
-      
+
+        </div>
         
-  </div>
-        
-		</div>
+        <div id="footer" class="footer">
+            <div class="footer-left">
+                <h3><span id="logo_mini">Ggarden</span></h3>
+                <p class="footer-menu">
+                    <a href="chisiamo.html">Chi&nbsp;siamo</a>
+                    ·
+                    <a href="XML/database.xml">Vendita</a>
+                    ·
+                    <a href="noleggio.html">Noleggio</a>
+                    ·
+                    <a href="contattaci.html">Contattaci</a>
+                </p>
+ 
+                <p class="footer-nome-azienda">Ggarden &copy; 2016</p>
+            </div>
+ 
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-indirizzo"></i>
+                    <p><span>Via Trieste , 63</span> Padova, Italy</p>
+                </div>
+ 
+                <div>
+                    <i class="fa fa-telefono"></i>
+                    <p>+1 555 123456</p>
+                </div>
+ 
+                <div>
+                    <i class="fa fa-mail"></i>
+                    <p><a href="mailto:support@company.com">service@ggarden.com</a></p>
+                </div>
+            </div>
+ 
+            <div class="footer-right">
+                <p class="footer-company-info">
+                    <span>Gg Garden a servizio</span>
+                    Non so che scrivere in questo momento ma seconod me ci sta una piccola nostra firma come una frase di battaglia
+                </p>
+            </div>
+        </div>
+ 
+        <script type="text/javascript" src="SCRIPT/script.js"></script>
+    </body>
+</html>
