@@ -1,279 +1,143 @@
-html, body{padding:0px;
-	margin:0px;
-	font-family: Verdana, Helevetica, sans-serif;
-	color: white;
-	background-color:rgb(12, 143, 254);}
-
-h1{ text-align:center;
-    background-image:url(../img/logo.png);
-    width: 800px;
-    height: 200px;
-}
-
-h1 span {
-	display:block;	
-    height:0;	
-    overflow:hidden;
-}
-
-/*Logo*/
-#logo{
-	float: left;
-}
-
-/*Login*/
-#contenitore-login{
-	float: right;
-	width: 40%;
-}
-
-#login{
-
-}
-
-#button_admin{
-
-}
-
-#breadcrumbs{
-	background-color:rgb(184,252,151);
-	padding-left: 3em;
-	clear: both;
-}
-
-#ricerca{
-	width:15em;
-	height:2em;
-}
-
-#conferma{
- outline: none;
- cursor: pointer;
- text-align: center;
- text-decoration: none;
- font: bold 12px Arial, Helvetica, sans-serif;
- color: #fff;
- padding: 10px 20px;
- border: solid 1px #0076a3;
- background: #0095cd;
-
- background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
- background: -webkit-linear-gradient(top,  #00adee,  #0078a5);
- background: -moz-linear-gradient(top,  #00adee,  #0078a5);
- background: -ms-linear-gradient(top,  #00adee,  #0078a5);
- background: -o-linear-gradient(top,  #00adee,  #0078a5);
-
-/*
-width:8em;
-height:2em;
-font-size:0.9em;
-font-weight:bold;
-background-color:lime;
-*/
-}
-
-.ricerca{
-	position:relative;
-	left:25%;
-}
-
-
-/*Menu*/
-#contenitore-menu {
-width: 524px;
-margin: 0 auto;
-}
-
-.vnav{
-	background-color: rgb(255,204,255);
-	font-weight: bold;
-}
-
-.menu{
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(204,255,255);
-}
-
-li {
-	float: left;
-}
-
-li a {    
-	display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-
-
-li a:hover {
-	color: white;
-    background-color: #111;
-}
-
-#content{
-background-color:rgb(184,252,151); 
-margin:0 auto; 
-padding: 1em; 
-width:70%; 
-color: black;}
-
-.informazioni{display:block;}
-
-.center {
-  display: block;
-  margin: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-#immagine{background-image:url("../img/prato.jpg");
-background-repeat:no-repeat;
-background-position:center;
-width:100%;
-height:27em;}
-
-
-.footer{
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-
-	padding: 25px 20px;
-	margin-top: 20px;
-}
-
-.footer .footer-left,
-.footer .footer-center,
-.footer .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
-
-
-.footer .footer-left{
-	width: 40%;
-}
-
-
-.footer h3{
-    text-align:center;
-    background-image: url(../img/logo_mini.png);
-    margin: 0;
-    
-    width: 200px;
-    height: 50px;
-}
-
-.footer h3 span {	
-    display:block;	
-    height:0;	
-    overflow:hidden;
-}
-
-.footer .footer-nome-azienda{
-	color:  #8f9296;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-}
-
-.footer .footer-center{
-	width: 35%;
-}
-
-.footer .footer-center i{
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
-
-.footer .footer-center i.fa-mail{
-	font-size: 17px;
-	line-height: 38px;
-}
-
-.footer .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-	vertical-align: middle;
-	margin:0;
-}
-
-.footer .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
-
-
-.footer .footer-right{
-	width: 20%;
-}
-
-.footer .footer-nome-azienda{
-	line-height: 20px;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
-
-.footer .footer-company-info span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-
-
-@media screen and (max-width:768px){
-
-    .ricerca{position:static;}
-
-	#menu{height:2100px;}
-	#chisiamo{margin-left:0em;}
-	#real{margin-left:0em;}
-	#vend{margin-left:0em;}
-	#nol{margin-left:0em;}
-	#serv{margin-left:0em;}
-	#cont{margin-left:0em;}
-	#formricerca{position:static; float:none;}
-	#formadmin{position:static; float:none;}
-	#log{width:15em; height:2em;}
-	#barra{height:5.3em;}
-	
-	
-	.footer{
-		font: bold 14px sans-serif;
-	}
-
-	.footer .footer-left,
-	.footer .footer-center,
-	.footer .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer .footer-center i{
-		margin-left: 0;
-	}
-}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+    <head>
+        <title>Home Page - GGarden</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="title" content="Chi siamo - GGarden" />
+        <meta name="description" content="Pagina principale dell'azienda GGarden" />
+        <meta name="keywords" content="GGarden, piante, fiori, giardinaggio, attrezzi, noleggio, padova" />
+        <meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini" />
+        <meta name="language" content="italian it" />
+        <link rel="stylesheet" href="CSS/chisiamo.css" type="text/css" media="screen and (min-width: 650px)" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+        <link rel="stylesheet" type="text/css" href="css/small-devices.css" media="screen and (max-width: 650px)" /> -->
+        <link rel="icon" href="img/logo2.png" type="image/png" />
+    </head>
+ 
+ 
+    <body>
+ 
+        <div id="header">
+            <h1><span id="logo" xml:lang="en">GGarden</span></h1> 
+            <div id="contenitore-login">
+            <input id="button_admin" type="button" onclick="nascondi();" value="Accedi come amministratore"></input> 
+	            <div id="login">
+	                <form action="cgi-bin/log.cgi" method="get">
+	                    <fieldset>
+	                        <legend>Login amministratore</legend>
+	                        <div class="modal hide fade in">
+	                            <!-- <div class="modal-header">
+	                                <button type="button" onclick="nascondi();" class="close" data-dismiss="modal" aria-hidden="true" >×</button>
+	                                <h3>Login Block</h3>
+	                            </div> -->
+	                            <!-- <div class="modal-body"> -->
+	                                    <div class="control-group">
+	                                        <label for="inputEmail">E-mail</label>
+	                                        <input type="text" id="inputEmail" value="Email" tabindex="-1"/>
+	                                    </div>
+	                                    <div class="control-group">
+	                                        <label for="inputPassword">Password</label>
+	                                        <input type="password" id="inputPassword" value="Password" tabindex="-2" />
+	                                    </div>
+	                                    <div class="control-group">
+	                                        <label class="checkbox">
+	                                        <input type="checkbox" /> Ricordami
+	                                        </label>
+	                                    </div>
+	                                <button type="submit" class="btn btn-success">Sign in</button>
+	                                <button class="btn" onclick="nascondi();">Close</button>
+	                            <!-- </div> -->
+	                        </div>
+	                    </fieldset>
+	                </form>
+	            </div>
+       		</div>
+            <div id="breadcrumbs">
+            	<span id="rifnav" >Ti trovi in: <b>Chi siamo</b></span>
+                <form class="headersearch" action="cgi-bin/search.cgi" method="get">
+                    <fieldset>
+                        	<label for="ricerca">Cerca un prodotto o un servizio</label>
+                        <input type="text" name="ricerca" id="ricerca" class="ricerca" accesskey="s" tabindex="1" />
+                        <input type="submit" name="conferma" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
+                    </fieldset>
+                </form>
+            </div>
+           
+           
+            <div id="contenitore-menu">
+                <ul class="menu">
+                    <li><a href="chisiamo.html" id="home" class="vnav">Home </a></li>
+                    <li><a href="realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
+                    <li><a href="XML/database.xml" id="vend" class="nav">Vendita </a></li>
+                    <li><a href="noleggio.html" id="nol" class="nav">Noleggio </a></li>
+                    <li><a href="contattaci.html" id="cont" class="nav">Contattaci</a></li>
+                </ul>
+            </div>
+        </div>
+       
+ 
+       
+        <div id="content">
+            <p class="center">
+                <span xml:lang="en">GGarden</span> nasce per semplificare la manutenzione del giardino, offrendo vendita e noleggio di attrezzature e l'intervento sul posto di personale specializzato.
+            </p>
+            <p class="center">
+                L'azienda ha sede a Padova e cresce grazie allo sforzo quotidiano degli attuali soci ed amministratori Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini, Jacopo Guizzardi.   
+            </p>
+            <p class="center">
+                Oggi siamo in grado di offrire i migliori marchi presenti sul mercato per quanto riguarda macchine ed attrezzature per il giardinaggio e l’<span xml:lang="en">hobby</span>.
+                Ci rivolgiamo sia al pubblico professionale sia a quello privato.
+            </p>
+            <p class="center">
+                Qualità, professionalità e cortesia sono i nostri punti di forza uniti ad un’assistenza responsabile con attrezzature moderne.
+            </p>
+            <span id="immagine" class="center"></span>
+        </div>
+       
+       
+        <div id="footer" class="footer">
+            <div class="footer-left">
+                <h3><span id="logo_mini">Ggarden</span></h3>
+                <p class="footer-menu">
+                    <a href="chisiamo.html">Chi&nbsp;siamo</a>
+                    ·
+                    <a href="XML/database.xml">Vendita</a>
+                    ·
+                    <a href="noleggio.html">Noleggio</a>
+                    ·
+                    <a href="contattaci.html">Contattaci</a>
+                </p>
+ 
+                <p class="footer-nome-azienda">Ggarden &copy; 2016</p>
+            </div>
+ 
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-indirizzo"></i>
+                    <p><span>Via Trieste , 63</span> Padova, Italy</p>
+                </div>
+ 
+                <div>
+                    <i class="fa fa-telefono"></i>
+                    <p>+1 555 123456</p>
+                </div>
+ 
+                <div>
+                    <i class="fa fa-mail"></i>
+                    <p><a href="mailto:support@company.com">service@ggarden.com</a></p>
+                </div>
+            </div>
+ 
+            <div class="footer-right">
+                <p class="footer-company-info">
+                    <span>Gg Garden a servizio</span>
+                    Non so che scrivere in questo momento ma seconod me ci sta una piccola nostra firma come una frase di battaglia
+                </p>
+            </div>
+        </div>
+ 
+        <script type="text/javascript" src="SCRIPT/script.js"></script>
+ 
+    </body>
+</html>
