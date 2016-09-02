@@ -4,67 +4,140 @@ html, body{padding:0px;
 	color: white;
 	background-color:rgb(12, 143, 254);}
 
-h1{font-size:3em;
-text-align:center;}
+h1{ text-align:center;
+    background-image:url(../img/logo.png);
+    width: 800px;
+    height: 200px;
+}
 
-.accesskey{text-decoration:underline;}
+h1 span {
+	display:block;	
+    height:0;	
+    overflow:hidden;
+}
 
-#barra{background-color:rgb(184,252,151);
-margin:1px;
-width:100%;
-height:3em;}
+/*Logo*/
+#logo{
+	float: left;
+}
 
-fieldset{border:0;}
+/*Login*/
+#contenitore-login{
+	float: right;
+	width: 40%;
+}
 
-#formricerca{float:left;
-position:relative;
-left:40%;}
+#login{
 
-#formadmin{float:right;}
+}
 
-#ricerca{width:15em;
-height:2em;}
+#button_admin{
 
-#conferma{width:8em;
+}
+
+#breadcrumbs{
+	background-color:rgb(184,252,151);
+	padding-left: 3em;
+	clear: both;
+}
+
+#ricerca{
+	width:15em;
+	height:2em;
+}
+
+#conferma{
+ outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font: bold 12px Arial, Helvetica, sans-serif;
+ color: #fff;
+ padding: 10px 20px;
+ border: solid 1px #0076a3;
+ background: #0095cd;
+
+ background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+ background: -webkit-linear-gradient(top,  #00adee,  #0078a5);
+ background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+ background: -ms-linear-gradient(top,  #00adee,  #0078a5);
+ background: -o-linear-gradient(top,  #00adee,  #0078a5);
+
+/*
+width:8em;
 height:2em;
 font-size:0.9em;
 font-weight:bold;
-background-color:lime;}
+background-color:lime;
+*/
+}
 
-#log{height:3.0em;
-width:10em;}
+.ricerca{
+	position:relative;
+	left:25%;
+}
 
-#menu{background-color:rgb(184,252,151); margin:0 auto;}
 
-ul{list-style-type:none; margin:0px; padding:0px;}
+/*Menu*/
+#contenitore-menu {
+width: 524px;
+margin: 0 auto;
+}
 
-.nav{display:block;
-line-height:11.5em;
-color:white;
-font-size:1.9em;
-text-align:center;
-text-decoration: none;
-font-weight:bold;
-background-repeat:no-repeat;
-background-position:center;
-width:70%;
-margin-left:15%;}
+.vnav{
+	background-color: rgb(255,204,255);
+	font-weight: bold;
+}
 
-#menu a:hover {color:black;}
+.menu{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(204,255,255);
+}
 
-#chisiamo{background-image:url(../../img/chiSiamo.jpg);}
+li {
+	float: left;
+}
 
-#real{background-image: url(../../img/realizzazione.jpg);}
+li a {    
+	display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-#vend{background-image: url(../../img/vendita.jpg);}
 
-#nol{background-image: url(../../img/noleggio.jpg);}
 
-#serv{background-image: url(../../img/servizi.jpg);}
 
-#cont{background-image: url(../../img/chiSiamo.jpg);}
+li a:hover {
+	color: white;
+    background-color: #111;
+}
+
+#content{
+background-color:rgb(184,252,151); 
+margin:0 auto; 
+padding: 1em; 
+width:70%; 
+color: black;}
 
 .informazioni{display:block;}
+
+.center {
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#immagine{background-image:url("../img/prato.jpg");
+background-repeat:no-repeat;
+background-position:center;
+width:100%;
+height:27em;}
 
 
 .footer{
@@ -92,15 +165,19 @@ margin-left:15%;}
 
 
 .footer h3{
-	color:  #ffffff;
-	font: normal 36px, cursive;
-	margin: 0;
+    text-align:center;
+    background-image: url(../img/logo_mini.png);
+    margin: 0;
+    
+    width: 200px;
+    height: 50px;
 }
 
-.footer h3 span{
-	color:  #5383d3;
+.footer h3 span {	
+    display:block;	
+    height:0;	
+    overflow:hidden;
 }
-
 
 .footer .footer-nome-azienda{
 	color:  #8f9296;
@@ -167,6 +244,9 @@ margin-left:15%;}
 
 
 @media screen and (max-width:768px){
+
+    .ricerca{position:static;}
+
 	#menu{height:2100px;}
 	#chisiamo{margin-left:0em;}
 	#real{margin-left:0em;}
@@ -197,6 +277,3 @@ margin-left:15%;}
 		margin-left: 0;
 	}
 }
-
-
-
