@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+    <head>
+        <title>Home Page - GGarden</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="title" content="Chi siamo - GGarden" />
+        <meta name="description" content="Pagina principale dell'azienda GGarden" />
+        <meta name="keywords" content="GGarden, piante, fiori, giardinaggio, attrezzi, noleggio, padova" />
+        <meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini" />
+        <meta name="language" content="italian it" />
+        <link rel="stylesheet" href="CSS/home.css" type="text/css" media="screen and (min-width: 650px)" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+        <link rel="stylesheet" type="text/css" href="css/small-devices.css" media="screen and (max-width: 650px)" /> -->
+        <link rel="icon" href="img/logo2.png" type="image/png" />
+    </head>
+ 
+ 
+    <body>
+ 
+        <div id="header">
+            <h1><span id="logo" xml:lang="en" class="nascosto">GGarden</span></h1> 
+            <div id="contenitore-login">
+            	<input id="button_admin" type="button" onclick="nascondi();" value="Accedi come amministratore"/> 
+	            <div id="login">
+	                <form action="../cgi-bin/log.cgi" method="get">
+	                    <fieldset>
+	                        <legend>Login amministratore</legend>
+	                        <div class="modal hide fade in">
+	                            <!-- <div class="modal-header">
+	                                <button type="button" onclick="nascondi();" class="close" data-dismiss="modal" aria-hidden="true" >×</button>
+	                                <h3>Login Block</h3>
+	                            </div> -->
+	                            <!-- <div class="modal-body"> -->
+	                                    <div class="control-group">
+	                                        <label for="inputEmail">E-mail</label>
+	                                        <input type="text" id="inputEmail" value="Email" tabindex="-1"/>
+	                                    </div>
+	                                    <div class="control-group">
+	                                        <label for="inputPassword">Password</label>
+	                                        <input type="password" id="inputPassword" value="Password" tabindex="-2" />
+	                                    </div>
+	                                    <input type="hidden" name="pagina" value="crea">
+	                                    <!-- <div class="control-group">
+	                                        <label class="checkbox">
+	                                        <input type="checkbox" /> Ricordami
+	                                        </label>
+	                                    </div> -->
+	                                <button type="submit" class="btn btn-success">Accedi</button>
+	                            <!-- </div> -->
+	                        </div>
+	                    </fieldset>
+	                </form>
+	            </div>
+       		</div>
+            <div id="breadcrumbs">
+            	<span id="rifnav" >Ti trovi in: <b>Home</b></span>
+                <form class="headersearch" action="../cgi-bin/search.cgi" method="get">
+                    <fieldset>
+                        	<label for="ricerca" class="nascosto">Cerca un prodotto o un servizio</label>
+                        <input type="text" name="ricerca" id="ricerca" class="ricerca" accesskey="s" tabindex="1" />
+                        <input type="submit" name="conferma" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
+                    </fieldset>
+                </form>
+            </div>
+           
+           
+            <div id="contenitore-menu">
+                <ul class="menu">
+                    <li><a href="home.html" id="home" class="vnav">Home </a></li>
+                    <li><a href="realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
+                    <li><a href="../data/database.xml" id="vend" class="nav">Vendita </a></li>
+                    <li><a href="noleggio.html" id="nol" class="nav">Noleggio </a></li>
+                    <li><a href="contattaci.html" id="cont" class="nav">Contattaci</a></li>
+                </ul>
+            </div>
+        </div>
+ 
+       
+        <div id="content">
+            <form class="create" action="../cgi-bin/databaseManager.cgi" enctype="multipart/form-data" method="post">
+				<input type="hidden" name="operation" value="create"/>
+				<input type="hidden" name="itemType" value="pianta"/>
+				<h4>Inserisci i dati della nuova pianta:</h4>
+				<fieldset>
+					<ul>
+						<li>
+							<p>
+								<label for="image">Inserisci l'immagine del prodotto:</label>
+								<input type="file" name="image" id="image" accept="image/*"/>
+							</p>
+							<p>
+								<label for="name">Nome:</label>
+								<input type="text" name="name" id="name"/>
+							</p>
+							<p>
+								<label for="scientificName">Nome scientifico:</label>
+								<input type="text" name="scientificName" id="scientificName"/>
+							</p>
+							<p>
+								<label for="type">Tipo di pianta:</label>
+								<input type="text" name="type" id="type"/>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="price">Prezzo: &euro; </label>
+								<input type="text" name="price" id="price" placeholder="3.99"/>
+								<label for="format">Formato:</label>
+								<input type="text" name="format" id="format" placeholder="per una confezione di 10 fiori"/>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="description">Descrizione:</label>
+								<textarea rows="4" cols="50" name="description" id="description"></textarea>
+							</p>
+							<p>
+								<label for="dataName">Dato:</label>
+								<input type="text" name="dataName" id="dataName" placeholder="Altezza"/>
+								<label for="dataContent">Contenuto:</label>
+								<input type="text" name="dataContent" id="dataContent" placeholder="30 cm"/>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="plantation">Piantagione:</label>
+								<textarea rows="4" cols="50" name="plantation" id="plantation"></textarea>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="care">Cura:</label>
+								<textarea rows="4" cols="50" name="care" id="care"></textarea>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="otherInfos">Altre informazioni:</label>
+								<textarea rows="4" cols="50" name="otherInfos" id="otherInfos"></textarea>
+							</p>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+        </div>
+		
+		<div id="content">
+			<form class="create" action="../cgi-bin/databaseManager.cgi" enctype="multipart/form-data" method="post">
+				<input type="hidden" name="operation" value="create"/>
+				<input type="hidden" name="itemType" value="attrezzo"/>
+				<h4>Inserisci i dati del nuovo attrezzo:</h4>
+				<fieldset>
+					<ul>
+						<li>
+							<p>
+								<label for="image">Inserisci l'immagine del prodotto:</label>
+								<input type="file" name="image" id="image" accept="image/*"/>
+							</p>
+							<p>
+								<label for="name">Nome:</label>
+								<input type="text" name="name" id="name"/>
+							</p>
+							<p>
+								<label for="type">Tipo di attrezzo:</label>
+								<input type="text" name="type" id="type"/>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="price">Prezzo: &euro; </label>
+								<input type="text" name="price" id="price" placeholder="3.99"/>
+								<label for="format">Formato:</label>
+								<input type="text" name="format" id="format" placeholder="al pezzo"/>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="description">Descrizione:</label>
+								<textarea rows="4" cols="50" name="description" id="description"></textarea>
+							</p>
+							<p>
+								<label for="dataName">Dato:</label>
+								<input type="text" name="dataName" id="dataName" placeholder="Lunghezza manico"/>
+								<label for="dataContent">Contenuto:</label>
+								<input type="text" name="dataContent" id="dataContent" placeholder="10 cm"/>
+							</p>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+		</div>
+		
+		<div id="content">
+            <form class="create" action="../cgi-bin/databaseManager.cgi" enctype="multipart/form-data" method="post">
+				<input type="hidden" name="id" value=""/>
+				<input type="hidden" name="operation" value="update"/>
+				<input type="hidden" name="itemType" value="pianta"/>
+				<h4>Inserisci i dati da modificare della pianta selezionata:</h4>
+				<fieldset>
+					<ul>
+						<li>
+							<p>
+								<label for="image">Inserisci la nuova immagine del prodotto:</label>
+								<input type="file" name="image" id="image" accept="image/*"/>
+							</p>
+							<p>
+								<label for="name">Nome:</label>
+								<input type="text" name="name" id="name"/>
+							</p>
+							<p>
+								<label for="scientificName">Nome scientifico:</label>
+								<input type="text" name="scientificName" id="scientificName"/>
+							</p>
+							<p>
+								<label for="type">Tipo di pianta:</label>
+								<input type="text" name="type" id="type"/>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="price">Prezzo: &euro; </label>
+								<input type="text" name="price" id="price" placeholder="3.99"/>
+								<label for="format">Formato:</label>
+								<input type="text" name="format" id="format" placeholder="per una confezione di 10 fiori"/>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="description">Descrizione:</label>
+								<textarea rows="4" cols="50" name="description" id="description"></textarea>
+							</p>
+							<p>
+								<label for="dataName">Dato:</label>
+								<input type="text" name="dataName" id="dataName" placeholder="Altezza"/>
+								<label for="dataContent">Contenuto:</label>
+								<input type="text" name="dataContent" id="dataContent" placeholder="30 cm"/>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="plantation">Piantagione:</label>
+								<textarea rows="4" cols="50" name="plantation" id="plantation"></textarea>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="care">Cura:</label>
+								<textarea rows="4" cols="50" name="care" id="care"></textarea>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="otherInfos">Altre informazioni:</label>
+								<textarea rows="4" cols="50" name="otherInfos" id="otherInfos"></textarea>
+							</p>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+        </div>
+		
+		<div id="content">
+			<form class="create" action="../cgi-bin/databaseManager.cgi" enctype="multipart/form-data" method="post">
+				<input type="hidden" name="id" value=""/>
+				<input type="hidden" name="operation" value="update"/>
+				<input type="hidden" name="itemType" value="attrezzo"/>
+				<h4>Inserisci i dati da modificare dell'attrezzo selezionato:</h4>
+				<fieldset>
+					<ul>
+						<li>
+							<p>
+								<label for="image">Inserisci l'immagine del prodotto:</label>
+								<input type="file" name="image" id="image" accept="image/*"/>
+							</p>
+							<p>
+								<label for="name">Nome:</label>
+								<input type="text" name="name" id="name"/>
+							</p>
+							<p>
+								<label for="type">Tipo di attrezzo:</label>
+								<input type="text" name="type" id="type"/>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="price">Prezzo: &euro; </label>
+								<input type="text" name="price" id="price" placeholder="3.99"/>
+								<label for="format">Formato:</label>
+								<input type="text" name="format" id="format" placeholder="al pezzo"/>
+							</p>
+						</li>
+						<li>
+							<p>
+								<label for="description">Descrizione:</label>
+								<textarea rows="4" cols="50" name="description" id="description"></textarea>
+							</p>
+							<p>
+								<label for="dataName">Dato:</label>
+								<input type="text" name="dataName" id="dataName" placeholder="Lunghezza manico"/>
+								<label for="dataContent">Contenuto:</label>
+								<input type="text" name="dataContent" id="dataContent" placeholder="10 cm"/>
+							</p>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+		</div>
+       
+       
+        <div id="footer" class="footer">
+            <div class="footer-left">
+                <h3><span id="logo_mini">Ggarden</span></h3>
+                <p class="footer-menu">
+                    <a href="home.html">Home</a>
+                    ·
+                    <a href="../data/database.xml">Vendita</a>
+                    ·
+                    <a href="noleggio.html">Noleggio</a>
+                    ·
+                    <a href="contattaci.html">Contattaci</a>
+                </p>
+ 
+                <p class="footer-nome-azienda">Ggarden &copy; 2016</p>
+            </div>
+ 
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-indirizzo"></i>
+                    <p><span>Via Trieste , 63</span> Padova, Italy</p>
+                </div>
+ 
+                <div>
+                    <i class="fa fa-telefono"></i>
+                    <p>+1 555 123456</p>
+                </div>
+ 
+                <div>
+                    <i class="fa fa-mail"></i>
+                    <p><a href="mailto:support@company.com">service@ggarden.com</a></p>
+                </div>
+            </div>
+ 
+            <div class="footer-right">
+                <p class="footer-company-info">
+                    <span>Gg Garden a servizio</span>
+                    Non so che scrivere in questo momento ma seconod me ci sta una piccola nostra firma come una frase di battaglia
+                </p>
+            </div>
+        </div>
+ 
+        <script type="text/javascript" src="SCRIPT/script.js"></script>
+ 
+    </body>
+</html>

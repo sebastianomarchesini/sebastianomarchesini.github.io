@@ -6,8 +6,8 @@ use warnings;
 use HTML::TreeBuilder;
 
 #Carico tutti i dati che mi servono, come i percorsi dei file xml
-my $filexml = "../XML/database.xml";
-my $filexslt = "../XML/search.xslt";
+my $filexml = "../data/database.xml";
+my $filexslt = "../data/search.xslt";
 
 #estraggo le parole della ricerca
 my $word = "";

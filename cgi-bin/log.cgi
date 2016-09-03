@@ -8,7 +8,7 @@ require "./checkLog.cgi";
 
 sub logError {
 	#carico l'html
-	my $htmlPage = "../".$_[0];
+	my $htmlPage = "../".$_[0].".html";
 	my $parserxml  = XML::LibXML->new;
 	my $doc = $parserxml->load_html(location => $htmlPage, recover => 1);
 	
