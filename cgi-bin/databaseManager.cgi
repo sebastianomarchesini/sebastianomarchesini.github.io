@@ -169,7 +169,7 @@ if($operation eq "delete") {
 						<li>
 							<p>
 								<label for='price'>Prezzo: € </label>
-								<input type='text' name='price' id='price' placeholder='3,99'/>
+								<input type='text' name='price' id='price' placeholder='3.99'/>
 								<label for='format'>Formato:</label>
 								<input type='text' name='format' id='format' placeholder=''/>
 								<input type='button' name='confirmPrice' value='Aggiungi prezzo'/>

@@ -5,7 +5,7 @@
 		<p:nome>Gerani Birch Double</p:nome>
 		<p:nome_scientifico>Geranium Himalayense Plenum</p:nome_scientifico>
 		<p:tipo>Piante per aiuole</p:tipo>
-		<p:prezzo><p:pacchetto><p:valore>13,95</p:valore><p:formato>per 1 confezione da 3</p:formato></p:pacchetto></p:prezzo>
+		<p:prezzo><p:pacchetto><p:valore>13.95</p:valore><p:formato>per 1 confezione da 3</p:formato></p:pacchetto></p:prezzo>
 		<p:descrizione>I Gerani Birch Double (Geranium Himalayense Plenum) sono una varietà resistente al freddo. La pianta sviluppa bellissimi fiori doppi fucsia, larghi 3,5 cm, che contrastano con il fogliame verde. La pianta ha una crescita compatta ed è bellissima nelle aiuole e nei vasi.
 		</p:descrizione>
 		<p:dettagli>
@@ -25,7 +25,7 @@
 		<p:nome>Edera bicolore</p:nome>
 		<p:nome_scientifico>Hedera helix</p:nome_scientifico>
 		<p:tipo>Piante da vaso</p:tipo>
-		<p:prezzo><p:pacchetto><p:valore>4,95</p:valore><p:formato>cadauno</p:formato></p:pacchetto></p:prezzo>
+		<p:prezzo><p:pacchetto><p:valore>4.95</p:valore><p:formato>cadauno</p:formato></p:pacchetto></p:prezzo>
 		<p:descrizione>Eccezionale pianta per purificare l'aria! Questa bellissima edera è molto semplice da coltivare ed estremamente decorativa con il suo fogliame bicolore. L'edera fa parte della famiglia delle Araliacee (famiglia delle edere) ed in natura di solito cresce su alberi e rocce, arrampicandosi fino a 25-30 metri.
 		</p:descrizione>
 		<p:dettagli>
@@ -49,7 +49,7 @@ Il nome Edera, è un'antichissima denominazione latina, che deriva probabilmente
 		<p:nome>Origano - sementi</p:nome>
 		<p:nome_scientifico>Origanum vulgare</p:nome_scientifico>
 		<p:tipo>Piante aromatiche</p:tipo>
-		<p:prezzo><p:pacchetto><p:valore>1,95</p:valore><p:formato>a bustina</p:formato></p:pacchetto></p:prezzo>
+		<p:prezzo><p:pacchetto><p:valore>1.95</p:valore><p:formato>a bustina</p:formato></p:pacchetto></p:prezzo>
 		<p:descrizione>Il gusto mediterraneo dell'origano è indispensabile nella cucina italiana! Di gran risalto in vaso, puoi coltivarlo anche sul davanzale.
 		</p:descrizione>
 		<p:dettagli>
@@ -67,7 +67,7 @@ L'origano può essere raccolto 6-8 settimane dopo la semina, solitamente nei mes
 		<p:nome>Rose Porcellana - cespuglio</p:nome>
 		<p:nome_scientifico>Rosa sp</p:nome_scientifico>
 		<p:tipo>Piante da vaso</p:tipo>
-		<p:prezzo><p:pacchetto><p:valore>29,95</p:valore><p:formato>per una confezione da 5 (1 per varietà)</p:formato></p:pacchetto></p:prezzo>
+		<p:prezzo><p:pacchetto><p:valore>29.95</p:valore><p:formato>per una confezione da 5 (1 per varietà)</p:formato></p:pacchetto></p:prezzo>
 		<p:descrizione>Nessun'altra varietà di rose fiorisce così riccamente come le Rose Porcellana. I folti cespuglietti sono coperti da grappoli di roselline dai colori magnifici. I Rosai Porcellana sono perfetti nelle fioriere sul terrazzo e nelle aiuole in giardino.
 		</p:descrizione>
 		<p:dettagli>
@@ -90,7 +90,7 @@ Le rose porcellana devono essere potati ogni anno. In marzo potalo mantenendo so
 		<p:nome>Mini Pesco-noce - albero</p:nome>
 		<p:nome_scientifico>Prunus persica var. nucipersica 'Fantasia'</p:nome_scientifico>
 		<p:tipo>Piante da orto</p:tipo>
-		<p:prezzo><p:pacchetto><p:valore>29,95</p:valore><p:formato>cadauno</p:formato></p:pacchetto></p:prezzo>
+		<p:prezzo><p:pacchetto><p:valore>29.95</p:valore><p:formato>cadauno</p:formato></p:pacchetto></p:prezzo>
 		<p:descrizione>Il Mini Pesco-Noce (Prunus Persica var. Nucipersica) produce frutti dalla buccia liscia e polpa giallo oro dal gusto eccellente. Più a lungo terrai le pesche a maturare sull'albero e più dolce sarà il loro sapore. Il Mini Pesco-Noce è meraviglioso in un vaso o fioriera sul terrazzo. 
 Il mini Pesco Noce è una pianta autofecondante, quindi può essere piantata singolarmente.
 Altezza alla fornitura 70-80 cm.
@@ -110,8 +110,8 @@ Altezza alla fornitura 70-80 cm.
 		<p:nome>Tulipani Olympic Mix - bulbo da fiore</p:nome>
 		<p:nome_scientifico>Tulipa sp</p:nome_scientifico>
 		<p:tipo>Bulbi</p:tipo>
-		<p:prezzo><p:pacchetto><p:valore>4,99</p:valore><p:formato>per una confezione da 10</p:formato></p:pacchetto>
-				<p:pacchetto><p:valore>12,50</p:valore><p:formato>per una confezione da 25</p:formato></p:pacchetto></p:prezzo>
+		<p:prezzo><p:pacchetto><p:valore>4.99</p:valore><p:formato>per una confezione da 10</p:formato></p:pacchetto>
+				<p:pacchetto><p:valore>12.50</p:valore><p:formato>per una confezione da 25</p:formato></p:pacchetto></p:prezzo>
 		<p:descrizione>Abbiamo selezionato questa collezione di tulipani (Tulipa) Olympic Mix nei colori più belli: rosa intenso, rosa chiaro, bianco e porpora! Piantali in gruppi, otterrai un effetto scenografico. Anche recisi risulteranno spettacolari.
 		</p:descrizione>
 		<p:dettagli>
@@ -132,7 +132,7 @@ Altezza alla fornitura 70-80 cm.
 	<p:attrezzo id="00000007" formato="png">
 		<p:nome>Decespugliatore Sterwins 36 BC LI-2</p:nome>
 		<p:tipo>Decespugliatori</p:tipo>
-		<p:prezzo><p:pacchetto><p:valore>149,00</p:valore><p:formato/></p:pacchetto></p:prezzo>
+		<p:prezzo><p:pacchetto><p:valore>149.00</p:valore><p:formato/></p:pacchetto></p:prezzo>
 		<p:descrizione>Decespugliatore ideale per taglio erba e sterpaglie. Silenzioso e di facile manutenzione grazie al motore senza spazzole.
 		</p:descrizione>
 		<p:dettagli>
@@ -149,7 +149,7 @@ Altezza alla fornitura 70-80 cm.
 	<p:attrezzo id="00000008" formato="png">
 		<p:nome>Trattorino Alpina AT1 66 B</p:nome>
 		<p:tipo>Trattorini</p:tipo>
-		<p:prezzo><p:pacchetto><p:valore>1199,00</p:valore><p:formato/></p:pacchetto></p:prezzo>
+		<p:prezzo><p:pacchetto><p:valore>1199.00</p:valore><p:formato/></p:pacchetto></p:prezzo>
 		<p:descrizione>Trattorino comodo e di dimensioni ridotte, adatto per gli usi domestici e per piccoli appezzamenti.
 		</p:descrizione>
 		<p:dettagli>
@@ -174,7 +174,7 @@ Altezza alla fornitura 70-80 cm.
 	<p:attrezzo id="00000009" formato="png">
 		<p:nome>Arieggiatore a scoppio Alko 38 VLB</p:nome>
 		<p:tipo>Arieggiatori</p:tipo>
-		<p:prezzo><p:pacchetto><p:valore>369,00</p:valore><p:formato/></p:pacchetto></p:prezzo>
+		<p:prezzo><p:pacchetto><p:valore>369.00</p:valore><p:formato/></p:pacchetto></p:prezzo>
 		<p:descrizione>Attrezzo indicato per ripulire il proprio giardino da erbacce e vegetali indesiderati, Alko vi lascierà stupiti dalla sua semplicità e maneggevolezza.
 		</p:descrizione>
 		<p:dettagli>
