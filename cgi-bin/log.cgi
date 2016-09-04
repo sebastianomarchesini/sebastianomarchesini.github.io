@@ -4,7 +4,6 @@ use warnings;
 use CGI::Session;
 use CGI;
 use XML::LibXML;
-require "./checkLog.cgi";
 
 sub logError {
 	#carico l'html
@@ -13,7 +12,7 @@ sub logError {
 	my $doc = $parserxml->load_html(location => $htmlPage, recover => 1);
 	
 	#aggiungo il messaggio di errore
-	my $form = $doc->findnodes('//fieldset[@id = "formadmin"]')->get_node(0);
+	my $form = $doc->findnodes('//div[@id="login"]/form/fieldset')->get_node(0);
 	my $childString = '<span id="logError">Dati inseriti errati</span>';
 	my $child = $parserxml->parse_string($childString); #elimino il tag che identifica la versione dell'xml perché non devo aggiungerlo
 	$child = $child->removeChild($child->firstChild());
@@ -29,14 +28,16 @@ sub logError {
 
 #estraggo le parole del login
 my $logString = CGI->new();
-my $username = $logString->param('logUsername');
-my $password = $logString->param('logPassword');
+#my $username = $logString->param('inputEmail');
+#my $password = $logString->param('inputPassword');
+my $username = 'Admin';
+my $password = 'password';
 #my $page = $logString->param('pagina');
-my $page = "home_andrea.html";
+my $page = "home";
 my $finalDoc;
 
 #estraggo i dati dall'XML
-my $filexml = "../XML/profili.xml";
+my $filexml = "../data/profili.xml";
 my $parserxml  = XML::LibXML->new;
 my $doc = $parserxml->parse_file($filexml);
 my $expectedUsername = $doc->findnodes('//p:profilo[@tipo = "amministratore"]/p:username');
@@ -44,18 +45,19 @@ my $expectedPassword = $doc->findnodes('//p:profilo[@tipo = "amministratore"]/p:
 
 if($username eq $expectedUsername && $password eq $expectedPassword) {
 	#creo la sessione
-	my $session = new CGI::Session();
-	$session->param("utente", "amministratore");
-	my $cookie = new CGI;
-	my $nome_utente = $cookie->param('utente');
-	$finalDoc = &log($page);
+	my $session = new CGI::Session() or die CGI::Session->errstr;
+	print $session->header(-charset=>'utf-8');
+	$session->param('username', 'amministratore');
+	$session->expire('+1h');
+	$session->flush();
+	require("checkLog.cgi");
 } else {
 	$finalDoc = &logError($page);
-}
+	print "Content-type: text/html; charset=utf-8\n\n";
 
-print "Content-type: text/html; charset=utf-8\n\n";
-print "<phtml>";
-print "<body>";
-print $finalDoc;
-print "</body>";
-print "</html>";
+	print "<phtml>";
+	print "<body>";
+	print $finalDoc;
+	print "</body>";
+	print "</html>";
+}

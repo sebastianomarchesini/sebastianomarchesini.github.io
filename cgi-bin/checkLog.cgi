@@ -5,12 +5,12 @@ use XML::LibXML;
 
 sub log {
 	#carico l'html
-	my $htmlPage = "../".$_[0];
+	my $htmlPage = "../public_html/".$_[0].".html";
 	my $parserxml  = XML::LibXML->new;
 	my $doc = $parserxml->load_html(location => $htmlPage, recover => 1);
 	
 	#modifico il form
-	my $legend = $doc->findnodes('//div[@id = "login"]//legend/text()')->get_node(0);
+	my $legend = $doc->findnodes("//div[\@id = 'login']/form/fieldset/legend/text()")->get_node(1);
 	$legend->setData('Modifica dati amministratore');
 	
 	#modifico il collegamento al CSS per riuscirlo a caricare
@@ -21,7 +21,6 @@ sub log {
 	return $doc;
 }
 
-my $doc = &log("public_html/home.html");
-print $doc;
-
-1;
+#my $doc = &log("public_html/home.html");
+#print $doc;
+print "banana\n";
