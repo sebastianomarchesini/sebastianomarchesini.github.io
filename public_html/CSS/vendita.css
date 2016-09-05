@@ -43,6 +43,8 @@ h1{
 #login {
     color: black;
     font-size: 12px;
+    display: none;
+    
 }
 
 #logError{      /*Compare dinamicamente a errore di inserimento*/
@@ -109,8 +111,8 @@ h1{
 }
 
 #ricerca{
-    width:15em;
-    height:2em;
+    width:20%;
+    height:32px;
 }
 
 #conferma{
@@ -136,7 +138,6 @@ h1{
     position:relative;
     left:10%;
 }
-
 
 /*Menu*/
 #contenitore-menu {
@@ -303,7 +304,11 @@ h4{
 }
 
 .riquadro_prezzi{
-    width: 96%
+    width: 96%;
+}
+
+.radio{
+    float:right;
 }
 
 .prezzo{
