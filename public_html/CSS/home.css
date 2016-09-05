@@ -43,6 +43,7 @@ h1{
 #login {
     color: black;
     font-size: 12px;
+    display: none;
 }
 
 #logError{      /*Compare dinamicamente a errore di inserimento*/
