@@ -36,43 +36,6 @@ h1{
     height: 200px;
 }
 
-
-
-
-/*Login*/
-#login {
-    color: black;
-    font-size: 12px;
-    display: none;
-}
-
-#logError{      /*Compare dinamicamente a errore di inserimento*/
-    
-}
-
-#contenitore-login{
-    margin: 0;
-    padding: 5px 10px 10px 0px;
-    float: right;
-    width:19%;
-}
-
-#button_admin{
-    float: right;
-    padding-right: 10px;
-    color: white;
-    
-    border: solid 1px #a30025;
-    background: #b40029;
-    
-    background: -webkit-gradient(linear, left top, left bottom, from(#d5000d), to(#8c001f));
-    background: -webkit-linear-gradient(top,  #d5000d,  #8c001f);
-    background: -moz-linear-gradient(top,  #d5000d,  #8c001f);
-    background: -ms-linear-gradient(top,  #d5000d,  #8c001f);
-    background: -o-linear-gradient(top,  #d5000d,  #8c001f);
-    
-}
-
 #accedi{
     margin-top: 10px;
     padding-left: 20px;
@@ -110,8 +73,8 @@ h1{
 }
 
 #ricerca{
-    width:15em;
-    height:2em;
+    width:20%;
+    height:24px;
 }
 
 #conferma{
@@ -131,10 +94,6 @@ h1{
     background: -ms-linear-gradient(top,  #d5000d,  #8c001f);
     background: -o-linear-gradient(top,  #d5000d,  #8c001f);
     
-}
-
-#conferma:hover{
-    position: 0 -50px;
 }
 
 .ricerca{
@@ -306,7 +265,6 @@ li a:hover {
     padding-left:100px;
     padding-right: 100px;
     border-color : #333333;
-    flat: center;
 }
 
 form {
@@ -337,8 +295,8 @@ form ul li .divider {
     height: 1px;
     width: 100%;
     display: block;
-    background-color: #31456b;
-    background-image: linear-gradient(to right, #ee9cb4, #31456b);
+    background-color: #4f6fad;
+    background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
 }
 form ul li .req {
     color: #ee9cb4;
@@ -346,7 +304,7 @@ form ul li .req {
 form label {
     display: block;
     margin: 0 0 0.5em 0;
-    color: #31456b;
+    color: #4f6fad;
     font-size: 1em;
 }
 form input {
@@ -363,14 +321,14 @@ form textarea {
     color: #555;
 }
 form small {
-    color: #31456b;
+    color: #4f6fad;
     margin: 0 0 0 0.5em;
 }
 
 .info {
     display: block;
     margin: 0 0 0.5em 0;
-    color: #31456b;
+    color: #4f6fad;
 }
 
 #frameMappa {
@@ -474,7 +432,7 @@ form small {
 
 .footer .footer-center p{
     display: inline-block;
-    color: #393939;
+    color: #ffffff;
     vertical-align: middle;
     margin:0;
 }
@@ -504,7 +462,7 @@ form small {
 
 .footer .footer-company-info span{
     display: block;
-    color:  #393939;
+    color:  #ffffff;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 20px;
