@@ -16,25 +16,57 @@ doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"/>
 		<meta name="keywords" content="piante, fiori, giardinaggio, attrezzi" />
 		<meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini, Jacopo Guizzardi" />
 		<meta name="language" content="italian it" />
-  		<link rel="stylesheet" href="../public_html/CSS/vendita.css" type="text/css" media="screen" />
+  		<link rel="stylesheet" href="../public_html/CSS/home.css" type="text/css" media="screen" />
 	</head>
 	<body>
 	<div id="header">
-		<span id="logo"><h1>GGarden</h1></span>
+        <h1><span id="logo" xml:lang="en" class="nascosto">GGarden</span></h1>
+        <div id="contenitore-login">
+            <input id="button_admin" type="button" onclick="nascondi();" value="Accedi come amministratore"/>
+            <div id="login">
+                <form action="../cgi-bin/log.cgi" method="get">
+                    <fieldset>
+                        <legend>Login amministratore</legend>
+                        <div class="modal hide fade in">
+                            <div class="control-group">
+                                <label for="inputUsername">Username:</label>
+                                <input type="text" name="inputUsername" id="inputUsername" value="Username" tabindex="-1"/>
+                            </div>
+                            <div class="control-group">
+                                <label for="inputPassword">Password :</label>
+                                <input type="password" name="inputPassword" id="inputPassword" value="Password" tabindex="-2" />
+                            </div>
+                            <input type="hidden" name="update" value="no"/>
+                            <button type="submit" id="accedi">Accedi</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
 	</div>
-	<div id="barra">
-		<form action="" method="get">
-			<fieldset id="formricerca">
-				<input type="search" name="ricerca" id="ricerca" placeholder="Cerca un prodotto o un servizio" accesskey="c" tabindex="1" />
-				<button type="submit" name="conferma" id="conferma" accesskey="e" tabindex="2">C<span class="accesskey">e</span>rca</button>
-			</fieldset>
-		</form>
-		<form action="" method="get">
-			<fieldset id="formadmin">
-				<button type="submit" name="log" id="log" accesskey="a" tabindex="3"><span class="accesskey">A</span>ccedi come amministratore</button>
-			</fieldset>
-		</form>
-		</div>
+    <div id="breadcrumbs">
+        <form class="headersearch" action="../cgi-bin/search.cgi" method="get">
+            <fieldset>
+                <span id="rifnav" >Ti trovi in: <a href="home.html" xml:lang="en">Home</a> / <b>Vendita</b></span>
+                <label for="ricerca" class="nascosto">Cerca un prodotto o un servizio</label>
+                <input type="text" name="ricerca" id="ricerca" class="ricerca" accesskey="s" tabindex="1" />
+                <input type="submit" name="conferma" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
+            </fieldset>
+        </form>
+    </div>
+    
+    <div id="contenitore-menu">
+        <ul class="menu">
+            <li><a href="../public_html/home.html" id="home" class="nav" xml:lang="en">Home </a></li>
+            <li><a href="../public_html/realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
+            <li><a href="database.xml" id="vend" class="vnav">Vendita </a></li>
+            <li><a href="../public_html/noleggio.html" id="nol" class="nav">Noleggio </a></li>
+            <li><a href="../public_html/contattaci.html" id="cont" class="nav">Contattaci</a></li>
+        </ul>
+    </div>
+
+
+    <div id="content">
 
 		<div id="piante">
 			<xsl:call-template name="piante"/>
@@ -42,6 +74,7 @@ doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"/>
 		<div id="attrezzi">
 			<xsl:call-template name="attrezzi"/>
 		</div>
+    </div>
 
 		<footer class="footer">
 			<div class="footer-left">
@@ -78,6 +111,9 @@ doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"/>
 			</div>
 
 		</footer>
+        
+        <script type="text/javascript" src="SCRIPT/script.js"></script>
+
 	</body>
 	</html>
 	</xsl:template>
@@ -97,7 +133,7 @@ doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"/>
 				<xsl:variable name="id" select="@id"/>
 				<xsl:variable name="formato" select="@formato"/>
 				<xsl:if test="$formato!='no_image'">
-					<p class="img"><img src="../data/img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
+					<p class="img"><img src="../img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
 				</xsl:if>
 				<h4>DESCRIZIONE GENERALE</h4>
 				<p class="desc"><xsl:value-of select="g:descrizione"/></p>
@@ -148,7 +184,7 @@ doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"/>
 				<xsl:variable name="id" select="@id"/>
 				<xsl:variable name="formato" select="@formato"/>
 				<xsl:if test="$formato!='no_image'">
-					<p class="img"><img src="../data/img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
+					<p class="img"><img src="../img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
 				</xsl:if>
 				<h4>DESCRIZIONE</h4>
 				<p class="desc"><xsl:value-of select="g:descrizione"/></p>
