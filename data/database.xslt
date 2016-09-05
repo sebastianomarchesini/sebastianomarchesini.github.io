@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 
-                <script type="text/javascript" src="SCRIPT/script.js"></script>
+                <script type="text/javascript" src="../public_html/SCRIPT/script.js"></script>
                 
             </body>
         </html>
