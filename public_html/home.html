@@ -19,45 +19,33 @@
     <body>
  
         <div id="header">
-            <h1><span id="logo" xml:lang="en" class="nascosto">GGarden</span></h1> 
+            <h1><span id="logo" xml:lang="en" class="nascosto">GGarden</span></h1>
             <div id="contenitore-login">
-            	<input id="button_admin" type="button" onclick="nascondi();" value="Accedi come amministratore"/> 
+            <input id="button_admin" type="button" onclick="nascondi();" value="Accedi come amministratore"/> 
 	            <div id="login">
 	                <form action="../cgi-bin/log.cgi" method="get">
 	                    <fieldset>
 	                        <legend>Login amministratore</legend>
 	                        <div class="modal hide fade in">
-	                            <!-- <div class="modal-header">
-	                                <button type="button" onclick="nascondi();" class="close" data-dismiss="modal" aria-hidden="true" >×</button>
-	                                <h3>Login Block</h3>
-	                            </div> -->
-	                            <!-- <div class="modal-body"> -->
 	                                    <div class="control-group">
-	                                        <label for="inputEmail">E-mail</label>
-	                                        <input type="text" id="inputEmail" value="Email" tabindex="-1"/>
+                                            <label for="inputEmail">Username:</label>
+	                                        <input type="text" name="inputUsername" id="inputUsername" value="Username" tabindex="-1"/>
 	                                    </div>
 	                                    <div class="control-group">
-	                                        <label for="inputPassword">Password</label>
-	                                        <input type="password" id="inputPassword" value="Password" tabindex="-2" />
+                                            <label for="inputPassword">Password :</label>
+	                                        <input type="password" name="inputPassword" id="inputPassword" value="Password" tabindex="-2" />
 	                                    </div>
-	                                    <input type="hidden" name="pagina" value="home">
-	                                    <!-- <div class="control-group">
-	                                        <label class="checkbox">
-	                                        <input type="checkbox" /> Ricordami
-	                                        </label>
-	                                    </div> -->
-	                                <button type="submit" class="btn btn-success">Accedi</button>
-	                            <!-- </div> -->
+	                                <button type="submit" id="accedi">Accedi</button>
 	                        </div>
 	                    </fieldset>
 	                </form>
 	            </div>
-       		</div>
+            </div>
             <div id="breadcrumbs">
-            	<span id="rifnav" >Ti trovi in: <b>Home</b></span>
                 <form class="headersearch" action="../cgi-bin/search.cgi" method="get">
                     <fieldset>
-                        	<label for="ricerca" class="nascosto">Cerca un prodotto o un servizio</label>
+                        <span id="rifnav" >Ti trovi in: <b>Home</b></span>
+                        <label for="ricerca" class="nascosto">Cerca un prodotto o un servizio</label>
                         <input type="text" name="ricerca" id="ricerca" class="ricerca" accesskey="s" tabindex="1" />
                         <input type="submit" name="conferma" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
                     </fieldset>
@@ -75,6 +63,7 @@
                 </ul>
             </div>
         </div>
+       
  
        
         <div id="content">
@@ -114,12 +103,12 @@
             <div class="footer-center">
                 <div>
                     <i class="fa fa-map-indirizzo"></i>
-                    <p><span>Via Trieste , 63</span> Padova, Italy</p>
+                    <p id="testo-footer"><span>Via Trieste , 63</span> Padova, Italy</p>
                 </div>
  
                 <div>
                     <i class="fa fa-telefono"></i>
-                    <p>+1 555 123456</p>
+                    <p id="testo-footer">+1 555 123456</p>
                 </div>
  
                 <div>
@@ -130,8 +119,8 @@
  
             <div class="footer-right">
                 <p class="footer-company-info">
-                    <span>Gg Garden a servizio</span>
-                    Non so che scrivere in questo momento ma seconod me ci sta una piccola nostra firma come una frase di battaglia
+                    <span id="testo-footer">Gg Garden a servizio</span>
+                    <span id="testo-footer">Non so che scrivere in questo momento ma seconod me ci sta una piccola nostra firma come una frase di battaglia</span>
                 </p>
             </div>
         </div>
