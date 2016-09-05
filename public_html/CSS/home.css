@@ -283,6 +283,99 @@ li a:hover {
 
 
 
+/*Parte per la form di contattaci*/
+
+#immagine{
+	background-image:url("../img/prato.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	height:22em;
+}
+
+form {
+  max-width: 100%;
+  display: block;
+}
+form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+form ul li {
+  margin: 0 0 0.25em 0;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+form ul li:last-child {
+  margin: 0;
+}
+/*form ul li p {
+  margin: 0;
+  padding: 0;
+  float: left;
+}*/
+form ul li p.right {
+  float: right;
+}
+form ul li .divider {
+  margin: 0.5em 0 0.5em 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: #4f6fad;
+  background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+form ul li .req {
+  color: #ee9cb4;
+}
+form label {
+  display: block;
+  margin: 0 0 0.5em 0;
+  color: #4f6fad;
+  font-size: 1em;
+}
+form input {
+  margin: 0 0 0.5em 0;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  color: #555;
+  font-size: 1em;
+}
+form textarea {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  width: 80%;
+  color: #555;
+}
+form small {
+  color: #4f6fad;
+  margin: 0 0 0 0.5em;
+}
+
+.info {
+  display: block;
+  margin: 0 0 0.5em 0;
+  color: #4f6fad;
+}
+/*
+.info ul {
+    list-style-type: none;
+}*/
+
+#frameMappa {
+	width: 100%;
+	height: 20em;
+}
+
+.print {
+	display: none;
+}
+
+/*fine*/
+
+
 @media screen and (max-width:768px){
     
     .ricerca{position:static;}
