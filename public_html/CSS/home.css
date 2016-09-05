@@ -80,7 +80,7 @@ h1{
 }
 
 #contenitore-login label{
-    color: #9898fb;
+    color: #0808c1;
 }
 
 #inputUsername{
@@ -188,7 +188,9 @@ li a:hover {
     margin:0 auto;
     padding: 1em;
     width:70%;
-    color: black;}
+    color: black;
+    clear: both;
+}
 
 .informazioni{
     display:block;
@@ -231,6 +233,69 @@ li a:hover {
 .info{
     clear: both;
     padding:0px 50px 50px 100px;
+}
+
+/* Realizzazioni */
+
+#gallery{
+    width: 100%;
+    height: 500px;
+}
+
+#content img{
+    border:0;
+}
+
+#content div #container{
+    width:740px;
+}
+
+#content div #header img{
+    float:left;
+}
+
+#content div #header h2{
+    float:left;
+    margin:24px 0 0 0;
+    font-size:100%;
+}
+
+#content div #zoom{
+    float:right;
+    margin:0 0 5px 0;
+    padding: 5px;
+    border:1px solid #ccc;
+}
+
+#content div #zoom h3{
+    margin:0;
+    font-size:100%;
+    color: #666;
+    text-align:center;
+}
+
+#content div #zoom img{
+    display:block;
+    margin: 30px;
+    width:400px;
+    height:400px;
+}
+
+#content div #minipics{
+    margin-right:415px      /*per Opera*/
+}
+
+#content div #minipics ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+#content div #minipics li{
+    float:left;
+    margin:0 5px 5px 5px;
+    border:1px solid #ccc;
+    padding: 3px
 }
 
 
@@ -317,7 +382,9 @@ form small {
 }
 
 .errorSuggestion{
-    color: blue;
+    font-size: 17px;
+    font-style: oblique;
+    color: #8c001f;
     width: 50%;
     float: right;
 }
@@ -331,6 +398,7 @@ form small {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     background-image:url(../img/grass_footer.png);
+    background-repeat: no-repeat;
     background-size:100%;
     background-position-y: 50%;
     width: 100%;
