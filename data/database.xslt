@@ -114,7 +114,8 @@
                     <div class="footer-right">
                         <p class="footer-company-info">
                             <span id="testo-footer">Gg Garden a servizio</span>
-                            <span id="testo-footer">Non so che scrivere in questo momento ma seconod me ci sta una piccola nostra firma come una frase di battaglia</span>
+                            <span id="testo-footer">L'erba del tuo vicino è sempre più verde. Sii come il tuo vicino,
+                    chiama G Garden Group</span>
                         </p>
                     </div>
                 </div>
