@@ -51,7 +51,7 @@ h1{
 
 #contenitore-login{
     margin: 0;
-    padding: 40px 10px 10px 0px;
+    padding: 5px 10px 10px 0px;
     float: right;
     width:19%;
 }
@@ -74,8 +74,23 @@ h1{
 
 #accedi{
     margin-top: 10px;
-    margin-left: 38%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30%;
 }
+
+#contenitore-login label{
+    color: #9898fb;
+}
+
+#inputUsername{
+    width:90%;
+}
+
+#inputPassword{
+    width:90%;
+}
+
 
 
 
@@ -86,6 +101,7 @@ h1{
 }
 
 #rifnav {
+    font-style: oblique;
     width: 29%;
     float: left;
     color: black;
@@ -114,13 +130,6 @@ h1{
     background: -ms-linear-gradient(top,  #d5000d,  #8c001f);
     background: -o-linear-gradient(top,  #d5000d,  #8c001f);
     
-    /*
-     width:8em;
-     height:2em;
-     font-size:0.9em;
-     font-weight:bold;
-     background-color:lime;
-     */
 }
 
 #conferma:hover{
@@ -135,7 +144,7 @@ h1{
 
 /*Menu*/
 #contenitore-menu {
-    width: 531px;
+    width: 540px;
     margin: 0 auto;
 }
 
@@ -145,12 +154,13 @@ h1{
 }
 
 .menu{
+    font-style: oblique;
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #99ff9b;
+    background-color: #c9fdc9;
 }
 
 li {
@@ -219,7 +229,8 @@ li a:hover {
 }
 
 .info{
-    
+    clear: both;
+    padding:0px 50px 50px 100px;
 }
 
 
@@ -255,7 +266,7 @@ form ul li p.right {
     float: right;
 }
 form ul li .divider {
-    margin: 0.5em 0 0.5em 0;
+    margin: 2em 0 2em 0;
     border: 0;
     height: 1px;
     width: 100%;
@@ -346,6 +357,7 @@ form small {
 .footer h3{
     text-align:center;
     background-image: url(../img/logo_mini.png);
+    background-repeat: no-repeat;
     margin: 0;
     
     width: 200px;
@@ -358,8 +370,13 @@ form small {
     overflow:hidden;
 }
 
+.footer .footer-left .footer-menu a{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 .footer .footer-nome-azienda{
-    color:  #8f9296;
+    color:  #333333;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
