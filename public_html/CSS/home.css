@@ -336,8 +336,8 @@ form ul li .divider {
     height: 1px;
     width: 100%;
     display: block;
-    background-color: #4f6fad;
-    background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+    background-color: #31456b;
+    background-image: linear-gradient(to right, #ee9cb4, #31456b);
 }
 form ul li .req {
     color: #ee9cb4;
@@ -345,7 +345,7 @@ form ul li .req {
 form label {
     display: block;
     margin: 0 0 0.5em 0;
-    color: #4f6fad;
+    color: #31456b;
     font-size: 1em;
 }
 form input {
@@ -362,14 +362,14 @@ form textarea {
     color: #555;
 }
 form small {
-    color: #4f6fad;
+    color: #31456b;
     margin: 0 0 0 0.5em;
 }
 
 .info {
     display: block;
     margin: 0 0 0.5em 0;
-    color: #4f6fad;
+    color: #31456b;
 }
 
 #frameMappa {
