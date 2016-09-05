@@ -169,9 +169,9 @@ if($operation eq "delete") {
 						<li>
 							<p>
 								<label for='price'>Prezzo: € </label>
-								<input type='text' name='price' id='price' placeholder='3.99'/>
+								<input type='text' name='price' id='price'/>
 								<label for='format'>Formato:</label>
-								<input type='text' name='format' id='format' placeholder=''/>
+								<input type='text' name='format' id='format'/>
 								<input type='button' name='confirmPrice' value='Aggiungi prezzo'/>
 							</p>
 						</li>
@@ -182,9 +182,9 @@ if($operation eq "delete") {
 							</p>
 							<p>
 								<label for='dataName'>Dato:</label>
-								<input type='text' name='dataName' id='dataName' placeholder=''/>
+								<input type='text' name='dataName' id='dataName'/>
 								<label for='dataContent'>Contenuto:</label>
-								<input type='text' name='dataContent' id='dataContent' placeholder=''/>
+								<input type='text' name='dataContent' id='dataContent'/>
 								<input type='button' name='confirmData' value='Aggiungi dato'/>
 							</p>
 						</li>
@@ -232,19 +232,6 @@ if($operation eq "delete") {
 						</li>");
 		$form = $form->removeChild($form->firstChild());
 		$child->insertAfter($form, $previousChild);
-		$child = $div->findnodes("./fieldset/ul/li/p/input[\@name='format']")->get_node(1);
-		$child->setAttribute("placeholder", "per una confezione di 10 fiori");
-		$child = $div->findnodes("./fieldset/ul/li/p/input[\@name='dataName']")->get_node(1);
-		$child->setAttribute("placeholder", "Altezza");
-		$child = $div->findnodes("./fieldset/ul/li/p/input[\@name='dataContent']")->get_node(1);
-		$child->setAttribute("placeholder", "30 cm");
-	} elsif($itemType eq 'attrezzo') {
-		my $child = $div->findnodes("./fieldset/ul/li/p/input[\@name='format']")->get_node(1);
-		$child->setAttribute("placeholder", "al pezzo");
-		$child = $div->findnodes("./fieldset/ul/li/p/input[\@name='dataName']")->get_node(1);
-		$child->setAttribute("placeholder", "Lunghezza manico");
-		$child = $div->findnodes("./fieldset/ul/li/p/input[\@name='dataContent']")->get_node(1);
-		$child->setAttribute("placeholder", "10 cm");
 	}
 	if($operation eq "create") {
 		&createOperation($doc, $itemType);

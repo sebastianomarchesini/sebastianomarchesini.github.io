@@ -5,6 +5,23 @@ use CGI::Session;
 use CGI;
 use XML::LibXML;
 
+sub log {
+	my $htmlPage = "../public_html/".$_[0].".html";
+	my $parserxml  = XML::LibXML->new;
+	my $doc = $parserxml->load_html(location => $htmlPage, recover => 1);
+
+	#modifico il form
+	my $legend = $doc->findnodes("//div[\@id = 'login']/form/fieldset/legend/text()")->get_node(1);
+	$legend->setData('Modifica dati amministratore');
+	
+	#modifico il collegamento al CSS per riuscirlo a caricare
+	my $css = $doc->findnodes('//link[@type="text/css"]')->get_node(0);
+	$css->setAttribute("href", '../CSS/home.css');
+	
+	#restituisco la pagina modificata
+	return $doc;
+}
+
 sub logError {
 	#carico l'html
 	my $htmlPage = "../public_html/".$_[0].".html";
@@ -20,7 +37,7 @@ sub logError {
 	
 	#modifico il collegamento al CSS per riuscirlo a caricare
 	my $css = $doc->findnodes('//link[@type="text/css"]')->get_node(0);
-	$css->setAttribute("href", '../public_html/CSS/home.css');
+	$css->setAttribute("href", '../CSS/home.css');
 	
 	#restituisco la pagina modificata
 	return $doc;
@@ -28,7 +45,7 @@ sub logError {
 
 #estraggo le parole del login
 my $logString = CGI->new();
-#my $username = $logString->param('inputEmail');
+#my $username = $logString->param('inputUsername');
 #my $password = $logString->param('inputPassword');
 my $username = 'Admin';
 my $password = 'password';
@@ -50,14 +67,13 @@ if($username eq $expectedUsername && $password eq $expectedPassword) {
 	$session->param('username', 'amministratore');
 	$session->expire('+1h');
 	$session->flush();
-	require("checkLog.cgi");
+	$finalDoc = &log($page);
 } else {
 	$finalDoc = &logError($page);
 	print "Content-type: text/html; charset=utf-8\n\n";
-
+}
 	print "<phtml>";
 	print "<body>";
 	print $finalDoc;
 	print "</body>";
 	print "</html>";
-}

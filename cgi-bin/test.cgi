@@ -3,12 +3,13 @@ use strict;
 use warnings;
 use CGI::Session;
 use CGI;
+use XML::LibXML;
 
 my $session = CGI::Session->load() or die CGI::Session->errstr;
-if ( $session->is_expired ) {
-    die "Your session expired. Please refresh your browser to re-start your session";
-}
-if ( $session->is_empty ) {
-    print "New session needed";
-}
+print "Content-type: text/html; charset=utf-8\n\n";
+print "<phtml>";
+print "<body>";
+print $session->param('username');
+print "</body>";
+print "</html>";
 	

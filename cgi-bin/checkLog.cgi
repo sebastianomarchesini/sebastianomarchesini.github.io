@@ -15,12 +15,17 @@ sub log {
 	
 	#modifico il collegamento al CSS per riuscirlo a caricare
 	my $css = $doc->findnodes('//link[@type="text/css"]')->get_node(0);
-	$css->setAttribute("href", '../public_html/CSS/home.css');
+	$css->setAttribute("href", '../CSS/home.css');
 	
 	#restituisco la pagina modificata
 	return $doc;
 }
 
-#my $doc = &log("public_html/home.html");
-#print $doc;
-print "banana\n";
+my $doc = &log("home");
+print "Content-type: text/html; charset=utf-8\n\n";
+
+	print "<phtml>";
+	print "<body>";
+	print $doc;
+	print "</body>";
+	print "</html>";
