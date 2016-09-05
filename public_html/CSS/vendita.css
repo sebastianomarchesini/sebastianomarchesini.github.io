@@ -58,7 +58,7 @@ h1{
 
 #button_admin{
     float: right;
-    padding-right: 10px;
+    margin-right: 10px;
     color: white;
     
     border: solid 1px #a30025;
@@ -160,6 +160,7 @@ h1{
 }
 
 li {
+    list-style: none;
     float: left;
 }
 
@@ -256,6 +257,12 @@ h4{
     color: #003e30;
 }
 
+.info {
+    float: left;
+    font-style : oblique;
+    width: 100%;
+}
+
 .prodotto .id{
     float: right;
 }
@@ -266,7 +273,8 @@ h4{
     width: 96%;
 }
 
-p{
+
+.dati{
     color: #3e000e;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -291,6 +299,8 @@ p{
     margin: 0 auto;
 }
 
+.dati{
+}
 
 .riquadro_prezzi{
     width: 96%
