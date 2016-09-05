@@ -16,7 +16,7 @@ doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"/>
 		<meta name="keywords" content="piante, fiori, giardinaggio, attrezzi" />
 		<meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini, Jacopo Guizzardi" />
 		<meta name="language" content="italian it" />
-  		<link rel="stylesheet" href="../public_html/CSS/home.css" type="text/css" media="screen" />
+  		<link rel="stylesheet" href="../public_html/CSS/vendita.css" type="text/css" media="screen" />
 	</head>
 	<body>
 	<div id="header">
@@ -105,7 +105,8 @@ doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"/>
 
 				<p class="footer-company-info">
 					<span>Gg Garden a servizio</span>
-					Non so che scrivere in questo momento ma seconod me ci sta una piccola nostra firma come una frase di battaglia
+                    L'erba del tuo vicino è sempre più verde. Sii come il tuo vicino,
+                    chiama G Garden Group
 				</p>
 
 			</div>
@@ -204,7 +205,7 @@ doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"/>
 					<xsl:if test="count(g:prezzo/g:pacchetto)&gt;1">
 					<xsl:for-each select="g:prezzo/g:pacchetto">
 						<span class="check"><xsl:variable name="num_prezzo" select="position()"/>
-						<xsl:if test="$num_prezzo=1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}" checked="true">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
+                            <xsl:if test="$num_prezzo=1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}" checked="true">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
 						<xsl:if test="$num_prezzo&gt;1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
 						<label for="{$num_prezzo}">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></label></span>
 					</xsl:for-each>
