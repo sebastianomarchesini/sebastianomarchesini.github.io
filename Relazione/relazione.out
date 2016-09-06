@@ -1,0 +1,42 @@
+\BOOKMARK [1][-]{section.1}{Introduzione}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Riferimenti}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{Descrizione Generale}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{Il sito}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Caratteristiche degli utenti}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.3}{Vincoli generali}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.4}{Requisiti}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Suddivisione dei lavori}{}% 8
+\BOOKMARK [1][-]{section.4}{Linguaggi Utilizzati}{}% 9
+\BOOKMARK [1][-]{section.5}{Architettura}{}% 10
+\BOOKMARK [2][-]{subsection.5.1}{Progettazione layout}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.2}{Sviluppo layout}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.3}{Layout per dispositivi mobili}{section.5}% 13
+\BOOKMARK [1][-]{subsection.5.4}{Architettura}{}% 14
+\BOOKMARK [1][-]{section.6}{Struttura}{}% 15
+\BOOKMARK [1][-]{section.7}{Presentazione}{}% 16
+\BOOKMARK [1][-]{section.8}{Comportamento}{}% 17
+\BOOKMARK [1][-]{section.9}{Accessibilit\340}{}% 18
+\BOOKMARK [2][-]{subsection.9.1}{Implementazione}{section.9}% 19
+\BOOKMARK [2][-]{subsection.9.2}{Combinazione dei colori}{section.9}% 20
+\BOOKMARK [1][-]{section.10}{Gestione Dati}{}% 21
+\BOOKMARK [2][-]{subsection.10.1}{Introduzione}{section.10}% 22
+\BOOKMARK [2][-]{subsection.10.2}{XML}{section.10}% 23
+\BOOKMARK [2][-]{subsection.10.3}{XML Schema}{section.10}% 24
+\BOOKMARK [2][-]{subsection.10.4}{XSLT}{section.10}% 25
+\BOOKMARK [1][-]{subsection.10.5}{Gestione Dati}{}% 26
+\BOOKMARK [1][-]{section.11}{PERL}{}% 27
+\BOOKMARK [2][-]{subsection.11.1}{Introduzione}{section.11}% 28
+\BOOKMARK [2][-]{subsection.11.2}{Descrizione moduli}{section.11}% 29
+\BOOKMARK [3][-]{subsubsection.11.2.1}{Pagine visibili agli utenti}{subsection.11.2}% 30
+\BOOKMARK [3][-]{subsubsection.11.2.2}{Pagine visibili agli admin}{subsection.11.2}% 31
+\BOOKMARK [3][-]{subsubsection.11.2.3}{Moduli di supporto}{subsection.11.2}% 32
+\BOOKMARK [3][-]{subsubsection.11.2.4}{Controlli e sicurezza}{subsection.11.2}% 33
+\BOOKMARK [1][-]{subsubsection.11.2.5}{PERL}{}% 34
+\BOOKMARK [1][-]{section.12}{Verifica e Test}{}% 35
+\BOOKMARK [2][-]{subsection.12.1}{Validazione}{section.12}% 36
+\BOOKMARK [2][-]{subsection.12.2}{Test}{section.12}% 37
+\BOOKMARK [2][-]{subsection.12.3}{Ambiente di lavoro}{section.12}% 38
+\BOOKMARK [2][-]{subsection.12.4}{Test interazione utenti}{section.12}% 39
+\BOOKMARK [2][-]{subsection.12.5}{Dispositivi utilizzati}{section.12}% 40
+\BOOKMARK [2][-]{subsection.12.6}{Verifica del codice prodotto}{section.12}% 41
+\BOOKMARK [2][-]{subsection.12.7}{Conclusioni}{section.12}% 42
