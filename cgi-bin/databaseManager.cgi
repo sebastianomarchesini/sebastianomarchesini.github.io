@@ -136,13 +136,14 @@ sub createOperation {
 	print "</html>";
 }
 
-my $operation = 'update';
+my $logString = CGI->new();
+my $operation = $logString->param('operation');
 if($operation eq "delete") {
-	my $id = '00000011';
+	my $id = $logString->param('id');
 	&deleteItem($id);
 } else {
 	my $htmlPage = "../public_html/databaseManager.html";
-	my $itemType = 'pianta';
+	my $itemType = $logString->param('tipo');
 	my $parserxml  = XML::LibXML->new;
 	my $doc = $parserxml->load_html(location => $htmlPage, recover => 1);
 	my $div = $doc->findnodes("//div[\@id='content']")->get_node(1);
@@ -236,7 +237,7 @@ if($operation eq "delete") {
 	if($operation eq "create") {
 		&createOperation($doc, $itemType);
 	} elsif($operation eq "update") {
-		my $id = '00000006';
+		my $id = $logString->param('id');
 		&updateOperation($doc, $id, $itemType);
 	}
 }
