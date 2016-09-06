@@ -50,11 +50,14 @@ var dettagli_form_plant={
 
 var dettagli_form_tool={
 	"name":["Nome pianta", /^[A-Z][a-z]+/, "Inserisci il nome dell'attrezzo'"],
-	 "type":["Tipo", /.*/, ""],
+	"type":["Tipo", /.*/, ""],
 	"price":["", /^\d+(.\d{1,2})?$/, "Inserisci il prezzo separato da una virgola"],
 	"format":["al pezzo",/.*/,""],
 	"dataName":["Nome del dato", /.*/, ""],
 	"dataContent":["valore", /.*/,""]
+}
+
+var array_dato={
 
 }
 
@@ -71,7 +74,7 @@ function caricamento(matrix) //carica i dati nei campi
 {
 	var img=document.getElementById("image");
 	img.onchange=function(){checkImage(this);};
-for (var key in matrix)
+	for (var key in matrix)
 	{
 		var input=document.getElementById(key);
 		campoDefault(matrix, input);
@@ -240,12 +243,12 @@ var limit_prezzo = 3;
 var limit_valore=3;
 
 function addInputPrice(divName){
-	var toInsert='<label for="price">Prezzo: &euro; </label><input type="text" name="price'+ (counter_prezzo+1) +'" id="price'+ (counter_prezzo+1) +'" placeholder="3.99"/><label for="format'+ (counter_prezzo+1) +'">Formato:</label><input type="text" name="format'+ (counter_prezzo+1) +'" id="format'+ (counter_prezzo+1) +'" placeholder="al pezzo"/>';
+	var toInsert='<label for="price">Prezzo: &euro; </label><input type="text" name="price\['+ (counter_prezzo+1) +'\]\[price\]" id="price'+ (counter_prezzo+1) +'" placeholder="3.99"/><label for="format'+ (counter_prezzo+1) +'">Formato:</label><input type="text" name="price\['+ (counter_prezzo+1) +'\]\[format\]" id="format'+ (counter_prezzo+1) +'" placeholder="al pezzo"/>';
 	counter_prezzo = addInput(divName, counter_prezzo, limit_valore, toInsert);
 }
 
 function addInputValue(divName){
-	var toInsert='<label for="dataName">Dato:</label><input type="text" name="dataName" id="dataName'+ (counter_prezzo+1) +'" placeholder="Lunghezza manico"/><label for="dataContent'+ (counter_prezzo+1) +'">Contenuto:</label><input type="text" name="dataContent'+ (counter_prezzo+1) +'" id="dataContent'+ (counter_prezzo+1) +'" placeholder="10 cm"/>';
+	var toInsert='<label for="dataName">Dato:</label><input type="text" name="dataName" id="dato\['+ (counter_prezzo+1) +'\]\[dataName\]" placeholder="Lunghezza manico"/><label for="dataContent'+ (counter_prezzo+1) +'">Contenuto:</label><input type="text" name="dato\['+ (counter_prezzo+1) +'\]\[dataContent\]" id="dataContent'+ (counter_prezzo+1) +'" placeholder="10 cm"/>';
 	counter_valore = addInput(divName, counter_valore, limit_valore, toInsert);
 }
 
