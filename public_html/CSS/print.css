@@ -15,7 +15,11 @@ html, body{
 }
 
 #logo{
-    display:inline;
+  display:inline;
+}
+
+#contenitore-login{
+    display:none;
 }
 
 
@@ -66,43 +70,9 @@ h1{
 
 /*Menu*/
 #contenitore-menu {
-    max-width: 200mm;
-    margin: 0 auto;
     display:none;
 }
 
-.vnav{
-    background-color: #ffcdcc;
-    font-weight: bold;
-}
-
-.menu{
-    font-style: oblique;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
-    background-color: #c9fdc9;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-li a:hover {
-    color: white;
-    background-color: #111;
-}
 
 /*Contenuto-Body-Centro*/
 
@@ -128,7 +98,6 @@ li a:hover {
 
 #gallery{
     width: 100%;
-    height: 500px;
 }
 
 #content img{
@@ -136,7 +105,7 @@ li a:hover {
 }
 
 #content div #container{
-    width:740px;
+    width:auto;
 }
 
 #content div #header img{
@@ -150,42 +119,67 @@ li a:hover {
 }
 
 #content div #zoom{
-    float:right;
+    text-align:center;
     margin:0 0 5px 0;
     padding: 5px;
-    border:1px solid #ccc;
+    border:1px solid;
 }
 
 #content div #zoom h3{
     margin:0;
     font-size:100%;
-    color: #666;
     text-align:center;
 }
 
 #content div #zoom img{
-    display:block;
-    margin: 30px;
-    width:400px;
-    height:400px;
+    width:300px;
+    height:300px;
 }
 
 #content div #minipics{
-    margin-right:415px      /*per Opera*/
+    float: left;
+    width: 100%;
 }
 
 #content div #minipics ul{
-    list-style-type: none;
     margin: 0;
-    padding: 0
+    list-style: none;
+    
 }
 
 #content div #minipics li{
-    float:left;
-    margin:0 5px 5px 5px;
-    border:1px solid #ccc;
-    padding: 3px
+    height: auto;
 }
+
+/* Vendita */
+
+#piante{
+    font-size: 80%;
+}
+
+#attrezzi{
+    font-size: 80%;
+}
+
+.prodotto{
+    page-break-before: auto;
+    page-break-inside: avoid;
+    page-break-after: always;
+}
+
+.dati .info{
+    width:100%;
+    float: left;
+}
+
+.img img{
+    width: 150px;
+    height: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 /*Parte per la form di contattaci*/
