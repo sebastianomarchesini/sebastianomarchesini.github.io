@@ -291,9 +291,9 @@
 
 						<div id="dynamicInputPrice">
 								<label for="price">Prezzo: &euro; </label>
-								<input type="text" name="price" id="price" placeholder="3.99"/>
+								<input type="text" name="price[0][price0]" id="price" placeholder="3.99"/>
 								<label for="format">Formato:</label>
-								<input type="text" name="format" id="format" placeholder="al pezzo"/>
+								<input type="text" name="price[0][format]" id="format" placeholder="al pezzo"/>
 
 						</div>
 								<input type="button" value="Add another text input" onClick="addInputPrice('dynamicInputPrice');">
@@ -308,9 +308,9 @@
 							<p>
 							<div id="dynamicInputData">
 								<label for="dataName">Dato:</label>
-								<input type="text" name="dataName" id="dataName" placeholder="Lunghezza manico"/>
+								<input type="text" name="dato[0][dataName]" id="dataName" placeholder="Lunghezza manico"/>
 								<label for="dataContent">Contenuto:</label>
-								<input type="text" name="dataContent" id="dataContent" placeholder="10 cm"/>
+								<input type="text" name="dato[0][dataContent]" id="dataContent" placeholder="10 cm"/>
 							</div>
 							<input type="button" value="Add another text input" onClick="addInputValue('dynamicInputData');">
 							</p>
