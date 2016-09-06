@@ -17,16 +17,17 @@ sub update {
 	my $form = $xpc->findnodes('//x:div[@id="login"]/x:form/x:fieldset')->get_node(1);
 	my $parserxml  = XML::LibXML->new;
 	my $childString;
-	if($username ne $expectedUsername && $password ne $expectedPassword) {
+	if($username ne $expectedUsername || $password ne $expectedPassword) {
 		$childString = '<span id="updateOk">Modifica dei dati avvenuta con successo</span>';
 		my $filexml = "../data/profili.xml";
 		my $xml = $parserxml->parse_file($filexml);
-		my $xnode = $xml->findnodes("//p:profilo[\@id = 'amministratore']/p:username")->get_node(1);
-		$xnode = $xnode->removeChildNodes();
+		my $xnode = $xml->findnodes("//p:profilo[\@tipo = 'amministratore']/p:username")->get_node(1);
+		$xnode->removeChildNodes();
 		$xnode->appendTextNode($username);
 		$xnode = $xnode->findnodes("../p:password")->get_node(1);
-		$xnode = $xnode->removeChildNodes();
+		$xnode->removeChildNodes();
 		$xnode->appendTextNode($password);
+		$xml->toFile($filexml);
 	} else {
 		$childString = '<span id="updateError">Dati inseriti errati</span>';
 	}
@@ -124,13 +125,13 @@ sub logError {
 my $logString = CGI->new();
 #my $username = $logString->param('inputUsername');
 #my $password = $logString->param('inputPassword');
-my $username = 'Admin';
+my $username = 'Admi';
 my $password = 'password';
-my $update = 'no';#$logString->param('update');
+my $update = 'yes';#$logString->param('update');
 my $finalDoc;
 
 #estraggo i dati dall'XML
-my $filexml = "../data/database.xml";
+my $filexml = "../data/profili.xml";
 my $parserxml  = XML::LibXML->new;
 my $doc = $parserxml->parse_file($filexml);
 my $expectedUsername = $doc->findnodes('//p:profilo[@tipo = "amministratore"]/p:username');
@@ -155,6 +156,7 @@ if($update eq "yes") {
 }
 
 #applico il foglio di stile al file modificato
+$filexml = "../data/database.xml";
 my $parserxslt = XML::LibXSLT->new;
 my $stylesheet  = $parserxslt->parse_stylesheet($finalDoc);
 my $results     = $stylesheet->transform_file($filexml);
@@ -162,6 +164,6 @@ my $fileToPrint = $stylesheet->output_as_bytes($results);
 
 print "<phtml>";
 print "<body>";
-print #$fileToPrint;
+print $fileToPrint;
 print "</body>";
 print "</html>";
