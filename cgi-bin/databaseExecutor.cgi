@@ -232,34 +232,34 @@ sub updateToolItem {
 	&printPage($doc);
 }
 
-
-my $operation = 'create';
-my $itemType = 'attrezzo';
-my $imageFormat = 'png';
-my $name = 'Attrezzo quasi inutile';
-my $type = 'Quasi inutilità su quasi misura';
-my @prices = ('Quasi 2,50');
-my @formats = ('quasi al pezzo');
-my $description = 'Attrezzo quasi inutile. Se trovi quasi uno scopo adatto sei quasi quasi pregato di comunicarcelo.';
-my @dataNames = ('Quasi lunghezza manico', 'Materiale manico', 'Colore manico', 'Quasi lunghezza testa', 'Materiale testa', 'Colore testa');
-my @dataContents = ('quasi 10 cm', 'faggio', ' quasi marrone', 'quasi 5 cm', 'acciaio', 'quasi grigio');
+my $logString = CGI->new();
+my $operation = $logString->param('operation');
+my $itemType = $logString->param('itemType');
+my $imageFormat = $logString->param('image');
+my $name = $logString->param('name');
+my $type = $logString->param('type');
+my @prices = $logString->param('price[]');
+my @formats = $logString->param('format[]');
+my $description = $logString->param('description');
+my @dataNames = $logString->param('dataName[]');
+my @dataContents = $logString->param('dataContent[]');
 	
 if($itemType eq "pianta") {
-	my $scientificName = 'Quasi quasi';
-	my $plantation = 'Le piante sono quasi finte, quindi non hanno quasi bisogno di cure; non provate a toglierle dal loro quasi vaso o altrimenti potrebbero quasi rompersi!';
-	my $care = 'Dato che le piante sono quasi finte non è quasi necessaria alcun tipo di cura.';
-	my $otherInfos = 'Quasi presto saranno quasi disponibili altri colori, quasi quasi chiedi pure in negozio per ulteriori quasi informazioni!';
+	my $scientificName = $logString->param('scientificName');
+	my $plantation = $logString->param('plantation');
+	my $care = $logString->param('care');
+	my $otherInfos = $logString->param('otherInfos');
 	if($operation eq "create") {
 		&createPlantItem($imageFormat, $name, $scientificName, $type, \@prices, \@formats, $description, \@dataNames, \@dataContents, $plantation, $care, $otherInfos);
 	} elsif($operation eq "update") {
-		my $id = '00000011';
+		my $id = $logString->param('id');
 		&updatePlantItem($id, $imageFormat, $name, $scientificName, $type, \@prices, \@formats, $description, \@dataNames, \@dataContents, $plantation, $care, $otherInfos);
 	}
 } elsif($itemType eq "attrezzo") { #inserisco la condizione anche nell'ultimo caso per evitare che un possibile errore, come una chiamata involontaria a questo script, possa compromettere il database
 	if($operation eq "create") {
 		&createToolItem($imageFormat, $name, $type, \@prices, \@formats, $description, \@dataNames, \@dataContents);
 	} elsif($operation eq "update") {
-		my $id = '00000011';
+		my $id = $logString->param('id');
 		&updateToolItem($id, $imageFormat, $name, $type, \@prices, \@formats, $description, \@dataNames, \@dataContents);
 	}
 }
