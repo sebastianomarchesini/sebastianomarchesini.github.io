@@ -123,11 +123,9 @@ sub logError {
 
 #estraggo le parole del login
 my $logString = CGI->new();
-#my $username = $logString->param('inputUsername');
-#my $password = $logString->param('inputPassword');
-my $username = 'Admi';
-my $password = 'password';
-my $update = 'yes';#$logString->param('update');
+my $username = $logString->param('inputUsername');
+my $password = $logString->param('inputPassword');
+my $update = $logString->param('update');
 my $finalDoc;
 
 #estraggo i dati dall'XML
