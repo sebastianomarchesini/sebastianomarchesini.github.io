@@ -12,11 +12,12 @@
                 <title>Vendita - GGarden</title>
                 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
                 <meta name="title" content="GGarden" />
-                <meta name="description" content="Azienda specializzata nella vendita di piante e fiori e vendita di attrezzi e macchine da giardinaggio" />
-                <meta name="keywords" content="piante, fiori, giardinaggio, attrezzi, vendita, realizzazioni, padova" />
+                <meta name="description" content="Azienda specializzata nella vendita di piante e fiori e nel noleggio e vendita di attrezzi e macchine da giardinaggio" />
+                <meta name="keywords" content="piante, fiori, giardinaggio, attrezzi" />
                 <meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini, Jacopo Guizzardi" />
                 <meta name="language" content="italian it" />
-                <link rel="stylesheet" href="../public_html/CSS/vendita.css" type="text/css" media="screen" />
+                <link rel="stylesheet" href="../CSS/vendita.css" type="text/css" media="screen" />
+                <link rel="stylesheet" href="../CSS/print.css" type="text/css" media="print" />
             </head>
             <body>
                 <div id="header">
@@ -112,7 +113,7 @@
                         <p class="footer-company-info">
                             <span id="testo-footer">Gg Garden a servizio</span>
                             <span id="testo-footer">L'erba del tuo vicino è sempre più verde. Sii come il tuo vicino,
-                    chiama G Garden Group</span>
+                                chiama G Garden Group</span>
                         </p>
                     </div>
                 </div>
@@ -138,7 +139,7 @@
                     <xsl:variable name="id" select="@id"/>
                     <xsl:variable name="formato" select="@formato"/>
                     <xsl:if test="$formato!='no_image'">
-                        <p class="img"><img src="../data/img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
+                        <p class="img"><img src="../img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
                     </xsl:if>
                     <h4>DESCRIZIONE GENERALE</h4>
                     <p class="desc"><xsl:value-of select="g:descrizione"/></p>
@@ -164,13 +165,12 @@
                             <xsl:if test="count(g:prezzo/g:pacchetto)&gt;1">
                                 <xsl:for-each select="g:prezzo/g:pacchetto">
                                     <span class="check"><xsl:variable name="num_prezzo" select="position()"/>
-                                        <xsl:if test="$num_prezzo=1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}" checked="true">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
-                                        <xsl:if test="$num_prezzo&gt;1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
-                                        <label for="{$num_prezzo}">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></label></span>
+                                        <xsl:if test="$num_prezzo=1"> € <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></xsl:if>
+                                        <xsl:if test="$num_prezzo&gt;1"> € <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></xsl:if>
+                                        </span>
                                 </xsl:for-each>
                             </xsl:if>
                         </p>
-                        <span class="submit"><input type="submit" class="subbutton" value="Aggiungi al carrello"/></span>
                     </fieldset>
                 </form>
             </div>
@@ -189,7 +189,7 @@
                     <xsl:variable name="id" select="@id"/>
                     <xsl:variable name="formato" select="@formato"/>
                     <xsl:if test="$formato!='no_image'">
-                        <p class="img"><img src="../data/img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
+                        <p class="img"><img src="../img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
                     </xsl:if>
                     <h4>DESCRIZIONE</h4>
                     <p class="desc"><xsl:value-of select="g:descrizione"/></p>
@@ -209,13 +209,12 @@
                             <xsl:if test="count(g:prezzo/g:pacchetto)&gt;1">
                                 <xsl:for-each select="g:prezzo/g:pacchetto">
                                     <span class="check"><xsl:variable name="num_prezzo" select="position()"/>
-                                        <xsl:if test="$num_prezzo=1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}" checked="true">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
-                                        <xsl:if test="$num_prezzo&gt;1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
-                                        <label for="{$num_prezzo}">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></label></span>
+                                        <xsl:if test="$num_prezzo=1"> € <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></xsl:if>
+                                        <xsl:if test="$num_prezzo&gt;1"> € <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></xsl:if>
+                                        </span>
                                 </xsl:for-each>
                             </xsl:if>
                         </p>
-                        <span class="submit"><input type="submit" class="subbutton" value="Aggiungi al carrello"/></span>
                     </fieldset>
                 </form>
             </div>
