@@ -1,0 +1,281 @@
+
+html, body{
+    padding:0px;
+    margin:0px;
+    font-family: Times New Roman, Helevetica, serif;
+    font-size:12px;
+    color: black;
+    background: transparent;
+}
+
+
+#headheader{
+    position: static;
+    float: none;
+}
+
+#logo{
+    display:inline;
+}
+
+
+/*Logo*/
+h1{
+    position: static;
+    float: none;
+    text-align:center;
+    background-image:url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    content:url(../img/logo.png);
+    
+}
+
+
+
+/* BreadCrumbs Part*/
+#breadcrumbs{
+    width: 100%;
+    background-color:#b0fcb0;
+    clear: both;
+    
+}
+
+#rifnav {
+    text-align:center;
+    font-style: oblique;
+    width: 100%;
+    color: black;
+    margin-top: 20px;
+}
+
+#ricerca{
+    display: none;
+}
+
+#conferma{
+    display: none;
+}
+
+.nascosto{
+    display: none;
+}
+
+
+
+/*Menu*/
+#contenitore-menu {
+    max-width: 200mm;
+    margin: 0 auto;
+    display:none;
+}
+
+.vnav{
+    background-color: #ffcdcc;
+    font-weight: bold;
+}
+
+.menu{
+    font-style: oblique;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #c9fdc9;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    color: white;
+    background-color: #111;
+}
+
+/*Contenuto-Body-Centro*/
+
+#content{
+    background-color:#b0fcb0;
+    margin:0 auto;
+    padding: 1em;
+    width:auto;
+    color: black;
+    clear: both;
+}
+
+.body_contattaci{
+    display:none;
+}
+
+.informazioni{
+    display:block;
+}
+
+
+/* Realizzazioni */
+
+#gallery{
+    width: 100%;
+    height: 500px;
+}
+
+#content img{
+    border:0;
+}
+
+#content div #container{
+    width:740px;
+}
+
+#content div #header img{
+    float:left;
+}
+
+#content div #header h2{
+    float:left;
+    margin:24px 0 0 0;
+    font-size:100%;
+}
+
+#content div #zoom{
+    float:right;
+    margin:0 0 5px 0;
+    padding: 5px;
+    border:1px solid #ccc;
+}
+
+#content div #zoom h3{
+    margin:0;
+    font-size:100%;
+    color: #666;
+    text-align:center;
+}
+
+#content div #zoom img{
+    display:block;
+    margin: 30px;
+    width:400px;
+    height:400px;
+}
+
+#content div #minipics{
+    margin-right:415px      /*per Opera*/
+}
+
+#content div #minipics ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+#content div #minipics li{
+    float:left;
+    margin:0 5px 5px 5px;
+    border:1px solid #ccc;
+    padding: 3px
+}
+
+
+/*Parte per la form di contattaci*/
+
+.info {
+    display: block;
+    margin: 0 0 0.5em 0;
+}
+
+#divMappa {
+    width: 100%;
+    height: 20em;
+    content:url(../img/mappa.png);
+}
+
+.print {
+    display: none;
+}
+
+.errorSuggestion{
+    display: none;
+    
+}
+
+
+
+/* Footer */
+
+
+.footer{
+    width: 100%;
+    text-align: left;
+    font: bold 8px sans-serif;
+}
+
+.footer h3{
+    margin: 0;
+    content:url(../img/logo_mini.png);
+    width: 100px;
+    height: auto;
+}
+
+
+.footer .footer-left .footer-menu a{
+    display:none;
+}
+
+.footer .footer-nome-azienda{
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-center{
+    float:left;
+}
+
+.footer .footer-center i{
+    font-size: 10px;
+    text-align: center;
+}
+
+.footer .footer-center i.fa-mail{
+    font-size: 10px;
+}
+
+.footer .footer-center p{
+    display: inline-block;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer .footer-center p span{
+    display:block;
+    font-weight: normal;
+    line-height:2;
+}
+
+
+.footer .footer-right{
+    float:right;
+}
+
+.footer .footer-nome-azienda{
+    line-height: 20px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-company-info span{
+    display: block;
+    font-weight: bold;
+}
