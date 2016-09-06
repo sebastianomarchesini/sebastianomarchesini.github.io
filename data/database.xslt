@@ -12,8 +12,8 @@
                 <title>Vendita - GGarden</title>
                 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
                 <meta name="title" content="GGarden" />
-                <meta name="description" content="Azienda specializzata nella vendita di piante e fiori e nel noleggio e vendita di attrezzi e macchine da giardinaggio" />
-                <meta name="keywords" content="piante, fiori, giardinaggio, attrezzi" />
+                <meta name="description" content="Azienda specializzata nella vendita di piante e fiori e vendita di attrezzi e macchine da giardinaggio" />
+                <meta name="keywords" content="piante, fiori, giardinaggio, attrezzi, vendita, realizzazioni, padova" />
                 <meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini, Jacopo Guizzardi" />
                 <meta name="language" content="italian it" />
                 <link rel="stylesheet" href="../public_html/CSS/vendita.css" type="text/css" media="screen" />
@@ -60,7 +60,6 @@
                         <li><a href="../public_html/home.html" id="home" class="nav" xml:lang="en">Home </a></li>
                         <li><a href="../public_html/realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
                         <li><a href="database.xml" id="vend" class="vnav">Vendita </a></li>
-                        <li><a href="../public_html/noleggio.html" id="nol" class="nav">Noleggio </a></li>
                         <li><a href="../public_html/contattaci.html" id="cont" class="nav">Contattaci</a></li>
                     </ul>
                 </div>
@@ -85,8 +84,6 @@
                             <a href="home.html">Home</a>
                             
                             <a href="../data/database.xml">Vendita</a>
-                            
-                            <a href="noleggio.html">Noleggio</a>
                             
                             <a href="contattaci.html">Contattaci</a>
                         </p>

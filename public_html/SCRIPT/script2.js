@@ -211,3 +211,53 @@ function errImg(){
 	p.appendChild(e);
 }
 
+var n_Prezzo=1;
+var n_Valore=1;
+
+function addPrezzo(){
+	var container=document.getElementsByClassName('create');
+	// container.appendChild(document.createTextNode("Member " + (i+1)));
+    // Create an <input> element, set its type and name attributes
+    var ln=document.createElement("li");
+    var par=document.createElement("p");
+    var input = document.createElement("input");
+    input.type = "text";
+    input.name = "price" + n_Prezzo;
+    var lbl=document.createElement("label");
+    lbl.setAttribute("for", "price" + (n_Prezzo + 1));
+    var t = document.createTextNode("Prezzo: &euro; ");
+    lbl.appendChild(t);
+    par.appendChild(lbl);
+    par.appendChild(input);
+    ln.appendChild(par)
+    container.appendChild(ln);
+    n_Prezzo=n_Prezzo+1;
+}
+
+var counter_prezzo = 1;
+var counter_valore = 1;
+var limit_prezzo = 3;
+var limit_valore=3;
+
+function addInputPrice(divName){
+	var toInsert='<label for="price">Prezzo: &euro; </label><input type="text" name="price'+ (counter_prezzo+1) +'" id="price'+ (counter_prezzo+1) +'" placeholder="3.99"/><label for="format'+ (counter_prezzo+1) +'">Formato:</label><input type="text" name="format'+ (counter_prezzo+1) +'" id="format'+ (counter_prezzo+1) +'" placeholder="al pezzo"/>';
+	counter_prezzo = addInput(divName, counter_prezzo, limit_valore, toInsert);
+}
+
+function addInputValue(divName){
+	var toInsert='<label for="dataName">Dato:</label><input type="text" name="dataName" id="dataName'+ (counter_prezzo+1) +'" placeholder="Lunghezza manico"/><label for="dataContent'+ (counter_prezzo+1) +'">Contenuto:</label><input type="text" name="dataContent'+ (counter_prezzo+1) +'" id="dataContent'+ (counter_prezzo+1) +'" placeholder="10 cm"/>';
+	counter_valore = addInput(divName, counter_valore, limit_valore, toInsert);
+}
+
+function addInput(divName, counter, limit, toInsert){
+    if (counter == limit)  {
+          alert("You have reached the limit of adding " + counter + " inputs");
+    }
+    else {
+          var newdiv = document.createElement('div');
+          newdiv.innerHTML = toInsert;
+          document.getElementById(divName).appendChild(newdiv);
+          counter++;
+          return counter;
+     }
+}
