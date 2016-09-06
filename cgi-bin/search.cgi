@@ -3,7 +3,6 @@ use XML::LibXSLT;
 use XML::LibXML;
 use strict;
 use warnings;
-use HTML::TreeBuilder;
 
 #Carico tutti i dati che mi servono, come i percorsi dei file xml
 my $filexml = "../data/database.xml";
