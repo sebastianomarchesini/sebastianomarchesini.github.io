@@ -21,38 +21,27 @@
         <div id="header">
             <h1><span id="logo" xml:lang="en" class="nascosto">GGarden</span></h1> 
             <div id="contenitore-login">
-            	<input id="button_admin" type="button" onclick="nascondi();" value="Accedi come amministratore"/> 
-	            <div id="login">
-	                <form action="../cgi-bin/log.cgi" method="get">
-	                    <fieldset>
-	                        <legend>Login amministratore</legend>
-	                        <div class="modal hide fade in">
-	                            <!-- <div class="modal-header">
-	                                <button type="button" onclick="nascondi();" class="close" data-dismiss="modal" aria-hidden="true" >×</button>
-	                                <h3>Login Block</h3>
-	                            </div> -->
-	                            <!-- <div class="modal-body"> --> 
-	                                    <div class="control-group">
-	                                        <label for="inputEmail">E-mail</label>
-	                                        <input type="text" id="inputEmail" value="Email" tabindex="-1"/>
-	                                    </div>
-	                                    <div class="control-group">
-	                                        <label for="inputPassword">Password</label>
-	                                        <input type="password" id="inputPassword" value="Password" tabindex="-2" />
-	                                    </div>
-	                                    <input type="hidden" name="pagina" value="crea">
-	                                    <!-- <div class="control-group">
-	                                        <label class="checkbox">
-	                                        <input type="checkbox" /> Ricordami
-	                                        </label>
-	                                    </div> -->
-	                                <button type="submit" class="btn btn-success">Accedi</button>
-	                            <!-- </div> -->
-	                        </div>
-	                    </fieldset>
-	                </form>
-	            </div>
-       		</div>
+                        <input id="button_admin" type="button" onclick="nascondi();" value="Accedi come amministratore"/>
+                        <div id="login">
+                            <form action="../cgi-bin/log.cgi" method="get">
+                                <fieldset>
+                                    <legend>Login amministratore</legend>
+                                    <div class="modal hide fade in">
+                                        <div class="control-group">
+                                            <label for="inputUsername">Username:</label>
+                                            <input type="text" name="inputUsername" id="inputUsername" value="Username" tabindex="-1"/>
+                                        </div>
+                                        <div class="control-group">
+                                            <label for="inputPassword">Password :</label>
+                                            <input type="password" name="inputPassword" id="inputPassword" value="Password" tabindex="-2" />
+                                        </div>
+                                        <input type="hidden" name="update" value="no"/>
+                                        <button type="submit" id="accedi">Accedi</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+              </div>
             <div id="breadcrumbs">
                 <form class="headersearch" action="../cgi-bin/search.cgi" method="get">
                     <fieldset>
