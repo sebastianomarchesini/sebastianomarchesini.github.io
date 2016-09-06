@@ -170,10 +170,9 @@ if($operation eq "delete") {
 						<li>
 							<p>
 								<label for='price'>Prezzo: € </label>
-								<input type='text' name='price' id='price'/>
+								<input type='text' name='price[]' id='price'/>
 								<label for='format'>Formato:</label>
-								<input type='text' name='format' id='format'/>
-								<input type='button' name='confirmPrice' value='Aggiungi prezzo'/>
+								<input type='text' name='format[]' id='format'/>
 							</p>
 						</li>
 						<li>
@@ -183,10 +182,9 @@ if($operation eq "delete") {
 							</p>
 							<p>
 								<label for='dataName'>Dato:</label>
-								<input type='text' name='dataName' id='dataName'/>
+								<input type='text' name='dataName[]' id='dataName'/>
 								<label for='dataContent'>Contenuto:</label>
-								<input type='text' name='dataContent' id='dataContent'/>
-								<input type='button' name='confirmData' value='Aggiungi dato'/>
+								<input type='text' name='dataContent[]' id='dataContent'/>
 							</p>
 						</li>
 						<li>
