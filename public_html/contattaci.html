@@ -4,12 +4,12 @@
     <head>
         <title>Contattaci- GGarden</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="title" content="Contattaci - GGarden" />
+        <meta name="title" content="Contattata GGarden" />
         <meta name="description" content="Pagina con le modalità di contatto di GGarden" />
-        <meta name="keywords" content="GGarden, piante, fiori, giardinaggio, attrezzi, telefono, email, mail, indirizzo" />
+        <meta name="keywords" content="GGarden, telefono, email, mail, indirizzo" />
         <meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini" />
         <meta name="language" content="italian it" />
-        <link rel="stylesheet" href="CSS/home.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="CSS/home.css" type="text/css" media="screen and (min-width: 650px)" />
         <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
     </head>
     <body onload="caricamento(); replaceMap();">
@@ -28,11 +28,15 @@
             
             
             <div id="contenitore-menu">
+                <div class="nascosto">
+                    <a href="content" title="salta al contenuto principale">salta direttamente al contattaci</a>
+                </div>
+
                 <ul class="menu">
-                    <li><a href="home.html" id="home" class="nav">Home </a></li>
-                    <li><a href="realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
-                    <li><a href="cgi-bin/checkLog.cgi" id="vend" class="nav">Vendita </a></li>
-                    <li><a href="contattaci.html" id="cont" class="vnav">Contattaci</a></li>
+                    <li><a href="home.html" id="home" class="nav" xml:lang="en" accesskey="h" tabindex="10">Home </a></li>
+                    <li><a href="realizzazioni.html" id="real" class="nav" accesskey="r" tabindex="11">Realizzazioni </a></li>
+                    <li><a href="cgi-bin/checkLog.cgi" id="vend" class="nav" accesskey="v" tabindex="12">Vendita </a></li>
+                    <li><a href="contattaci.html" id="cont" class="vnav" accesskey="c" tabindex="13">Contattaci</a></li>
                 </ul>
             </div>
         </div>
@@ -43,31 +47,31 @@
                 <h3>Qualsiasi infromazione in modo semplice</h3>
             </div>
             <div class="body_contattaci">
-                <form action="#" onsubmit="return validazioneForm()" method="post">
+                <form action="cgi-bin/email.cgi" onsubmit="return validazioneForm()" method="post">
                     <ul>
                         <li>
                             <p>
                             <label for="first_name">Nome</label>
-                            <input type="text" name="first_name" id="first_name" />
+                            <input type="text" name="first_name" id="first_name" tabindex="100"/>
                             </p>
                             <p>
                             <label for="last_name">Cognome</label>
-                            <input type="text" name="last_name" id="last_name" />
+                            <input type="text" name="last_name" id="last_name" tabindex="101" />
                             </p>
                         </li>
-                        <li>
+                        <li xml:lang="en">
                             <p>
-                            <label for="email">eMail <span class="req">*</span></label>
-                            <input type="text" name="email" id="email" />
+                            <label for="email">E-Mail <span class="req">*</span></label>
+                            <input type="text" name="email" id="email" tabindex="102" />
                             </p>
                         </li>
                         <li>
                             <label for="comments">Fai la tua domanda</label>
-                            <textarea cols="46" rows="3" name="comments" id="comments"></textarea>
+                            <textarea cols="46" rows="3" name="comments" id="comments" tabindex="103"></textarea>
                         </li>
                         
-                        <li>
-                            <input class="btn btn-submit" type="submit" value="Submit" />
+                        <li xml:lang="en">
+                            <input class="btn btn-submit" type="submit" value="Submit" tabindex="104"/>
                             <small>or press <strong>enter</strong></small>
                         </li>
                         <li>
@@ -78,19 +82,16 @@
             </div>
             <div>
                 <div class="Gaddress">
-                    <!-- <label for="Address"> -->
                     <div class="info">
                         <p>Oppure puoi trovarci nella nostra sede: in via Trieste, 63 - 35121 Padova PD.</p>
                         <p>Siamo aperti dal lunedì al sabato, dalle ore 8:30 alle 13:30 e dalle 15:00 alle 19:30.</p>
                         <p>Il nostro numero di telefono è: +39 049 827 1200.</p>
                     </div>
-                    <!-- <div id="map1" class="map"> -->
-                    <!-- </label> -->
                 </div>
             </div>
             <div id="divMappa">
                 <div id="visualizzaMappa">
-                    <a href="https://www.google.it/maps/place/Torre+Archimede,+Via+Trieste,+63,+35121+Padova+PD/@45.4113311,11.8854431,17z/data=!3m1!4b1!4m5!3m4!1s0x477eda58b44676df:0xfacae5884fca17f5!8m2!3d45.4113311!4d11.8876318"><img id="fotoMappa" src="img/mappa.png" alt="Mappa della posizione del campo" width="100%" height="100%"/></a>
+                    <a href="https://www.google.it/maps/place/Torre+Archimede,+Via+Trieste,+63,+35121+Padova+PD/@45.4113311,11.8854431,17z/data=!3m1!4b1!4m5!3m4!1s0x477eda58b44676df:0xfacae5884fca17f5!8m2!3d45.4113311!4d11.8876318" tabindex="105"><img id="fotoMappa" src="img/mappa.png" alt="Mappa della posizione del campo" width="100%" height="100%"/></a>
                 </div>
             </div>
         </div>
@@ -99,11 +100,13 @@
             <div class="footer-left">
                 <h3><span id="logo_mini">Ggarden</span></h3>
                 <p class="footer-menu">
-                <a href="home.html">Home</a>
-                
-                <a href="cgi-bin/checkLog.cgi">Vendita</a>
-                
-                <a href="contattaci.html">Contattaci</a>
+                    <a href="home.html" reflang="it" xml:lang="en" accesskey="h" tabindex="1000">Home</a>
+                    
+                    <a href="realizzazioni.html" hreflang="it" acceskey="r" tabindex="1001">Realizzazioni </a>
+
+                    <a href="cgi-bin/checkLog.cgi" reflang="it" acceskey="v" tabindex="1002">Vendita</a>
+                    
+                    <a href="contattaci.html" reflang="it" acceskey="c" tabindex="1003">Contattaci</a>
                 </p>
                 
                 <p class="footer-nome-azienda">Ggarden &copy; 2016</p>
@@ -122,12 +125,12 @@
                 
                 <div>
                     <i class="fa fa-mail"></i>
-                    <p><a href="mailto:support@company.com">service@ggarden.com</a></p>
+                    <p><a href="ggardengroup@gmail.com" tabindex="1004">ggardengroup@gmail.com</a></p>
                 </div>
             </div>
             
             <div class="footer-right">
-                <p class="footer-company-info">
+                <p class="footer-company-info" title="motto">
                 <span id="testo-footer">Gg Garden a servizio</span>
                 <span id="testo-footer">L'erba del tuo vicino è sempre più verde. Sii come il tuo vicino,
                     chiama G Garden Group</span>
