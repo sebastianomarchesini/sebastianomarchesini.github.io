@@ -2,6 +2,10 @@
 use strict;
 use warnings;
 use XML::LibXML;
+use CGI::Session;
+use XML::LibXSLT;
+use CGI::Carp qw(fatalsToBrowser);
+use Mail::Sendmail;
 
 sub log {
 	my $xmlPage = "../data/database.xslt";
@@ -64,7 +68,7 @@ sub log {
 }
 
 my $session = CGI::Session->load() or die CGI::Session->errstr;
-my $doc;
+my $doc="";
 if(!$session->is_expired && !$session->is_empty) {
 	$doc = &log();
 } else {
@@ -73,7 +77,7 @@ if(!$session->is_expired && !$session->is_empty) {
 	$doc = $parserxml->load_xml(location => $xmlPage);
 }
 
-$filexml = "../data/database.xml";
+my $filexml = "../data/database.xml";
 my $parserxslt = XML::LibXSLT->new;
 my $stylesheet  = $parserxslt->parse_stylesheet($doc);
 my $results     = $stylesheet->transform_file($filexml);
@@ -83,6 +87,6 @@ print "Content-type: text/html; charset=utf-8\n\n";
 
 	print "<phtml>";
 	print "<body>";
-	print $doc;
+	print $fileToPrint;
 	print "</body>";
 	print "</html>";
