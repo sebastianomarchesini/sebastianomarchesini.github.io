@@ -4,14 +4,13 @@
     <head>
         <title>Home Page - GGarden</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="title" content="Chi siamo - GGarden" />
+        <meta name="title" content="Chi è GGarden" />
         <meta name="description" content="Pagina principale dell'azienda GGarden" />
         <meta name="keywords" content="GGarden, piante, fiori, giardinaggio, attrezzi, vendita, padova" />
         <meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini" />
         <meta name="language" content="italian it" />
         <link rel="stylesheet" href="CSS/home.css" type="text/css" media="screen and (min-width: 650px)" />
         <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
-        <!--  <link rel="stylesheet" type="text/css" href="css/small-devices.css" media="screen and (max-width: 650px)" /> -->
         <link rel="icon" href="img/logo2.png" type="image/png" />
     </head>
  
@@ -33,11 +32,15 @@
            
            
             <div id="contenitore-menu">
+                <div class="nascosto">
+                    <a href="content" title="salta al contenuto principale">salta direttamente alla nostra descrizione</a>
+                </div>
+
                 <ul class="menu">
-                    <li><a href="home.html" id="home" class="vnav" xml:lang="en">Home </a></li>
-                    <li><a href="realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
-                    <li><a href="cgi-bin/checkLog.cgi" id="vend" class="nav">Vendita </a></li>
-                    <li><a href="contattaci.html" id="cont" class="nav">Contattaci</a></li>
+                    <li><a href="home.html" id="home" class="vnav" xml:lang="en" accesskey="h" tabindex="10">Home </a></li>
+                    <li><a href="realizzazioni.html" id="real" class="nav" accesskey="r" tabindex="11">Realizzazioni </a></li>
+                    <li><a href="cgi-bin/checkLog.cgi" id="vend" class="nav" accesskey="v" tabindex="12">Vendita </a></li>
+                    <li><a href="contattaci.html" id="cont" class="nav" accesskey="c" tabindex="13">Contattaci</a></li>
                 </ul>
             </div>
         </div>
@@ -58,7 +61,7 @@
             <p class="center">
                 Qualità, professionalità e cortesia sono i nostri punti di forza uniti ad un’assistenza responsabile con attrezzature moderne.
             </p>
-            <span id="immagine" class="center"></span>
+            <span id="immagine" class="center" alt="Immagine di una mano sul prato" title="Mano sul prato"></span>
         </div>
        
        
@@ -66,11 +69,13 @@
             <div class="footer-left">
                 <h3><span id="logo_mini">Ggarden</span></h3>
                 <p class="footer-menu">
-                    <a href="home.html">Home</a>
+                    <a href="home.html" reflang="it" xml:lang="en" accesskey="h" tabindex="100">Home</a>
                     
-                    <a href="cgi-bin/checkLog.cgi">Vendita</a>
+                    <a href="realizzazioni.html" hreflang="it" acceskey="r" tabindex="101">Realizzazioni </a>
+
+                    <a href="cgi-bin/checkLog.cgi" reflang="it" acceskey="v" tabindex="102">Vendita</a>
                     
-                    <a href="contattaci.html">Contattaci</a>
+                    <a href="contattaci.html" reflang="it" acceskey="c" tabindex="103">Contattaci</a>
                 </p>
  
                 <p class="footer-nome-azienda">Ggarden &copy; 2016</p>
@@ -89,12 +94,12 @@
  
                 <div>
                     <i class="fa fa-mail"></i>
-                    <p><a href="mailto:support@company.com">service@ggarden.com</a></p>
+                    <p><a href="ggardengroup@gmail.com" acceskey="e" tabindex="104">ggardengroup@gmail.com</a></p>
                 </div>
             </div>
  
             <div class="footer-right">
-                <p class="footer-company-info">
+                <p class="footer-company-info" title="motto">
                     <span id="testo-footer">Gg Garden a servizio</span>
                     <span id="testo-footer">L'erba del tuo vicino è sempre più verde. Sii come il tuo vicino,
                         chiama G Garden Group</span>
