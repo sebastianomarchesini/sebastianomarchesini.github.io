@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.19)  19 SEP 2016 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.19)  19 SEP 2016 18:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -758,10 +758,42 @@ Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 \c@subfigure=\count132
 \c@subtable=\count133
 )
+(/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2014/01/06 v3.24\ Stacking text and objects in convenient 
+ways
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count135
+\calc@Bcount=\count136
+\calc@Adimen=\dimen161
+\calc@Bdimen=\dimen162
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count137
+\calc@Cskip=\skip63
+)
+\c@@stackindex=\count138
+\@boxshift=\skip64
+\stack@tmplength=\skip65
+\temp@stkl=\skip66
+\@stackedboxwidth=\skip67
+\@addedbox=\box39
+\@anchorbox=\box40
+\stackedbox=\box41
+\@centerbox=\box42
+\c@ROWcellindex@=\count139
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 139.
+Package hyperref Info: Option `colorlinks' set `true' on input line 143.
 )
 (./relazione.aux)
 \openout1 = `relazione.aux'.
@@ -782,16 +814,16 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count134
-\scratchdimen=\dimen161
-\scratchbox=\box39
-\nofMPsegments=\count135
-\nofMParguments=\count136
+\scratchcounter=\count140
+\scratchdimen=\dimen163
+\scratchbox=\box43
+\nofMPsegments=\count141
+\nofMParguments=\count142
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count137
-\MPscratchDim=\dimen162
-\MPnumerator=\count138
-\makeMPintoPDFobject=\count139
+\MPscratchCnt=\count143
+\MPscratchDim=\dimen164
+\MPnumerator=\count144
+\makeMPintoPDFobject=\count145
 \everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -808,7 +840,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box40
+\AtBeginShipoutBox=\box44
 Package hyperref Info: Link coloring ON on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -817,7 +849,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count140
+\c@section@level=\count146
 )
 LaTeX Info: Redefining \ref on input line 28.
 LaTeX Info: Redefining \pageref on input line 28.
@@ -862,7 +894,7 @@ LaTeX Info: Redefining \nameref on input line 28.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count141
+\c@lstlisting=\count147
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 28.
@@ -902,7 +934,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ...spositivi utilizzati}{16}{subsection.12.5}
+l.40 ...spositivi utilizzati}{17}{subsection.12.5}
                                                    [1])
 \tf@toc=\write4
 \openout4 = `relazione.toc'.
@@ -940,7 +972,7 @@ File: ./sezioni/img/Logo.png Graphic file (type png)
 Package pdftex.def Info: ./sezioni/img/Logo.png used on input line 39.
 (pdftex.def)             Requested size: 129.07996pt x 30.3127pt.
  [4] (./sezioni/DescrizioneGenerale.tex
-\c@magicrownumbers=\count142
+\c@magicrownumbers=\count148
 )
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -979,38 +1011,43 @@ File: ./sezioni/img/Logo.png Graphic file (type png)
 <use ./sezioni/img/Logo.png>
 Package pdftex.def Info: ./sezioni/img/Logo.png used on input line 45.
 (pdftex.def)             Requested size: 129.07996pt x 30.3127pt.
- [7] (./sezioni/Architettura.tex)
-File: ./sezioni/img/Logo.png Graphic file (type png)
+ [7] (./sezioni/Architettura.tex
+<./sezioni/img/Schemasito.png, id=290, 354.32375pt x 384.43625pt>
+File: ./sezioni/img/Schemasito.png Graphic file (type png)
 
-<use ./sezioni/img/Logo.png>
+<use ./sezioni/img/Schemasito.png>
+Package pdftex.def Info: ./sezioni/img/Schemasito.png used on input line 14.
+(pdftex.def)             Requested size: 354.32288pt x 384.4353pt.
+)
+File: ./sezioni/img/Logo.png Graphic file (type png)
+ <use ./sezioni/img/Logo.png>
 Package pdftex.def Info: ./sezioni/img/Logo.png used on input line 47.
 (pdftex.def)             Requested size: 129.07996pt x 30.3127pt.
- [8] (./sezioni/Struttura.tex)
+ [8 <./sezioni/img/Schemasito.png>] (./sezioni/Struttura.tex)
 File: ./sezioni/img/Logo.png Graphic file (type png)
-
-<use ./sezioni/img/Logo.png>
+ <use ./sezioni/img/Logo.png>
 Package pdftex.def Info: ./sezioni/img/Logo.png used on input line 49.
 (pdftex.def)             Requested size: 129.07996pt x 30.3127pt.
- [9] (./sezioni/Presentazione.tex)
-File: ./sezioni/img/Logo.png Graphic file (type png)
 
-<use ./sezioni/img/Logo.png>
+[9] (./sezioni/Presentazione.tex)
+File: ./sezioni/img/Logo.png Graphic file (type png)
+ <use ./sezioni/img/Logo.png>
 Package pdftex.def Info: ./sezioni/img/Logo.png used on input line 51.
 (pdftex.def)             Requested size: 129.07996pt x 30.3127pt.
- [10] (./sezioni/Comportamento.tex)
+ [10]
+(./sezioni/Comportamento.tex)
 File: ./sezioni/img/Logo.png Graphic file (type png)
-
-<use ./sezioni/img/Logo.png>
+ <use ./sezioni/img/Logo.png>
 Package pdftex.def Info: ./sezioni/img/Logo.png used on input line 53.
 (pdftex.def)             Requested size: 129.07996pt x 30.3127pt.
- [11] (./sezioni/Accessibilita.tex
+ [11]
+(./sezioni/Accessibilita.tex
 File: ./sezioni/img/Logo.png Graphic file (type png)
-
-<use ./sezioni/img/Logo.png>
+ <use ./sezioni/img/Logo.png>
 Package pdftex.def Info: ./sezioni/img/Logo.png used on input line 52.
 (pdftex.def)             Requested size: 129.07996pt x 30.3127pt.
  [12]
-<./sezioni/img/Home.png, id=327, 1284.8pt x 803.0pt>
+<./sezioni/img/Home.png, id=331, 1284.8pt x 803.0pt>
 File: ./sezioni/img/Home.png Graphic file (type png)
 
 <use ./sezioni/img/Home.png>
@@ -1091,28 +1128,35 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
 Package rerunfilecheck Info: File `relazione.out' has not changed.
 (rerunfilecheck)             Checksum: 605C0DD119795CDE9A450041B5C693C1;2667.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
  ) 
 Here is how much of TeX's memory you used:
- 10824 strings out of 494910
- 156980 string characters out of 6179836
- 281773 words of memory out of 5000000
- 13831 multiletter control sequences out of 15000+600000
+ 11332 strings out of 494910
+ 163372 string characters out of 6179836
+ 291750 words of memory out of 5000000
+ 14325 multiletter control sequences out of 15000+600000
  16225 words of font info for 43 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 48i,17n,45p,518b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/
-pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/pietro/.te
-xmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/pietro/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/pietro/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/ectt1200.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecbx2488.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
-1200.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on relazione.pdf (17 pages, 1532338 bytes).
+ 48i,17n,45p,958b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{page.17} has been referenced but does not exist, 
+replaced by a fixed one
+
+ </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/pi
+etro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/pietro/.texm
+f-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/pietro/.texmf-var/font
+s/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/pietro/.texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ectt1200.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen
+/ec/ecbx2488.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx12
+00.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on relazione.pdf (17 pages, 1538730 bytes).
 PDF statistics:
- 744 PDF objects out of 1000 (max. 8388607)
- 380 compressed objects within 4 object streams
- 65 named destinations out of 1000 (max. 500000)
- 347 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 750 PDF objects out of 1000 (max. 8388607)
+ 384 compressed objects within 4 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 352 words of extra memory for PDF output out of 10000 (max. 10000000)
 
