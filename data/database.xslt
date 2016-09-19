@@ -118,7 +118,7 @@
                     </div>
                 </div>
                 
-                <script type="text/javascript" src="../public_html/SCRIPT/script.js"></script>
+                <script type="text/javascript" src="public_html/SCRIPT/script.js"></script>
                 
             </body>
         </html>
@@ -139,7 +139,7 @@
                     <xsl:variable name="id" select="@id"/>
                     <xsl:variable name="formato" select="@formato"/>
                     <xsl:if test="$formato!='no_image'">
-                        <p class="img"><img src="../img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
+                        <p class="img"><img src="public_html/img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
                     </xsl:if>
                     <h4>DESCRIZIONE GENERALE</h4>
                     <p class="desc"><xsl:value-of select="g:descrizione"/></p>
@@ -189,7 +189,7 @@
                     <xsl:variable name="id" select="@id"/>
                     <xsl:variable name="formato" select="@formato"/>
                     <xsl:if test="$formato!='no_image'">
-                        <p class="img"><img src="../img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
+                        <p class="img"><img src="public_html/img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
                     </xsl:if>
                     <h4>DESCRIZIONE</h4>
                     <p class="desc"><xsl:value-of select="g:descrizione"/></p>
