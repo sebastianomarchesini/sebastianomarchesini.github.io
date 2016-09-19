@@ -4,9 +4,9 @@
     <head>
         <title>Home Page - GGarden</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="title" content="Chi siamo - GGarden" />
-        <meta name="description" content="Pagina principale dell'azienda GGarden" />
-        <meta name="keywords" content="GGarden, piante, fiori, giardinaggio, attrezzi, vendita, realizzioni, padova" />
+        <meta name="title" content="Realizzioni di GGarden" />
+        <meta name="description" content="Opere migliori realizzate da GGarden" />
+        <meta name="keywords" content="GGarden, piante, fiori, giardinaggio, realizzioni" />
         <meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini" />
         <meta name="language" content="italian it" />
         <link rel="stylesheet" href="CSS/home.css" type="text/css" media="screen and (min-width: 650px)" />
@@ -23,7 +23,7 @@
             <div id="breadcrumbs">
                 <form class="headersearch" action="../cgi-bin/search.cgi" method="get">
                     <fieldset>
-                        <span id="rifnav" >Ti trovi in: <a href="home.html" xml:lang="en">Home</a> / <b>Contattaci</b></span>
+                        <span id="rifnav" >Ti trovi in: <a href="home.html" xml:lang="en" accesskey="h">Home</a> / <b>Contattaci</b></span>
                         <label for="ricerca" class="nascosto">Cerca un prodotto o un servizio</label>
                         <input type="text" name="ricerca" id="ricerca" class="ricerca" accesskey="s" tabindex="1" />
                         <input type="submit" name="conferma" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
@@ -33,11 +33,15 @@
            
            
             <div id="contenitore-menu">
+                <div class="nascosto">
+                    <a href="content" title="salta al contenuto principale">salta direttamente alle immagini delle nostre relizzazioni</a>
+                </div>
+
                 <ul class="menu">
-                    <li><a href="home.html" id="home" class="nav" xml:lang="en">Home </a></li>
-                    <li><a href="realizzazioni.html" id="real" class="vnav">Realizzazioni </a></li>
-                    <li><a href="cgi-bin/checkLog.cgi" id="vend" class="nav">Vendita </a></li>
-                    <li><a href="contattaci.html" id="cont" class="nav">Contattaci</a></li>
+                    <li><a href="home.html" id="home" xml:lang="en" class="nav" accesskey="h" tabindex="10">Home </a></li>
+                    <li><a href="realizzazioni.html" id="real" class="vnav" accesskey="r" tabindex="11">Realizzazioni </a></li>
+                    <li><a href="cgi-bin/checkLog.cgi" id="vend" class="nav" accesskey="v" tabindex="12">Vendita </a></li>
+                    <li><a href="contattaci.html" id="cont" class="nav" accesskey="c" tabindex="13">Contattaci</a></li>
                 </ul>
             </div>
         </div>
@@ -52,10 +56,10 @@
                 </div>
                 <div id="minipics">
                     <ul>
-                        <li><a href="img/real/vicenza_big.jpg"><img src="img/real/vicenza.jpg" alt="Scaloni realizzati su villetta" title="Scaloni realizzati su villetta"></a></li>
-                        <li><a href="img/real/padova_big.jpg"><img src="img/real/padova.jpg" alt="Pinate fianco scale esterne" title="Piante fianco scale esterne"></a></li>
-                        <li><a href="img/real/venezia_big.jpg"><img src="img/real/venezia.jpg" alt="Realizzazione pubblica giardino francese" title="Realizzazione pubblica giardino francese"></a></li>
-                        <li><a href="img/real/treviso_big.jpg"><img src="img/real/treviso.jpg" alt="Fontanella in sasso" title="Fontanella in sasso"></a></li>
+                        <li><a href="img/real/vicenza_big.jpg" tabindex="100"><img src="img/real/vicenza.jpg" alt="Scaloni realizzati su villetta" title="Scaloni realizzati su villetta"></a></li>
+                        <li><a href="img/real/padova_big.jpg" tabindex="101"><img src="img/real/padova.jpg" alt="Pinate fianco scale esterne" title="Piante fianco scale esterne"></a></li>
+                        <li><a href="img/real/venezia_big.jpg" tabindex="102"><img src="img/real/venezia.jpg" alt="Realizzazione pubblica giardino francese" title="Realizzazione pubblica giardino francese"></a></li>
+                        <li><a href="img/real/treviso_big.jpg" tabindex="103"><img src="img/real/treviso.jpg" alt="Fontanella in sasso" title="Fontanella in sasso"></a></li>
                     </ul>
                 </div>
                 
@@ -67,11 +71,13 @@
             <div class="footer-left">
                 <h3><span id="logo_mini">Ggarden</span></h3>
                 <p class="footer-menu">
-                    <a href="home.html">Home</a>
+                    <a href="home.html" reflang="it" xml:lang="en" accesskey="h" tabindex="1000">Home</a>
                     
-                    <a href="cgi-bin/checkLog.cgi">Vendita</a>
+                    <a href="realizzazioni.html" hreflang="it" acceskey="r" tabindex="1001">Realizzazioni </a>
+
+                    <a href="cgi-bin/checkLog.cgi" reflang="it" acceskey="v" tabindex="1002">Vendita</a>
                     
-                    <a href="contattaci.html">Contattaci</a>
+                    <a href="contattaci.html" reflang="it" acceskey="c" tabindex="1003">Contattaci</a>
                 </p>
  
                 <p class="footer-nome-azienda">Ggarden &copy; 2016</p>
@@ -90,12 +96,12 @@
  
                 <div>
                     <i class="fa fa-mail"></i>
-                    <p><a href="mailto:support@company.com">service@ggarden.com</a></p>
+                    <p><a href="ggardengroup@gmail.com" tabindex="1004">ggardengroup@gmail.com</a></p>
                 </div>
             </div>
  
             <div class="footer-right">
-                <p class="footer-company-info">
+                <p class="footer-company-info" title="motto">
                     <span id="testo-footer">Gg Garden a servizio</span>
                     <span id="testo-footer">L'erba del tuo vicino è sempre più verde. Sii come il tuo vicino,
                         chiama G Garden Group</span>
