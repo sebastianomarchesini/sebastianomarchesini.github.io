@@ -11,7 +11,7 @@
 \BOOKMARK [2][-]{subsection.5.1}{Progettazione layout}{section.5}% 11
 \BOOKMARK [2][-]{subsection.5.2}{Sviluppo layout}{section.5}% 12
 \BOOKMARK [2][-]{subsection.5.3}{Layout per dispositivi mobili}{section.5}% 13
-\BOOKMARK [1][-]{subsection.5.4}{Architettura}{}% 14
+\BOOKMARK [2][-]{subsection.5.4}{Layout di stampa}{section.5}% 14
 \BOOKMARK [1][-]{section.6}{Struttura}{}% 15
 \BOOKMARK [1][-]{section.7}{Presentazione}{}% 16
 \BOOKMARK [1][-]{section.8}{Comportamento}{}% 17
@@ -23,7 +23,7 @@
 \BOOKMARK [2][-]{subsection.10.2}{XML}{section.10}% 23
 \BOOKMARK [2][-]{subsection.10.3}{XML Schema}{section.10}% 24
 \BOOKMARK [2][-]{subsection.10.4}{XSLT}{section.10}% 25
-\BOOKMARK [1][-]{subsection.10.5}{Gestione Dati}{}% 26
+\BOOKMARK [2][-]{subsection.10.5}{DTD}{section.10}% 26
 \BOOKMARK [1][-]{section.11}{PERL}{}% 27
 \BOOKMARK [2][-]{subsection.11.1}{Introduzione}{section.11}% 28
 \BOOKMARK [2][-]{subsection.11.2}{Descrizione moduli}{section.11}% 29
@@ -31,7 +31,7 @@
 \BOOKMARK [3][-]{subsubsection.11.2.2}{Pagine visibili agli admin}{subsection.11.2}% 31
 \BOOKMARK [3][-]{subsubsection.11.2.3}{Moduli di supporto}{subsection.11.2}% 32
 \BOOKMARK [3][-]{subsubsection.11.2.4}{Controlli e sicurezza}{subsection.11.2}% 33
-\BOOKMARK [1][-]{subsubsection.11.2.5}{PERL}{}% 34
+\BOOKMARK [3][-]{subsubsection.11.2.5}{Gestione delle sessioni}{subsection.11.2}% 34
 \BOOKMARK [1][-]{section.12}{Verifica e Test}{}% 35
 \BOOKMARK [2][-]{subsection.12.1}{Validazione}{section.12}% 36
 \BOOKMARK [2][-]{subsection.12.2}{Test}{section.12}% 37

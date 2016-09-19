@@ -1,42 +1,42 @@
-\contentsline {section}{\numberline {1}Introduzione}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Riferimenti}{3}{subsection.1.1}
-\contentsline {section}{\numberline {2}Descrizione Generale}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}Il sito}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Caratteristiche degli utenti}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Vincoli generali}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Requisiti}{4}{subsection.2.4}
-\contentsline {section}{\numberline {3}Suddivisione dei lavori}{5}{section.3}
-\contentsline {section}{\numberline {4}Linguaggi Utilizzati}{6}{section.4}
-\contentsline {section}{\numberline {5}Architettura}{7}{section.5}
-\contentsline {subsection}{\numberline {5.1}Progettazione layout}{7}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Sviluppo layout}{7}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Layout per dispositivi mobili}{7}{subsection.5.3}
-\contentsline {section}{\numberline {5}Architettura}{7}{subsection.5.4}
-\contentsline {section}{\numberline {6}Struttura}{8}{section.6}
-\contentsline {section}{\numberline {7}Presentazione}{9}{section.7}
-\contentsline {section}{\numberline {8}Comportamento}{10}{section.8}
-\contentsline {section}{\numberline {9}Accessibilit\`a}{11}{section.9}
-\contentsline {subsection}{\numberline {9.1}Implementazione}{11}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Combinazione dei colori}{12}{subsection.9.2}
-\contentsline {section}{\numberline {10}Gestione Dati}{13}{section.10}
-\contentsline {subsection}{\numberline {10.1}Introduzione}{13}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}XML}{13}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}XML Schema}{13}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}XSLT}{13}{subsection.10.4}
-\contentsline {section}{\numberline {10}Gestione Dati}{13}{subsection.10.5}
-\contentsline {section}{\numberline {11}PERL}{14}{section.11}
-\contentsline {subsection}{\numberline {11.1}Introduzione}{14}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Descrizione moduli}{14}{subsection.11.2}
-\contentsline {subsubsection}{\numberline {11.2.1}Pagine visibili agli utenti}{14}{subsubsection.11.2.1}
-\contentsline {subsubsection}{\numberline {11.2.2}Pagine visibili agli admin}{14}{subsubsection.11.2.2}
-\contentsline {subsubsection}{\numberline {11.2.3}Moduli di supporto}{14}{subsubsection.11.2.3}
-\contentsline {subsubsection}{\numberline {11.2.4}Controlli e sicurezza}{14}{subsubsection.11.2.4}
-\contentsline {section}{\numberline {11}PERL}{14}{subsubsection.11.2.5}
-\contentsline {section}{\numberline {12}Verifica e Test}{15}{section.12}
-\contentsline {subsection}{\numberline {12.1}Validazione}{15}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Test}{15}{subsection.12.2}
-\contentsline {subsection}{\numberline {12.3}Ambiente di lavoro}{15}{subsection.12.3}
-\contentsline {subsection}{\numberline {12.4}Test interazione utenti}{15}{subsection.12.4}
-\contentsline {subsection}{\numberline {12.5}Dispositivi utilizzati}{15}{subsection.12.5}
-\contentsline {subsection}{\numberline {12.6}Verifica del codice prodotto}{15}{subsection.12.6}
-\contentsline {subsection}{\numberline {12.7}Conclusioni}{15}{subsection.12.7}
+\contentsline {section}{\numberline {1}Introduzione}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Riferimenti}{4}{subsection.1.1}
+\contentsline {section}{\numberline {2}Descrizione Generale}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Il sito}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Caratteristiche degli utenti}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Vincoli generali}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Requisiti}{5}{subsection.2.4}
+\contentsline {section}{\numberline {3}Suddivisione dei lavori}{6}{section.3}
+\contentsline {section}{\numberline {4}Linguaggi Utilizzati}{7}{section.4}
+\contentsline {section}{\numberline {5}Architettura}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}Progettazione layout}{8}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Sviluppo layout}{8}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Layout per dispositivi mobili}{8}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Layout di stampa}{8}{subsection.5.4}
+\contentsline {section}{\numberline {6}Struttura}{9}{section.6}
+\contentsline {section}{\numberline {7}Presentazione}{10}{section.7}
+\contentsline {section}{\numberline {8}Comportamento}{11}{section.8}
+\contentsline {section}{\numberline {9}Accessibilit\IeC {\`a}}{12}{section.9}
+\contentsline {subsection}{\numberline {9.1}Implementazione}{12}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Combinazione dei colori}{13}{subsection.9.2}
+\contentsline {section}{\numberline {10}Gestione Dati}{14}{section.10}
+\contentsline {subsection}{\numberline {10.1}Introduzione}{14}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}XML}{14}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}XML Schema}{14}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}XSLT}{14}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}DTD}{14}{subsection.10.5}
+\contentsline {section}{\numberline {11}PERL}{15}{section.11}
+\contentsline {subsection}{\numberline {11.1}Introduzione}{15}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Descrizione moduli}{15}{subsection.11.2}
+\contentsline {subsubsection}{\numberline {11.2.1}Pagine visibili agli utenti}{15}{subsubsection.11.2.1}
+\contentsline {subsubsection}{\numberline {11.2.2}Pagine visibili agli admin}{15}{subsubsection.11.2.2}
+\contentsline {subsubsection}{\numberline {11.2.3}Moduli di supporto}{15}{subsubsection.11.2.3}
+\contentsline {subsubsection}{\numberline {11.2.4}Controlli e sicurezza}{15}{subsubsection.11.2.4}
+\contentsline {subsubsection}{\numberline {11.2.5}Gestione delle sessioni}{15}{subsubsection.11.2.5}
+\contentsline {section}{\numberline {12}Verifica e Test}{16}{section.12}
+\contentsline {subsection}{\numberline {12.1}Validazione}{16}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Test}{16}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}Ambiente di lavoro}{16}{subsection.12.3}
+\contentsline {subsection}{\numberline {12.4}Test interazione utenti}{16}{subsection.12.4}
+\contentsline {subsection}{\numberline {12.5}Dispositivi utilizzati}{16}{subsection.12.5}
+\contentsline {subsection}{\numberline {12.6}Verifica del codice prodotto}{16}{subsection.12.6}
+\contentsline {subsection}{\numberline {12.7}Conclusioni}{16}{subsection.12.7}
