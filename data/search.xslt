@@ -1,82 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
-xmlns:g="http://www.ggarden.com"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-exclude-result-prefixes="g">
-<xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"
-doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
-doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"/>
-	<xsl:template match="/">
-	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
-	<head>
-		<title>Vendita - GGarden</title>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-		<meta name="title" content="GGarden" />
-		<meta name="description" content="Azienda specializzata nella vendita di piante e fiori e nel noleggio e vendita di attrezzi e macchine da giardinaggio" />
-		<meta name="keywords" content="piante, fiori, giardinaggio, attrezzi" />
-		<meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini, Jacopo Guizzardi" />
-		<meta name="language" content="italian it" />
-  		<link rel="stylesheet" href="../public_html/CSS/vendita.css" type="text/css" media="screen" />
-	</head>
-	<body>
-	<div id="header">
-		<span id="logo"><h1>GGarden</h1></span>
-	</div>
-	<div id="barra">
-		<form action="" method="get">
-			<fieldset id="formricerca">
-				<input type="search" name="ricerca" id="ricerca" placeholder="Cerca un prodotto o un servizio" accesskey="c" tabindex="1" />
-				<button type="submit" name="conferma" id="conferma" accesskey="e" tabindex="2">C<span class="accesskey">e</span>rca</button>
-			</fieldset>
-		</form>
-		<form action="" method="get">
-			<fieldset id="formadmin">
-				<button type="submit" name="log" id="log" accesskey="a" tabindex="3"><span class="accesskey">A</span>ccedi come amministratore</button>
-			</fieldset>
-		</form>
-		</div>
+    xmlns:g="http://www.ggarden.com"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    exclude-result-prefixes="g">
+    <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"
+    doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+    doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"/>
+    <xsl:template match="/">
+        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+            <head>
+                <title>Esito ricerca - GGarden</title>
+                <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+                <meta name="title" content="GGarden" />
+                <meta name="description" content="Azienda specializzata nella vendita di piante e fiori e nel noleggio e vendita di attrezzi e macchine da giardinaggio" />
+                <meta name="keywords" content="piante, fiori, giardinaggio, attrezzi" />
+                <meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini, Jacopo Guizzardi" />
+                <meta name="language" content="italian it" />
+                <link rel="stylesheet" href="../CSS/vendita.css" type="text/css" media="screen" />
+                <link rel="stylesheet" href="../CSS/print.css" type="text/css" media="print" />
+            </head>
+            <body>
+                <div id="header">
+                    <h1><span id="logo" xml:lang="en" class="nascosto">GGarden</span></h1>
+                    <div id="contenitore-login">
+                        <input id="button_admin" type="button" onclick="nascondi();" value="Accedi come amministratore"/>
+                        <div id="login">
+                            <form action="../cgi-bin/log.cgi" method="get">
+                                <fieldset>
+                                    <legend>Login amministratore</legend>
+                                    <div class="modal hide fade in">
+                                        <div class="control-group">
+                                            <label for="inputUsername">Username:</label>
+                                            <input type="text" name="inputUsername" id="inputUsername" value="Username" tabindex="-1"/>
+                                        </div>
+                                        <div class="control-group">
+                                            <label for="inputPassword">Password :</label>
+                                            <input type="password" name="inputPassword" id="inputPassword" value="Password" tabindex="-2" />
+                                        </div>
+                                        <input type="hidden" name="update" value="no"/>
+                                        <button type="submit" id="accedi">Accedi</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="breadcrumbs">
+                    <form class="headersearch" action="search.cgi" method="get">
+                        <fieldset>
+                            <span id="rifnav" >Ti trovi in: <a href="../home.html" xml:lang="en">Home</a> / <b>Esito ricerca</b></span>
+                            <label for="ricerca" class="nascosto">Cerca un prodotto o un servizio</label>
+                            <input type="text" name="ricerca" id="ricerca" class="ricerca" accesskey="s" tabindex="1" />
+                            <input type="submit" name="conferma" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
+                        </fieldset>
+                    </form>
+                </div>
+                
+                <div id="contenitore-menu">
+                    <ul class="menu">
+                        <li><a href="../home.html" id="home" class="nav" xml:lang="en">Home </a></li>
+                        <li><a href="../realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
+                        <li><a href="checkLog.cgi" id="vend" class="vnav">Vendita </a></li>
+                        <li><a href="../contattaci.html" id="cont" class="nav">Contattaci</a></li>
+                    </ul>
+                </div>
 
-		<div id="esito">
+		<div id="content">
 			<xsl:call-template name="esito"/>
 		</div>
-		<footer class="footer">
-			<div class="footer-left">
-				<h3>Company<span>logo</span></h3>
-
-				<p class="footer-nome-azienda">Nome Azienda &amp;copy; 2016</p>
-			</div>
-
-			<div class="footer-center">
-
-				<div>
-					<i class="fa fa-map-indirizzo"></i>
-					<p><span>Via Trieste , 63</span> Padova, Italy</p>
-				</div>
-
-				<div>
-					<i class="fa fa-telefono"></i>
-					<p>+1 555 123456</p>
-				</div>
-
-				<div>
-					<i class="fa fa-mail"></i>
-					<p><a href="mailto:support@company.com">service@ggarden.com</a></p>
-				</div>
-			</div>
-
-			<div class="footer-right">
-
-				<p class="footer-company-info">
-					<span>Gg Garden a servizio</span>
-					Non so che scrivere in questo momento ma seconod me ci sta una piccola nostra firma come una frase di battaglia
-				</p>
-
-			</div>
-
-		</footer>
-	</body>
-	</html>
-	</xsl:template>
+				
+		<div id="footer" class="footer">
+                    <div class="footer-left">
+                        <h3><span id="logo_mini">Ggarden</span></h3>
+                        <p class="footer-menu">
+                            <a href="../home.html">Home</a>
+                            
+                            <a href="checkLog.cgi">Vendita</a>
+                            
+                            <a href="../contattaci.html">Contattaci</a>
+                        </p>
+                        
+                        <p class="footer-nome-azienda">Ggarden &#169; 2016</p>
+                    </div>
+                    
+                    <div class="footer-center">
+                        <div>
+                            <i class="fa fa-map-indirizzo"></i>
+                            <p id="testo-footer"><span>Via Trieste , 63</span> Padova, Italy</p>
+                        </div>
+                        
+                        <div>
+                            <i class="fa fa-telefono"></i>
+                            <p id="testo-footer">+1 555 123456</p>
+                        </div>
+                        
+                        <div>
+                            <i class="fa fa-mail"></i>
+                            <p><a href="mailto:support@company.com">service@ggarden.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-right">
+                        <p class="footer-company-info">
+                            <span id="testo-footer">Gg Garden a servizio</span>
+                            <span id="testo-footer">L'erba del tuo vicino è sempre più verde. Sii come il tuo vicino,
+                                chiama G Garden Group</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <script type="text/javascript" src="../SCRIPT/script.js"></script>
+                
+            </body>
+        </html>
+    </xsl:template>
 
 	<xsl:template name="esito">
 		<p class="maintitle"><h2>ESITO DELLA RICERCA</h2></p>
@@ -92,7 +129,7 @@ doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"/>
 					<xsl:variable name="id" select="@id"/>
 					<xsl:variable name="formato" select="@formato"/>
 					<xsl:if test="$formato!='no_image'">
-						<p class="img"><img src="../data/img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
+						<p class="img"><img src="../img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
 					</xsl:if>
 					<h4>DESCRIZIONE GENERALE</h4>
 					<p class="desc"><xsl:value-of select="g:descrizione"/></p>
@@ -139,7 +176,7 @@ doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"/>
 					<xsl:variable name="id" select="@id"/>
 					<xsl:variable name="formato" select="@formato"/>
 					<xsl:if test="$formato!='no_image'">
-						<p class="img"><img src="../data/img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
+						<p class="img"><img src="../img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
 					</xsl:if>
 					<h4>DESCRIZIONE</h4>
 					<p class="desc"><xsl:value-of select="g:descrizione"/></p>

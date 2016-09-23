@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div id="breadcrumbs">
-                    <form class="headersearch" action="../cgi-bin/search.cgi" method="get">
+                    <form class="headersearch" action="search.cgi" method="get">
                         <fieldset>
                             <span id="rifnav" >Ti trovi in: <a href="../home.html" xml:lang="en">Home</a> / <b>Vendita</b></span>
                             <label for="ricerca" class="nascosto">Cerca un prodotto o un servizio</label>
@@ -118,7 +118,7 @@
                     </div>
                 </div>
                 
-                <script type="text/javascript" src="public_html/SCRIPT/script.js"></script>
+                <script type="text/javascript" src="../SCRIPT/script.js"></script>
                 
             </body>
         </html>
