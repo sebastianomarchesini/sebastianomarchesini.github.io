@@ -48,7 +48,7 @@
                 <div id="breadcrumbs">
                     <form class="headersearch" action="../cgi-bin/search.cgi" method="get">
                         <fieldset>
-                            <span id="rifnav" >Ti trovi in: <a href="home.html" xml:lang="en">Home</a> / <b>Vendita</b></span>
+                            <span id="rifnav" >Ti trovi in: <a href="../home.html" xml:lang="en">Home</a> / <b>Vendita</b></span>
                             <label for="ricerca" class="nascosto">Cerca un prodotto o un servizio</label>
                             <input type="text" name="ricerca" id="ricerca" class="ricerca" accesskey="s" tabindex="1" />
                             <input type="submit" name="conferma" id="conferma" class="ricerca" value="Cerca" accesskey="c" tabindex="2"/>
@@ -58,10 +58,10 @@
                 
                 <div id="contenitore-menu">
                     <ul class="menu">
-                        <li><a href="../public_html/home.html" id="home" class="nav" xml:lang="en">Home </a></li>
-                        <li><a href="../public_html/realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
-                        <li><a href="database.xml" id="vend" class="vnav">Vendita </a></li>
-                        <li><a href="../public_html/contattaci.html" id="cont" class="nav">Contattaci</a></li>
+                        <li><a href="../home.html" id="home" class="nav" xml:lang="en">Home </a></li>
+                        <li><a href="../realizzazioni.html" id="real" class="nav">Realizzazioni </a></li>
+                        <li><a href="checkLog.cgi" id="vend" class="vnav">Vendita </a></li>
+                        <li><a href="../contattaci.html" id="cont" class="nav">Contattaci</a></li>
                     </ul>
                 </div>
                 
@@ -82,11 +82,11 @@
                     <div class="footer-left">
                         <h3><span id="logo_mini">Ggarden</span></h3>
                         <p class="footer-menu">
-                            <a href="home.html">Home</a>
+                            <a href="../home.html">Home</a>
                             
-                            <a href="../data/database.xml">Vendita</a>
+                            <a href="checkLog.cgi">Vendita</a>
                             
-                            <a href="contattaci.html">Contattaci</a>
+                            <a href="../contattaci.html">Contattaci</a>
                         </p>
                         
                         <p class="footer-nome-azienda">Ggarden &#169; 2016</p>
@@ -139,7 +139,7 @@
                     <xsl:variable name="id" select="@id"/>
                     <xsl:variable name="formato" select="@formato"/>
                     <xsl:if test="$formato!='no_image'">
-                        <p class="img"><img src="public_html/img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
+                        <p class="img"><img src="../img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
                     </xsl:if>
                     <h4>DESCRIZIONE GENERALE</h4>
                     <p class="desc"><xsl:value-of select="g:descrizione"/></p>
@@ -189,7 +189,7 @@
                     <xsl:variable name="id" select="@id"/>
                     <xsl:variable name="formato" select="@formato"/>
                     <xsl:if test="$formato!='no_image'">
-                        <p class="img"><img src="public_html/img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
+                        <p class="img"><img src="../img database/{$id}.{$formato}" alt="Foto con {$nome}"/></p>
                     </xsl:if>
                     <h4>DESCRIZIONE</h4>
                     <p class="desc"><xsl:value-of select="g:descrizione"/></p>

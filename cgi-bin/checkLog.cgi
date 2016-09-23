@@ -5,7 +5,6 @@ use XML::LibXML;
 use CGI::Session;
 use XML::LibXSLT;
 use CGI::Carp qw(fatalsToBrowser);
-use Mail::Sendmail;
 
 sub log {
 	my $xmlPage = "../data/database.xslt";
