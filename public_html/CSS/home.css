@@ -91,12 +91,6 @@ h1{
     border: solid 1px #a30025;
     background: #b40029;
     
-    background: -webkit-gradient(linear, left top, left bottom, from(#d5000d), to(#8c001f));
-    background: -webkit-linear-gradient(top,  #d5000d,  #8c001f);
-    background: -moz-linear-gradient(top,  #d5000d,  #8c001f);
-    background: -ms-linear-gradient(top,  #d5000d,  #8c001f);
-    background: -o-linear-gradient(top,  #d5000d,  #8c001f);
-    
 }
 
 .ricerca{
@@ -180,17 +174,10 @@ li a:hover {
     padding: 20px;
     
     border-radius: 0px 0px 20px 20px;
-    -moz-border-radius: 0px 0px 20px 20px; /* firefox */
-    -webkit-border-radius: 0px 0px 20px 20px; /* safari, chrome */
     
     background: #b40029;
     
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff3d48), to(#8c001f));
-    background: -webkit-linear-gradient(top,  #ff3d48,  #8c001f);
-    background: -moz-linear-gradient(top,  #ff3d48,  #8c001f);
-    background: -ms-linear-gradient(top,  #ff3d48,  #8c001f);
-    background: -o-linear-gradient(top,  #ff3d48,  #8c001f);
-    
+        
 }
 
 .info{
@@ -308,14 +295,14 @@ form label {
     display: block;
     margin: 0 0 0.5em 0;
     color: #4f6fad;
-    font-size: 1em;
+    font-size: 0.05em;
 }
 form input {
     margin: 0 0 0.5em 0;
     border: 1px solid #ccc;
     padding: 6px 10px;
     color: #555;
-    font-size: 1em;
+    font-size: 0.05em;
 }
 form textarea {
     border: 1px solid #ccc;
@@ -344,7 +331,7 @@ form small {
 }
 
 .errorSuggestion{
-    font-size: 17px;
+    font-size: 1em;
     font-style: oblique;
     color: #8c001f;
     width: 50%;
@@ -406,7 +393,7 @@ form small {
 
 .footer .footer-nome-azienda{
     color:  #333333;
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: normal;
     margin: 0;
 }
@@ -417,7 +404,7 @@ form small {
 
 .footer .footer-center i{
     color: #e6e6e6;
-    font-size: 25px;
+    font-size: 2em;
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -428,7 +415,7 @@ form small {
 }
 
 .footer .footer-center i.fa-mail{
-    font-size: 17px;
+    font-size: 1em;
     line-height: 38px;
 }
 
@@ -442,7 +429,7 @@ form small {
 .footer .footer-center p span{
     display:block;
     font-weight: normal;
-    font-size:14px;
+    font-size:0.9em;
     line-height:2;
 }
 
@@ -457,7 +444,7 @@ form small {
 
 .footer .footer-nome-azienda{
     line-height: 20px;
-    font-size: 13px;
+    font-size: 0.85em;
     font-weight: normal;
     margin: 0;
 }
@@ -465,7 +452,7 @@ form small {
 .footer .footer-company-info span{
     display: block;
     color:  #ffffff;
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: bold;
     margin-bottom: 20px;
 }
