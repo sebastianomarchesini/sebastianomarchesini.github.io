@@ -126,6 +126,7 @@ h1{
 #ricerca{
     width:20%;
     height:24px;
+    font-size: 1em; 
 }
 
 #conferma{
@@ -302,6 +303,7 @@ li a:hover {
 .body_contattaci{
     padding-left:100px;
     padding-right: 100px;
+    margin-top: 50px;
     border-color : #333333;
 }
 
@@ -343,14 +345,14 @@ form label {
     display: block;
     margin: 0 0 0.5em 0;
     color: #4f6fad;
-    font-size: 0.05em;
+    font-size: 0.8em;
 }
 form input {
     margin: 0 0 0.5em 0;
     border: 1px solid #ccc;
     padding: 6px 10px;
     color: #555;
-    font-size: 0.05em;
+    font-size: 1em;
 }
 form textarea {
     border: 1px solid #ccc;
@@ -458,7 +460,6 @@ form small {
     border-radius: 50%;
     text-align: center;
     line-height: 42px;
-    margin: 10px 15px;
     vertical-align: middle;
 }
 

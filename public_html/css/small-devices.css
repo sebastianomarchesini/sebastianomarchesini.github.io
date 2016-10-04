@@ -47,7 +47,8 @@ table {
 /* CSS RESET FINE */
 
 
-html, body{padding:0px;
+html, body{
+	padding:0px;
     margin:0px;
     font-family: Verdana, Helevetica, sans-serif;
     color: white;
@@ -130,7 +131,7 @@ h1{
     clear: left;
     width:69%;
     height:24px;
-    margin: 20px 5px 20px 5px;
+    margin: 18px 3px 18px 2px;
 }
 
 #conferma{
@@ -139,12 +140,11 @@ h1{
     text-align: center;
     font: bold 12px Arial, Helvetica, sans-serif;
     color: #fff;
-    padding: 10px 20px;
+    padding: 8px 18px;
     border: solid 1px #a30025;
     background: #b40029;
     width: 19%;
-    margin: 20px 5px 20px 5px;
-
+    margin: 18px 3px 18px 2px;
 }
 
 .ricerca{
@@ -166,6 +166,8 @@ h1{
 .menu{
     font-style: oblique;
     list-style-type: none;
+    border-left:1%;
+    border-right: 1%;
     margin: 0;
     padding: 0;
     width: 99%;
@@ -181,7 +183,7 @@ li a {
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 1em 0.45em;
+    padding: 1em 0.30em;
     text-decoration: none;
 }
 
@@ -301,14 +303,16 @@ li a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
 
 #content div #minipics li{
     position: center;
-    width: 21%;
-    margin:0 0.2em 0.2em 0.2em;
-    border:0.05em solid #ccc;
-    padding: 0.06em;
+    width: 22%;
+    margin:0 0.05em 0 0.05em;
+    border:0.04em solid #ccc;
+    padding: 0.03em;
+
 }
 
 
@@ -357,14 +361,14 @@ form label {
     display: block;
     margin: 0 0 0.5em 0;
     color: #4f6fad;
-    font-size: 0.5em;
+    font-size: 0.8em;
 }
 form input {
     margin: 0 0 0.5em 0;
     border: 1px solid #ccc;
     padding: 6px 10px;
     color: #555;
-    font-size: 0.3em;
+    font-size: 1em;
 }
 form textarea {
     resize: none;
@@ -376,7 +380,7 @@ form textarea {
 form small {
     color: #4f6fad;
     margin: 0 0 0 0.5em;
-    font-size: 0.5em;
+    font-size: 0.7em;
 }
 
 .Gaddress {
@@ -384,7 +388,8 @@ form small {
 }
 
 .info {
-    font-size: 0.5em;
+    font-size: 1em;
+    margin: 0.5em;
     color: #4f6fad;
 }
 
