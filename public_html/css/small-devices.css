@@ -52,7 +52,6 @@ html, body{padding:0px;
     font-family: Verdana, Helevetica, sans-serif;
     color: white;
     background-color:#c9fdc9;
-    text-size-adjust: none;
 }
 
 
@@ -120,7 +119,6 @@ h1{
 #rifnav {
     font-style: oblique;
     width: 99%;
-    float: center;
     color: black;
     margin-top: 20px;
     padding: 20px 5px 20px 5px;
