@@ -9,8 +9,10 @@
         <meta name="keywords" content="GGarden, telefono, email, mail, indirizzo" />
         <meta name="author" content="Andrea Grendene, Pietro Gabelli, Sebastiano Marchesini" />
         <meta name="language" content="italian it" />
-        <link rel="stylesheet" href="CSS/home.css" type="text/css" media="screen and (min-width: 650px)" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="css/home.css" type="text/css" media="screen and (min-width: 650px)" />
         <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+        <link rel="stylesheet" type="text/css" href="css/small-devices.css" media="screen and (max-width: 650px)" />
     </head>
     <body onload="caricamento(); replaceMap();">
         <div id="header">
@@ -29,7 +31,7 @@
             
             <div id="contenitore-menu">
                 <div class="nascosto">
-                    <a href="content" title="salta al contenuto principale">salta direttamente al contattaci</a>
+                    <a href="#content" title="salta al contenuto principale">salta direttamente al contattaci</a>
                 </div>
 
                 <ul class="menu">
@@ -84,8 +86,8 @@
                 <div class="Gaddress">
                     <div class="info">
                         <p>Oppure puoi trovarci nella nostra sede: in via Trieste, 63 - 35121 Padova PD.</p>
-                        <p>Siamo aperti dal lunedì al sabato, dalle ore 8:30 alle 13:30 e dalle 15:00 alle 19:30.</p>
-                        <p>Il nostro numero di telefono è: +39 049 827 1200.</p>
+                        <p>Siamo aperti dal luned&igrave; al sabato, dalle ore 8:30 alle 13:30 e dalle 15:00 alle 19:30.</p>
+                        <p>Il nostro numero di telefono &egrave;: <a href="tel:+1 555 123456" tabindex="106">+1 555 123456</a>.</p>
                     </div>
                 </div>
             </div>
@@ -100,13 +102,13 @@
             <div class="footer-left">
                 <h3><span id="logo_mini">Ggarden</span></h3>
                 <p class="footer-menu">
-                    <a href="home.html" reflang="it" xml:lang="en" accesskey="h" tabindex="1000">Home</a>
-                    
-                    <a href="realizzazioni.html" hreflang="it" acceskey="r" tabindex="1001">Realizzazioni </a>
-
-                    <a href="cgi-bin/checkLog.cgi" reflang="it" acceskey="v" tabindex="1002">Vendita</a>
-                    
-                    <a href="contattaci.html" reflang="it" acceskey="c" tabindex="1003">Contattaci</a>
+                <a href="home.html" hreflang="it" xml:lang="en" accesskey="h" tabindex="1000">Home</a>
+                
+                <a href="realizzazioni.html" hreflang="it" accesskey="r" tabindex="1001">Realizzazioni </a>
+                
+                <a href="cgi-bin/checkLog.cgi" hreflang="it" accesskey="v" tabindex="1002">Vendita</a>
+                
+                <a href="contattaci.html" hreflang="it" accesskey="c" tabindex="1003">Contattaci</a>
                 </p>
                 
                 <p class="footer-nome-azienda">Ggarden &copy; 2016</p>
@@ -114,31 +116,26 @@
             
             <div class="footer-center">
                 <div>
-                    <i class="fa fa-map-indirizzo"></i>
-                    <p id="testo-footer"><span>Via Trieste , 63</span> Padova, Italy</p>
+                    <address class="testo-footer">Via Trieste 63. Padova, Italy</address>
                 </div>
-                
+ 
                 <div>
-                    <i class="fa fa-telefono"></i>
-                    <p id="testo-footer">+1 555 123456</p>
+                    <p class="testo-footer"><a href="tel:+1 555 123456">+1 555 123456</a></p>
                 </div>
-                
+ 
                 <div>
-                    <i class="fa fa-mail"></i>
-                    <p><a href="ggardengroup@gmail.com" tabindex="1004">ggardengroup@gmail.com</a></p>
+                    <p xml:lang="en">E-Mail<a href="mailto:ggardengroup@gmail.com" accesskey="e" tabindex="104">ggardengroup@gmail.com</a></p>
                 </div>
             </div>
             
             <div class="footer-right">
                 <p class="footer-company-info" title="motto">
-                <span id="testo-footer">Gg Garden a servizio</span>
-                <span id="testo-footer">L'erba del tuo vicino è sempre più verde. Sii come il tuo vicino,
+                <span class="testo-footer">Gg Garden a servizio</span>
+                <span class="testo-footer">L'erba del tuo vicino &egrave; sempre pi&ugrave; verde. Sii come il tuo vicino,
                     chiama G Garden Group</span>
                 </p>
             </div>
         </div>
-
-        
         <script type="text/javascript" src="SCRIPT/script.js"></script>
     </body>
 </html>

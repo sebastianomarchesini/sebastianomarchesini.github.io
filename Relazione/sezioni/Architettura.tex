@@ -10,16 +10,30 @@
 		Si è deciso di utilizzare un layout di tipo adattativo, specificando 
 	}
 	\subsection{Sviluppo layout}{
+		Nell'immagine che segue viene mostrata la struttura data ai vari blocchi \textit{div} che compongono il sito, in cui sono contenute le informazioni divise per area tematica le informazioni.
+	\\
+	Il layout si adatta in base alla larghezza dello schermo, senza però porre condizioni sull'altezza, con l'obiettivo di far evolvere in altezza il sito.
 		\begin{figure}[H]
 			\includegraphics{\docsImg Schemasito.png}
 			\caption{Schema del sito}
 			\label{Schema del sito}
 		\end{figure}
+		\\
+		Viene applicato un foglio di stile ai browser standard per computer desktop e portatili e fino a che la larghezza dello schermo rimane maggiore di 650 px: al di sotto si passa ad usare il CSS destinato al mobile.
+		\\
+		Analizzando il sito spostandosi dall'alto verso il basso, segue che:
+		\begin{itemize}
+			\item Il div \textbf{header} che informa l'utente su ciò che sta visitando; comprende:
+			\begin{itemize}
+				\item Titolo e logo;
+				\item Il div \textbf{breadcrumbs} che aiuta l'utente ad identificare la posizione in cui si trova rispetto alla gomepage del sito. Ciò rappresenta l'asse informativo 
+			\end{itemize}
+		\end{itemize}
 		}
 	\subsection{Layout per dispositivi mobili}{
-		
+		Il layout per dispositivi mobili è stato sviluppato in modo da favorire l'incolonnamento degli elementi, rimuovendo quanto possibili margini e padding, sfruttando al meglio l'area disponibile; sono state infine ridimensionate le immagini presenti.
 	}
 	\subsection{Layout di stampa}{
-		
+		Nel layout di stampa sono stati tolti gli elementi che non portavano informazioni significative; i contenuti sono stati privati dei colori; è stato rimosso il menù; nella pagina delle realizzazioni è stata messa in risalto l'immagine selezionata; nella pagina relativa alla vendite si è fatto in modo da non spezzare su più pagine le informazioni relative al singolo articolo all'interno del menù.
 	}
 }

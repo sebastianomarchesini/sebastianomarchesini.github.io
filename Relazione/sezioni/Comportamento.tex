@@ -1,2 +1,10 @@
 \section{Comportamento}{
+	Le funzioni offerte tramite javascript riguardano: 
+	\begin{itemize}
+		\item Il controllo lato client dei dati inseriti nella form della pagina "Contattaci", tramite l'uso d'espressioni regolari;
+		\item La sostituzione dell'immagine della mappa con l'iFrame della mappa di Google Maps;
+		\item La generazione di nuovi campi della form d'inserimento prodotti che inserisce un numero di campi sufficiente ad inserire più articoli con la stessa form; un altra funzione s'occupa di fare il controllo sugli stessi prima di procedere all'inserimento, in maniera analoga alla funzione nella pagina "Contattaci";
+		\item Nella pagina relativa alle vendite, una funzione s'occupa di nascondere la form d'accesso amministratore e la rende visibile alla pressione del pulsante "Accedi come amministratore".
+	\end{itemize}
+	Consci che javascript piò essere facilmente disabilitato dall'utente, abbiamo provveduto ad inserire controlli anche tramite PERL al fine di garantire la correttezza dei dati inseriti, utilizzando JS per fornire messaggi d'errore sull'inpute utente, nascondere elementi non necessari e garantire un degrado elegante nel caso sia stato disattivato.
 }

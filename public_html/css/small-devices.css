@@ -1,0 +1,541 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS RESET FINE */
+
+
+html, body{
+	padding:0px;
+    margin:0px;
+    font-family: Verdana, Helevetica, sans-serif;
+    color: white;
+    background-color:#c9fdc9;
+}
+
+
+#headheader{
+    padding: 0;
+    margin: 30px auto; /*per Firefox, Opera, Safari, etc...*/
+    
+}
+
+/*Elementi nascosti di lettura per lo screenR e non visibili*/
+.nascosto{
+    position:absolute;
+    left:0px;
+    top:-500px;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    
+    display: none;
+
+}
+
+
+/*Logo*/
+h1{
+    text-align:center;
+    float:left;
+    background-image:url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 99% auto;
+    width: 99%;
+    height: 100px;
+}
+
+#accedi{
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30%;
+}
+
+#contenitore-login label{
+    color: #0808c1;
+}
+
+#inputUsername{
+    width:90%;
+}
+
+#inputPassword{
+    width:90%;
+}
+
+
+
+
+/* BreadCrumbs Part*/
+#breadcrumbs{
+    background-color:#b0fcb0;
+    clear: both;
+    width: auto;
+}
+
+#rifnav {
+    font-style: oblique;
+    width: 99%;
+    color: black;
+    margin-top: 20px;
+    padding: 20px 5px 20px 5px;
+    clear: both;
+}
+
+#ricerca{
+    float: left;
+    clear: left;
+    width:69%;
+    height:24px;
+    margin: 18px 3px 18px 2px;
+}
+
+#conferma{
+    float: right;
+    outline: none;
+    text-align: center;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 8px 18px;
+    border: solid 1px #a30025;
+    background: #b40029;
+    width: 19%;
+    margin: 18px 3px 18px 2px;
+}
+
+.ricerca{
+    position:relative;
+}
+
+
+/*Menu*/
+#contenitore-menu {
+    width: 99%;
+    margin: 0 auto;
+}
+
+.vnav{
+    background-color: #ffcdcc;
+    font-weight: bold;
+}
+
+.menu{
+    font-style: oblique;
+    list-style-type: none;
+    border-left:1%;
+    border-right: 1%;
+    margin: 0;
+    padding: 0;
+    width: 99%;
+    overflow: hidden;
+    background-color: #c9fdc9;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 1em 0.30em;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    color: white;
+    background-color: #111;
+}
+
+/*Contenuto-Body-Centro*/
+
+#content{
+    background-color:#b0fcb0;
+    margin:0 auto;
+    padding: 1em;
+    width:70%;
+    color: black;
+    clear: both;
+}
+
+.informazioni{
+    display:block;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#immagine{
+    background-image:url("../img/prato.jpg");
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+    width:99%;
+    height:10em;
+}
+
+
+.titolo_contattaci{
+    color: #fff3f6;
+    padding: 20px;
+    
+    border-radius: 0px 0px 20px 20px;
+    
+    background: #b40029;
+    
+        
+}
+
+.info{
+    clear: both;
+    padding-bottom: 3em;
+}
+
+/* Realizzazioni */
+
+#gallery{
+    width: 100%;
+    height: 40em;
+}
+
+#content img{
+    display: block;
+    max-width: 99%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+#content div #header img{
+    float:left;
+    display: block;
+    max-width: 99%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+#content div #header h2{
+    float:left;
+    margin:24px 0 0 0;
+    font-size:100%;
+}
+
+#content div #zoom{
+    width:99%;
+    margin:0 0 5px 0;
+    padding: 5px;
+    border:1px solid #ccc;
+    height: 49%;
+}
+
+#content div #zoom h3{
+    margin:0;
+    font-size:100%;
+    color: #666;
+    text-align:center;
+}
+
+#content div #zoom img{
+    display:block;
+    margin: 0 auto;
+    max-width: 99%;
+    height: auto;
+
+}
+
+#content div #minipics{
+    margin-bottom: 5px;
+    float: left;
+    height:49%;
+}
+
+#content div #minipics ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#content div #minipics li{
+    position: center;
+    width: 22%;
+    margin:0 0.05em 0 0.05em;
+    border:0.04em solid #ccc;
+    padding: 0.03em;
+
+}
+
+
+/*Parte per la form di contattaci*/
+
+.body_contattaci{
+    padding-top : 20px;
+    border-color : #333333;
+}
+
+form {
+    max-width: 100%;
+    display: block;
+}
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+form ul li {
+    margin: 0 0 0.25em 0;
+    clear: both;
+    display: inline-block;
+    width: 100%;
+}
+form ul li:last-child {
+    margin: 0;
+}
+
+form ul li p.right {
+    float: right;
+}
+form ul li .divider {
+    margin: 2em 0 2em 0;
+    border: 0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: #4f6fad;
+    background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+form ul li .req {
+    color: #ee9cb4;
+}
+form label {
+    display: block;
+    margin: 0 0 0.5em 0;
+    color: #4f6fad;
+    font-size: 0.8em;
+}
+form input {
+    margin: 0 0 0.5em 0;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    color: #555;
+    font-size: 1em;
+}
+form textarea {
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 0.5em 0.8em;
+    width: 95%;
+    color: #555;
+}
+form small {
+    color: #4f6fad;
+    margin: 0 0 0 0.5em;
+    font-size: 0.7em;
+}
+
+.Gaddress {
+    width: 99%;
+}
+
+.info {
+    font-size: 1em;
+    margin: 0.5em;
+    color: #4f6fad;
+}
+
+#frameMappa {
+    width: 100%;
+    height: 20em;
+}
+
+.print {
+    position:absolute;
+    left:0px;
+    top:-500px;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    
+    display: none;
+    
+}
+
+.errorSuggestion{
+    font-size: 0.8em;
+    font-style: oblique;
+    color: #8c001f;
+    width: 50%;
+    float: right;
+}
+
+
+
+
+
+/* Footer */
+
+
+.footer{
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    text-align: center;
+    font: bold 1em sans-serif;
+    padding: 25px 20px;
+    margin-top: 20px;
+    width: 99%;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+}
+
+
+.footer .footer-left{
+    width: 99%;
+}
+
+
+.footer h3{
+    text-align:center;
+    background-image: url(../img/logo_mini.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0;
+    
+    width: 99%;
+    height: 5em;
+}
+
+.footer h3 span {
+    display:block;
+    height:0;
+    overflow:hidden;
+}
+
+.footer .footer-left .footer-menu a{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.footer .footer-nome-azienda{
+    color:  #333333;
+    font-size: 0.9em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-center{
+    width: 99%;
+}
+
+.footer .footer-center i{
+    color: #333333;
+    font-size: 2em;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-mail{
+    font-size: 1em;
+    line-height: 38px;
+}
+
+.footer .footer-center p{
+    display: inline-block;
+    color: #333333;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:0.9em;
+    line-height:2;
+}
+
+
+.footer .footer-right{
+    width: 99%;
+}
+
+.footer .footer-right{
+    color: black;
+}
+
+.footer .footer-nome-azienda{
+    line-height: 20px;
+    font-size: 0.85em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-company-info span{
+    display: block;
+    color:  #333333;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.testo-footer{
+    color: #333333;
+}
+
