@@ -18,25 +18,25 @@
 \contentsline {section}{\numberline {9}Accessibilit\IeC {\`a}}{14}{section.9}
 \contentsline {subsection}{\numberline {9.1}Implementazione}{14}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}Combinazione dei colori}{15}{subsection.9.2}
-\contentsline {section}{\numberline {10}Gestione Dati}{16}{section.10}
-\contentsline {subsection}{\numberline {10.1}Introduzione}{16}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}XML}{16}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}XML Schema}{16}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}XSLT}{16}{subsection.10.4}
-\contentsline {subsection}{\numberline {10.5}DTD}{16}{subsection.10.5}
-\contentsline {section}{\numberline {11}PERL}{17}{section.11}
-\contentsline {subsection}{\numberline {11.1}Introduzione}{17}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Descrizione moduli}{17}{subsection.11.2}
-\contentsline {subsubsection}{\numberline {11.2.1}Pagine visibili agli utenti}{17}{subsubsection.11.2.1}
-\contentsline {subsubsection}{\numberline {11.2.2}Pagine visibili agli admin}{17}{subsubsection.11.2.2}
-\contentsline {subsubsection}{\numberline {11.2.3}Moduli di supporto}{17}{subsubsection.11.2.3}
-\contentsline {subsubsection}{\numberline {11.2.4}Controlli e sicurezza}{17}{subsubsection.11.2.4}
-\contentsline {subsubsection}{\numberline {11.2.5}Gestione delle sessioni}{17}{subsubsection.11.2.5}
-\contentsline {section}{\numberline {12}Verifica e Test}{18}{section.12}
-\contentsline {subsection}{\numberline {12.1}Validazione}{18}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Test}{18}{subsection.12.2}
-\contentsline {subsection}{\numberline {12.3}Ambiente di lavoro}{18}{subsection.12.3}
-\contentsline {subsection}{\numberline {12.4}Test interazione utenti}{18}{subsection.12.4}
-\contentsline {subsection}{\numberline {12.5}Dispositivi utilizzati}{18}{subsection.12.5}
-\contentsline {subsection}{\numberline {12.6}Verifica del codice prodotto}{18}{subsection.12.6}
-\contentsline {subsection}{\numberline {12.7}Conclusioni}{18}{subsection.12.7}
+\contentsline {section}{\numberline {10}Gestione Dati}{17}{section.10}
+\contentsline {subsection}{\numberline {10.1}Introduzione}{17}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}XML}{17}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}XML Schema}{17}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}XSLT}{17}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}DTD}{17}{subsection.10.5}
+\contentsline {section}{\numberline {11}PERL}{18}{section.11}
+\contentsline {subsection}{\numberline {11.1}Introduzione}{18}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Descrizione moduli}{18}{subsection.11.2}
+\contentsline {subsubsection}{\numberline {11.2.1}Pagine visibili agli utenti}{18}{subsubsection.11.2.1}
+\contentsline {subsubsection}{\numberline {11.2.2}Pagine visibili agli admin}{18}{subsubsection.11.2.2}
+\contentsline {subsubsection}{\numberline {11.2.3}Moduli di supporto}{18}{subsubsection.11.2.3}
+\contentsline {subsubsection}{\numberline {11.2.4}Controlli e sicurezza}{18}{subsubsection.11.2.4}
+\contentsline {subsubsection}{\numberline {11.2.5}Gestione delle sessioni}{18}{subsubsection.11.2.5}
+\contentsline {section}{\numberline {12}Verifica e Test}{19}{section.12}
+\contentsline {subsection}{\numberline {12.1}Validazione}{19}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Test}{19}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}Ambiente di lavoro}{19}{subsection.12.3}
+\contentsline {subsection}{\numberline {12.4}Test interazione utenti}{19}{subsection.12.4}
+\contentsline {subsection}{\numberline {12.5}Dispositivi utilizzati}{19}{subsection.12.5}
+\contentsline {subsection}{\numberline {12.6}Verifica del codice prodotto}{19}{subsection.12.6}
+\contentsline {subsection}{\numberline {12.7}Conclusioni}{19}{subsection.12.7}
