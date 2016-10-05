@@ -161,7 +161,6 @@
 						</xsl:for-each>
 						</xsl:if>
 					</p>
-					<span class="submit"><input type="submit" class="subbutton" value="Aggiungi al carrello"/></span>
 					</fieldset>
 				</form>
 				</div>
@@ -202,7 +201,6 @@
 						</xsl:for-each>
 						</xsl:if>
 					</p>
-					<span class="submit"><input type="submit" class="subbutton" value="Aggiungi al carrello"/></span>
 					</fieldset>
 				</form>
 				</div>
