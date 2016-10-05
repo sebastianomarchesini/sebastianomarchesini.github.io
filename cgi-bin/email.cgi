@@ -55,11 +55,13 @@ $string->setAttribute("action", 'search.cgi');
 $string = $doc->findnodes('//form[@action="cgi-bin/email.cgi"]')->get_node(0);
 $string->setAttribute("action", 'email.cgi');
 
-if($name eq '' || $surname eq '' || $userEmail eq '' || $userEmail =~ /^[a-z0-9]([a-z0-9.]+[a-z0-9])?\@[a-z0-9.-]+$/ || $text eq '') {
-	$string = $doc->findnodes('//div[@class="body_contattaci"/form/ul]')->get_node(0);
+#Faccio il check del formato dei dati, se viene rilevato un errore allora viene aggiunta alla pgina da stampare una riga in cui si segnala l'errore
+if($name eq '' || $surname eq '' || $userEmail eq '' || (index($userEmail, '.')==-1 || index($userEmail, '@')>rindex($userEmail, '.') || $userEmail=~tr/@// != 1) || $text eq '') {
+	$string = $doc->findnodes('//div[@class="body_contattaci"]/form/ul')->get_node(0);
 	my $fragment = $parserxml->parse_string("<li>
 		<p class='errore'>Errore: dato mancante o errato.</p>
 	</li>");
+	$fragment = $fragment->removeChild($fragment->firstChild());
 	$string = $string->insertBefore($fragment, $string->firstChild());
 }
 
@@ -77,18 +79,36 @@ $smtp->datasend($name." ".$surname." ha posto la seguente domanda:\n".$text);
 
 my $redirect=0;
 if($redirect) {
-	print "Status: 302 Moved\r\nLocation: perltestCARP.pl\r\n\r\n";
-	$smtp->datasend("Lo script ha solo ridiretto il browser...\n");
+	my @check = $doc->findnodes('//p[@class=\'errore\']');
+	if(scalar @check==0){
+		$string = $doc->findnodes('//div[@class="body_contattaci"]/form/ul')->get_node(0);
+		my $fragment = $parserxml->parse_string("<li>
+			<p class='errore'>Errore di redirect durante l'invio dell'email.</p>
+		</li>");
+		$fragment = $fragment->removeChild($fragment->firstChild());
+		$string = $string->insertBefore($fragment, $string->firstChild());
+	}
 } else {
+
+#Controlla se è già stata aggiunta una segnalazione d'errore nella pagina, in caso negativo allora segnala che l'operazione è avvenuta con successo.
+	my @check = $doc->findnodes('//p[@class=\'errore\']');
+	if(scalar @check==0){
+		$string = $doc->findnodes('//div[@class="body_contattaci"]/form/ul')->get_node(0);
+		my $fragment = $parserxml->parse_string("<li>
+			<p class='errore'>Email inviata con successo.</p>
+		</li>");
+		$fragment = $fragment->removeChild($fragment->firstChild());
+		$string = $string->insertBefore($fragment, $string->firstChild());
+	}
 
 #stampa contattaci.html
 
-print "Content-type: text/html; charset=utf-8\n\n";
-print "<phtml>";
-print "<body>";
-print $doc;
-print "</body>";
-print "</html>";
+	print "Content-type: text/html; charset=utf-8\n\n";
+	print "<phtml>";
+	print "<body>";
+	print $doc;
+	print "</body>";
+	print "</html>";
 }
 $smtp->dataend();
 $smtp->quit;
