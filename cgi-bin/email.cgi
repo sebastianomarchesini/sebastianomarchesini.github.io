@@ -20,8 +20,8 @@ my $parserxml  = XML::LibXML->new;
 my $doc = $parserxml->load_html(location => $htmlPage, recover => 1);
 
 #Aggiorno il link ai CSS
-my $string = $doc->findnodes('//link[@href="CSS/home.css"]')->get_node(0);
-$string->setAttribute("href", '../CSS/home.css');
+my $string = $doc->findnodes('//link[@href="css/home.css"]')->get_node(0);
+$string->setAttribute("href", '../css/home.css');
 $string = $doc->findnodes('//link[@href="css/print.css"]')->get_node(0);
 $string->setAttribute("href", '../css/print.css');
 
@@ -52,11 +52,15 @@ foreach my $link(@links){
 }
 $string = $doc->findnodes('//form[@action="cgi-bin/search.cgi"]')->get_node(0);
 $string->setAttribute("action", 'search.cgi');
-$string = $doc->findnodes('//form[@action="../cgi-bin/email.cgi"]')->get_node(0);
+$string = $doc->findnodes('//form[@action="cgi-bin/email.cgi"]')->get_node(0);
 $string->setAttribute("action", 'email.cgi');
 
 if($name eq '' || $surname eq '' || $userEmail eq '' || $userEmail =~ /^[a-z0-9]([a-z0-9.]+[a-z0-9])?\@[a-z0-9.-]+$/ || $text eq '') {
-
+	$string = $doc->findnodes('//div[@class="body_contattaci"/form/ul]')->get_node(0);
+	my $fragment = $parserxml->parse_string("<li>
+		<p class='errore'>Errore: dato mancante o errato.</p>
+	</li>");
+	$string = $string->insertBefore($fragment, $string->firstChild());
 }
 
 #Il codice seguente è stato tratto dalla pagina https://www.studenti.math.unipd.it/index.php?id=corsi_tecweb.
