@@ -10,7 +10,7 @@
         <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
             <head>
                 <title>Lista Prodotti - GGarden</title>
-                <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                 <meta name="title" content="GGarden" />
                 <meta name="description" content="Azienda specializzata nella vendita di piante e fiori e nel noleggio e vendita di attrezzi e macchine da giardinaggio" />
                 <meta name="keywords" content="prodotti, piante, fiori, giardinaggio, attrezzi" />
@@ -98,7 +98,7 @@
                             <a href="contattaci.html" hreflang="it" accesskey="c" tabindex="103">Contattaci</a>
                         </p>
                         
-                        <p class="footer-nome-azienda">Ggarden &copy; 2016</p>
+                        <p class="footer-nome-azienda">Ggarden &#169; 2016</p>
                     </div>
                     
                     <div class="footer-center">
@@ -118,7 +118,7 @@
                     <div class="footer-right">
                         <p class="footer-company-info" title="motto">
                             <span class="testo-footer">Gg Garden a servizio</span>
-                            <span class="testo-footer">L'erba del tuo vicino &egrave; sempre pi&ugrave; verde. Sii come il tuo vicino,
+                            <span class="testo-footer">L'erba del tuo vicino e&#768; sempre piu&#768; verde. Sii come il tuo vicino,
                                 chiama G Garden Group</span>
                         </p>
                     </div>
@@ -166,13 +166,13 @@
                     <fieldset class="riquadro_prezzi">
                         <p class="prezzo">
                             <xsl:if test="count(g:prezzo/g:pacchetto)&lt;=1">
-                                <span class="prezzo_singolo">€ <xsl:value-of select="g:prezzo/g:pacchetto/g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:prezzo/g:pacchetto/g:formato"/></span>
+                                <span class="prezzo_singolo">&#8364; <xsl:value-of select="g:prezzo/g:pacchetto/g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:prezzo/g:pacchetto/g:formato"/></span>
                             </xsl:if>
                             <xsl:if test="count(g:prezzo/g:pacchetto)&gt;1">
                                 <xsl:for-each select="g:prezzo/g:pacchetto">
                                     <span class="check"><xsl:variable name="num_prezzo" select="position()"/>
-                                        <xsl:if test="$num_prezzo=1"> € <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></xsl:if>
-                                        <xsl:if test="$num_prezzo&gt;1"> € <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></xsl:if>
+                                        <xsl:if test="$num_prezzo=1"> &#8364; <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></xsl:if>
+                                        <xsl:if test="$num_prezzo&gt;1"> &#8364; <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></xsl:if>
                                         </span>
                                 </xsl:for-each>
                             </xsl:if>
@@ -210,13 +210,13 @@
                     <fieldset class="riquadro_prezzi">
                         <p class="prezzo">
                             <xsl:if test="count(g:prezzo/g:pacchetto)&lt;=1">
-                                <span class="prezzo_singolo">€ <xsl:value-of select="g:prezzo/g:pacchetto/g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:prezzo/g:pacchetto/g:formato"/></span>
+                                <span class="prezzo_singolo">&#8364; <xsl:value-of select="g:prezzo/g:pacchetto/g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:prezzo/g:pacchetto/g:formato"/></span>
                             </xsl:if>
                             <xsl:if test="count(g:prezzo/g:pacchetto)&gt;1">
                                 <xsl:for-each select="g:prezzo/g:pacchetto">
                                     <span class="check"><xsl:variable name="num_prezzo" select="position()"/>
-                                        <xsl:if test="$num_prezzo=1"> € <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></xsl:if>
-                                        <xsl:if test="$num_prezzo&gt;1"> € <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></xsl:if>
+                                        <xsl:if test="$num_prezzo=1"> &#8364; <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></xsl:if>
+                                        <xsl:if test="$num_prezzo&gt;1"> &#8364; <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></xsl:if>
                                         </span>
                                 </xsl:for-each>
                             </xsl:if>

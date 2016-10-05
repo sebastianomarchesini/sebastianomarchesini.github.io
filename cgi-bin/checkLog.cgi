@@ -5,11 +5,13 @@ use XML::LibXML;
 use CGI::Session;
 use XML::LibXSLT;
 use CGI::Carp qw(fatalsToBrowser);
+use utf8;
+use HTML::Entities;
 
 sub log {
 	my $xmlPage = "../data/database.xslt";
 	my $parserxml = XML::LibXML->new;
-	my $doc = $parserxml->load_xml(location => $xmlPage);
+	my $doc = $parserxml->load_xml(location => $xmlPage, recover => 1);
 	
 	#modifico il form
 	my @xslUpperHTML = $doc->findnodes("//xsl:template[\@match='/']")->get_node(1)->childNodes();

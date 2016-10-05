@@ -87,7 +87,7 @@
                             <a href="contattaci.html" hreflang="it" accesskey="c" tabindex="103">Contattaci</a>
                         </p>
                         
-                        <p class="footer-nome-azienda">Ggarden &copy; 2016</p>
+                        <p class="footer-nome-azienda">Ggarden &#169; 2016</p>
                     </div>
                     
                     <div class="footer-center">
@@ -107,7 +107,7 @@
                     <div class="footer-right">
                         <p class="footer-company-info" title="motto">
                             <span class="testo-footer">Gg Garden a servizio</span>
-                            <span class="testo-footer">L'erba del tuo vicino &egrave; sempre pi&ugrave; verde. Sii come il tuo vicino,
+                            <span class="testo-footer">L'erba del tuo vicino e&#768; sempre piu&#768; verde. Sii come il tuo vicino,
                                 chiama G Garden Group</span>
                         </p>
                     </div>
@@ -154,14 +154,14 @@
 					<fieldset class="riquadro_prezzi">
 					<p class="prezzo">
 						<xsl:if test="count(g:prezzo/g:pacchetto)&lt;=1">
-							<span class="prezzo_singolo">€ <xsl:value-of select="g:prezzo/g:pacchetto/g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:prezzo/g:pacchetto/g:formato"/></span>
+							<span class="prezzo_singolo">&#8364; <xsl:value-of select="g:prezzo/g:pacchetto/g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:prezzo/g:pacchetto/g:formato"/></span>
 						</xsl:if>
 						<xsl:if test="count(g:prezzo/g:pacchetto)&gt;1">
 						<xsl:for-each select="g:prezzo/g:pacchetto">
 							<span class="check"><xsl:variable name="num_prezzo" select="position()"/>
-							<xsl:if test="$num_prezzo=1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}" checked="true">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
-							<xsl:if test="$num_prezzo&gt;1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
-							<label for="{$num_prezzo}">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></label></span>
+							<xsl:if test="$num_prezzo=1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}" checked="true">&#8364; <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
+							<xsl:if test="$num_prezzo&gt;1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}">&#8364; <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
+							<label for="{$num_prezzo}">&#8364; <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></label></span>
 						</xsl:for-each>
 						</xsl:if>
 					</p>
@@ -194,14 +194,14 @@
 					<fieldset class="riquadro_prezzi">
 					<p class="prezzo">
 						<xsl:if test="count(g:prezzo/g:pacchetto)&lt;=1">
-							<span class="prezzo_singolo">€ <xsl:value-of select="g:prezzo/g:pacchetto/g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:prezzo/g:pacchetto/g:formato"/></span>
+							<span class="prezzo_singolo">&#8364; <xsl:value-of select="g:prezzo/g:pacchetto/g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:prezzo/g:pacchetto/g:formato"/></span>
 						</xsl:if>
 						<xsl:if test="count(g:prezzo/g:pacchetto)&gt;1">
 						<xsl:for-each select="g:prezzo/g:pacchetto">
 							<span class="check"><xsl:variable name="num_prezzo" select="position()"/>
-							<xsl:if test="$num_prezzo=1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}" checked="true">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
-							<xsl:if test="$num_prezzo&gt;1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
-							<label for="{$num_prezzo}">€ <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></label></span>
+							<xsl:if test="$num_prezzo=1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}" checked="true">&#8364; <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
+							<xsl:if test="$num_prezzo&gt;1"><input type="radio" name="{$id}" id="{$id}{$num_prezzo}">&#8364; <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></input></xsl:if>
+							<label for="{$num_prezzo}">&#8364; <xsl:value-of select="g:valore"/><xsl:text> </xsl:text><xsl:value-of select="g:formato"/></label></span>
 						</xsl:for-each>
 						</xsl:if>
 					</p>
