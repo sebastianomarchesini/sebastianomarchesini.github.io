@@ -24,6 +24,8 @@ my $string = $doc->findnodes('//link[@href="css/home.css"]')->get_node(0);
 $string->setAttribute("href", '../css/home.css');
 $string = $doc->findnodes('//link[@href="css/print.css"]')->get_node(0);
 $string->setAttribute("href", '../css/print.css');
+$string = $doc->findnodes('//link[@href="css/small-devices.css"]')->get_node(0);
+$string->setAttribute("href", '../css/small-devices.css');
 
 #Aggiorno il link dell'immagine di Google Mpas
 $string = $doc->findnodes('//img[@id="fotoMappa"]')->get_node(0);
