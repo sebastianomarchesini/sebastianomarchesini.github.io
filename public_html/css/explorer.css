@@ -48,10 +48,11 @@ table {
 
 
 html, body{padding:0px;
-    margin:0px;
-    font-family: Verdana, Helevetica, sans-serif;
-    color: white;
-    background-color:#c9fdc9;}
+    _margin:0px;
+    _font-family: Verdana, Helevetica, sans-serif;
+    _color: white;
+    _background-color:#c9fdc9;
+}
 
 
 #headheader{
