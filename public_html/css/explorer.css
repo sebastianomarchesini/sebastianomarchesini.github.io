@@ -1,0 +1,713 @@
+ /* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS RESET FINE */
+
+
+html, body{padding:0px;
+    margin:0px;
+    font-family: Verdana, Helevetica, sans-serif;
+    color: white;
+    background-color:#c9fdc9;}
+
+
+#headheader{
+    padding: 0;
+    margin: 30px auto; /*per Firefox, Opera, Safari, etc...*/
+    
+}
+
+/*Elementi nascosti di lettura per lo screenR e non visibili*/
+.nascosto{
+    position:absolute;
+    left:0px;
+    top:-500px;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    
+    display: none;
+
+}
+
+
+/*Logo*/
+h1{
+    margin: 0;
+    padding: 0px 0px 10px 10px;
+    text-align:left;
+    float:left;
+    background-image:url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 79%;
+    height: 200px;
+}
+
+
+
+#accedi{
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30%;
+}
+
+
+
+#inputUsername{
+    width:90%;
+}
+
+#inputPassword{
+    width:90%;
+}
+
+
+/*Login*/
+#login {
+    color: black;
+    font-size: 12px;
+    display: none;
+    
+}
+
+legend{
+
+   font-size:1.4em;
+   padding: 1em 0em 1em 0em;	
+}
+
+#logError{      /*Compare dinamicamente a errore di inserimento*/
+   float:right;
+   font-size: 1.2em;
+   color: #8c001f; 
+   margin-right: 1em;
+}
+
+#contenitore-login{
+    margin: 0;
+    padding: 5px 10px 10px 0px;
+    float: right;
+    width:19%;
+}
+
+
+#button_admin, #accedi{
+    float: right;
+    margin: 1em;
+    color: white;
+    
+    border: solid 1px #a30025;
+    background: #b40029;
+    
+}
+
+#legend{
+    margin: 1.3em;
+}
+
+#accedi{
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30%;
+}
+
+#contenitore-login label{
+    color: #0808c1;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+#inputUsername{
+    width:90%;
+}
+
+#inputPassword{
+    width:90%;
+}
+
+
+
+
+/* BreadCrumbs Part*/
+#breadcrumbs{
+    background-color:#b0fcb0;
+    clear: both;
+}
+
+#rifnav {
+    font-style: oblique;
+    width: 29%;
+    margin-left: 2em;
+    float: left;
+    color: black;
+    margin-top: 20px;
+}
+
+#conferma{
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 10px 20px;
+    border: solid 1px #a30025;
+    background: #b40029;
+    
+}
+
+.ricerca{
+    position:relative;
+    left:7%;
+}
+
+
+/*Menu*/
+#contenitore-menu {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.vnav{
+    background-color: #ffcdcc;
+    font-weight: bold;
+}
+
+.menu{
+    font-style: oblique;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #c9fdc9;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    color: white;
+    background-color: #111;
+}
+
+/*Contenuto-Body-Centro*/
+
+#content{
+    background-color:#b0fcb0;
+    margin:0 auto;
+    padding: 1em;
+    width:70%;
+    color: black;
+    clear: both;
+}
+
+.informazioni{
+    display:block;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#immagine{
+    background-image:url("../img/prato.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    width:100%;
+    height:27em;
+}
+
+
+.titolo_contattaci{
+    color: #fff3f6;
+    padding: 20px;
+    
+    border-radius: 0px 0px 20px 20px;
+    
+    background: #b40029;
+    
+        
+}
+
+.info{
+    clear: both;
+    padding:0px 50px 50px 100px;
+}
+
+/* Realizzazioni */
+
+#gallery{
+    width: 100%;
+    height: 500px;
+}
+
+#content img{
+    border:0;
+    margin: 1em;
+}
+
+#content div #container{
+    width:740px;
+}
+
+#content div #header img{
+    float:left;
+}
+
+#content div #header h2{
+    float:left;
+    margin:24px 0 0 0;
+    font-size:100%;
+}
+
+#content div #zoom{
+    float:right;
+    margin:0 0 5px 0;
+    padding: 5px;
+    border:1px solid #ccc;
+}
+
+#content div #zoom h3{
+    margin:0;
+    font-size:100%;
+    color: #666;
+    text-align:center;
+}
+
+#content div #zoom img{
+    display:block;
+    margin: 30px;
+    width:400px;
+    height:400px;
+}
+
+#content div #minipics{
+    margin-right:415px      /*per Opera*/
+}
+
+#content div #minipics ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+#content div #minipics li{
+    float:left;
+    margin:0 5px 5px 5px;
+    border:1px solid #ccc;
+    padding: 3px
+}
+
+
+/*Parte per la form di contattaci*/
+
+.body_contattaci{
+    padding-left:100px;
+    padding-right: 100px;
+    margin-top: 50px;
+    border-color : #333333;
+}
+
+form {
+    max-width: 100%;
+    display: block;
+}
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+form ul li {
+    margin: 0 0 0.25em 0;
+    clear: both;
+    display: inline-block;
+    width: 100%;
+}
+form ul li:last-child {
+    margin: 0;
+}
+
+form ul li p.right {
+    float: right;
+}
+form ul li .divider {
+    margin: 2em 0 2em 0;
+    border: 0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: #31456b;
+    background-image: linear-gradient(to right, #ee9cb4, #31456b);
+}
+form ul li .req {
+    color: #ee9cb4;
+}
+form label {
+    display: block;
+    margin: 0 0 0.5em 0;
+    color: #31456b;
+    font-size: 0.8em;
+}
+form input {
+    margin: 1em 0.5em 1em 0.5em;
+    border: 1px solid #ccc;
+    padding: 0.3em 0.6em;
+    color: #555;
+    font-size: 1em;
+}
+form textarea {
+    margin: 1em 0.5em 1em 0.5em;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    width: 80%;
+    color: #555;
+}
+form small {
+    color: #31456b;
+    margin: 0 0 0 0.5em;
+}
+
+.info {
+    display: block;
+    margin: 0 0 0.5em 0;
+    color: #31456b;
+}
+
+#frameMappa {
+    width: 100%;
+    height: 20em;
+}
+
+.print {
+    display: none;
+}
+
+.errorSuggestion{
+    font-size: 1em;
+    font-style: oblique;
+    color: #8c001f;
+    width: 50%;
+    float: right;
+}
+
+
+/* VENDITA */
+
+.maintitle{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border: solid 1px #00a37e;
+    background: #005541;
+}
+
+.cnome{
+    text-align: center;
+    color: #003e30;
+}
+
+.nome_scientifico{
+    padding: 0.8em;
+}
+
+.tipo{
+    padding: 0.8em;
+}
+
+h4{
+    text-align: left;
+    color: #003e30;
+}
+
+.info {
+    float: left;
+    font-style : oblique;
+    width: 100%;
+}
+
+.prodotto .id{
+    float: right;
+}
+
+.prodotto .desc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 96%;
+}
+
+
+.dati{
+    color: #3e000e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenuto{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.prodotto .nome_scientifico{
+    font-style: oblique;
+}
+
+.prodotto .tipo{
+    font-weight: bold;
+}
+
+.img{
+    text-align: center;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 600px;
+}
+
+.dati{
+}
+
+.riquadro_prezzi{
+    width: 96%;
+}
+
+.radio{
+    float:right;
+}
+
+.prezzo{
+    color: #232323;
+    font-style: oblique;
+    text-align: right;
+    margin: 10px;
+}
+
+.subbutton{
+    padding-right: 10px;
+    color: white;
+    float: right;
+    
+    border: solid 1px #a30025;
+    background: #b40029;
+    
+}
+
+.check{
+    padding-bottom: 1em;
+    display: block;
+}
+
+hr{
+   
+}
+
+/* VENDITA - Parte Admin e form */
+
+#createButtons{
+    height: 2em;
+}
+
+.createButton{
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 1em;
+    color: white;
+    border: solid 1px #a30025;
+    background: #b40029;
+
+}
+
+#productButtons{
+    padding: 2em;
+}
+.productButton{
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 1em;
+    color: white;
+    border: solid 1px #a30025;
+    background: #b40029;
+}
+
+#format{
+    width: 35%;
+}
+
+
+/* Footer */
+
+
+.footer{
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    background-image:url(../img/grass_footer.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    
+    padding: 25px 20px;
+    margin-top: 20px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.footer .footer-left{
+    width: 40%;
+}
+
+
+.footer .footerlogo{
+    text-align:center;
+    background-image: url(../img/logo_mini.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    
+    width: 200px;
+    height: 50px;
+}
+
+.footer .footerlogo span {
+    display:block;
+    height:0;
+    overflow:hidden;
+}
+
+.footer .footer-left .footer-menu a{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.footer .footer-nome-azienda{
+    color:  #333333;
+    font-size: 0.9em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-center{
+    width: 35%;
+}
+
+.footer .footer-center i{
+    color: #333333;
+    font-size: 2em;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-mail{
+    font-size: 1em;
+    line-height: 38px;
+}
+
+.footer .footer-center p{
+    display: inline-block;
+    color: #333333;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:0.9em;
+    line-height:2;
+}
+
+
+.footer .footer-right{
+    width: 20%;
+}
+
+.footer .footer-right{
+    color: black;
+}
+
+.footer .footer-nome-azienda{
+    line-height: 20px;
+    font-size: 0.85em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-company-info span{
+    display: block;
+    color:  #333333;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.testo-footer{
+    color: #333333;
+}
