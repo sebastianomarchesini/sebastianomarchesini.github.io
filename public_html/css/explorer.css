@@ -211,7 +211,7 @@ legend{
 
 /*Menu*/
 #contenitore-menu {
-    width: 450px;
+    width: 29em;
     margin: 0 auto;
 }
 
@@ -322,10 +322,7 @@ li a:hover {
 }
 
 #content div #zoom{
-    float:right;
-    margin:0 0 5px 0;
-    padding: 5px;
-    border:1px solid #ccc;
+   display : none;
 }
 
 #content div #zoom h3{
