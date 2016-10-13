@@ -1,4 +1,4 @@
-/* CSS RESET */
+ /* CSS RESET */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -87,6 +87,69 @@ h1{
     height: 200px;
 }
 
+
+
+#accedi{
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30%;
+}
+
+
+
+#inputUsername{
+    width:90%;
+}
+
+#inputPassword{
+    width:90%;
+}
+
+
+/*Login*/
+#login {
+    color: black;
+    font-size: 12px;
+    display: none;
+    
+}
+
+legend{
+
+   font-size:1.4em;
+   padding: 1em 0em 1em 0em;	
+}
+
+#logError{      /*Compare dinamicamente a errore di inserimento*/
+   float:right;
+   font-size: 1.2em;
+   color: #8c001f; 
+   margin-right: 1em;
+}
+
+#contenitore-login{
+    margin: 0;
+    padding: 5px 10px 10px 0px;
+    float: right;
+    width:19%;
+}
+
+
+#button_admin, #accedi{
+    float: right;
+    margin: 1em;
+    color: white;
+    
+    border: solid 1px #a30025;
+    background: #b40029;
+    
+}
+
+#legend{
+    margin: 1.3em;
+}
+
 #accedi{
     margin-top: 10px;
     padding-left: 20px;
@@ -96,6 +159,8 @@ h1{
 
 #contenitore-login label{
     color: #0808c1;
+    font-size: 1.2em;
+    margin-top: 0.5em;
 }
 
 #inputUsername{
@@ -118,15 +183,10 @@ h1{
 #rifnav {
     font-style: oblique;
     width: 29%;
+    margin-left: 2em;
     float: left;
     color: black;
     margin-top: 20px;
-}
-
-#ricerca{
-    width:20%;
-    height:24px;
-    font-size: 1em; 
 }
 
 #conferma{
@@ -144,13 +204,13 @@ h1{
 
 .ricerca{
     position:relative;
-    left:10%;
+    left:7%;
 }
 
 
 /*Menu*/
 #contenitore-menu {
-    width: 29em;
+    width: 450px;
     margin: 0 auto;
 }
 
@@ -243,6 +303,7 @@ li a:hover {
 
 #content img{
     border:0;
+    margin: 1em;
 }
 
 #content div #container{
@@ -335,8 +396,8 @@ form ul li .divider {
     height: 1px;
     width: 100%;
     display: block;
-    background-color: #4f6fad;
-    background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+    background-color: #31456b;
+    background-image: linear-gradient(to right, #ee9cb4, #31456b);
 }
 form ul li .req {
     color: #ee9cb4;
@@ -344,31 +405,32 @@ form ul li .req {
 form label {
     display: block;
     margin: 0 0 0.5em 0;
-    color: #4f6fad;
+    color: #31456b;
     font-size: 0.8em;
 }
 form input {
-    margin: 0 0 0.5em 0;
+    margin: 1em 0.5em 1em 0.5em;
     border: 1px solid #ccc;
-    padding: 6px 10px;
+    padding: 0.3em 0.6em;
     color: #555;
     font-size: 1em;
 }
 form textarea {
+    margin: 1em 0.5em 1em 0.5em;
     border: 1px solid #ccc;
     padding: 6px 10px;
     width: 80%;
     color: #555;
 }
 form small {
-    color: #4f6fad;
+    color: #31456b;
     margin: 0 0 0 0.5em;
 }
 
 .info {
     display: block;
     margin: 0 0 0.5em 0;
-    color: #4f6fad;
+    color: #31456b;
 }
 
 #frameMappa {
@@ -388,6 +450,146 @@ form small {
     float: right;
 }
 
+
+/* VENDITA */
+
+.maintitle{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border: solid 1px #00a37e;
+    background: #005541;
+}
+
+.cnome{
+    text-align: center;
+    color: #003e30;
+}
+
+.nome_scientifico{
+    padding: 0.8em;
+}
+
+.tipo{
+    padding: 0.8em;
+}
+
+h4{
+    text-align: left;
+    color: #003e30;
+}
+
+.info {
+    float: left;
+    font-style : oblique;
+    width: 100%;
+}
+
+.prodotto .id{
+    float: right;
+}
+
+.prodotto .desc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 96%;
+}
+
+
+.dati{
+    color: #3e000e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenuto{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.prodotto .nome_scientifico{
+    font-style: oblique;
+}
+
+.prodotto .tipo{
+    font-weight: bold;
+}
+
+.img{
+    text-align: center;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 600px;
+}
+
+.dati{
+}
+
+.riquadro_prezzi{
+    width: 96%;
+}
+
+.radio{
+    float:right;
+}
+
+.prezzo{
+    color: #232323;
+    font-style: oblique;
+    text-align: right;
+    margin: 10px;
+}
+
+.subbutton{
+    padding-right: 10px;
+    color: white;
+    float: right;
+    
+    border: solid 1px #a30025;
+    background: #b40029;
+    
+}
+
+.check{
+    padding-bottom: 1em;
+    display: block;
+}
+
+hr{
+   
+}
+
+/* VENDITA - Parte Admin e form */
+
+#createButtons{
+    height: 2em;
+}
+
+.createButton{
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 1em;
+    color: white;
+    border: solid 1px #a30025;
+    background: #b40029;
+
+}
+
+#productButtons{
+    padding: 2em;
+}
+.productButton{
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 1em;
+    color: white;
+    border: solid 1px #a30025;
+    background: #b40029;
+}
+
+#format{
+    width: 35%;
+}
 
 
 /* Footer */
@@ -420,7 +622,7 @@ form small {
 }
 
 
-.footer h3{
+.footer .footerlogo{
     text-align:center;
     background-image: url(../img/logo_mini.png);
     background-repeat: no-repeat;
@@ -430,7 +632,7 @@ form small {
     height: 50px;
 }
 
-.footer h3 span {
+.footer .footerlogo span {
     display:block;
     height:0;
     overflow:hidden;
@@ -510,37 +712,3 @@ form small {
     color: #333333;
 }
 
-@media screen and (max-width:768px){
-    
-    .ricerca{position:static;}
-    
-    #menu{height:2100px;}
-    #chisiamo{margin-left:0em;}
-    #real{margin-left:0em;}
-    #vend{margin-left:0em;}
-    #nol{margin-left:0em;}
-    #serv{margin-left:0em;}
-    #cont{margin-left:0em;}
-    #formricerca{position:static; float:none;}
-    #formadmin{position:static; float:none;}
-    #log{width:15em; height:2em;}
-    #barra{height:5.3em;}
-    
-    
-    .footer{
-        font: bold 14px sans-serif;
-    }
-    
-    .footer .footer-left,
-    .footer .footer-center,
-    .footer .footer-right{
-        display: block;
-        width: 100%;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-    
-    .footer .footer-center i{
-        margin-left: 0;
-    }
-}
