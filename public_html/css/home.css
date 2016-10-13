@@ -87,17 +87,6 @@ h1{
     height: 200px;
 }
 
-
-
-#accedi{
-    margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 30%;
-}
-
-
-
 #inputUsername{
     width:90%;
 }
@@ -138,7 +127,7 @@ legend{
 
 #button_admin, #accedi{
     float: right;
-    margin: 1em;
+    margin: 0.5em;
     color: white;
     
     border: solid 1px #a30025;
@@ -151,10 +140,8 @@ legend{
 }
 
 #accedi{
-    margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 30%;
+    float:right;
+    padding: 0 1.5em 0 1.5em;
 }
 
 #contenitore-login label{
@@ -169,6 +156,17 @@ legend{
 
 #inputPassword{
     width:90%;
+}
+
+.logout{
+    margin: 0.5em;
+    float: left;
+    text-decoration: none;
+    padding: 0.2em 1.5em 0.2em 1.5em;
+    color: white;
+    border: solid 1px #a30025;
+    background: #b40029;
+
 }
 
 
@@ -462,6 +460,8 @@ form small {
 }
 
 .cnome{
+    font-size: 1.4em; 
+    font-style: italic;
     text-align: center;
     color: #003e30;
 }
@@ -568,6 +568,8 @@ hr{
 }
 
 .createButton{
+    text-decoration: none; 
+    font-weight: bold;
     padding: 0.5em 1em 0.5em 1em;
     margin: 1em;
     color: white;
@@ -579,7 +581,10 @@ hr{
 #productButtons{
     padding: 2em;
 }
+
 .productButton{
+    text-decoration: none; 
+    font-weight: bold;
     padding: 0.5em 1em 0.5em 1em;
     margin: 1em;
     color: white;
